@@ -158,7 +158,14 @@ namespace RichFlyer
             else
             {
                 if (_receiver != null) {
-                    _receiver(action.Title, action.Value, action.Type, (ulong)action.Index, extendedProperty);
+                    if (action != null)
+                    {
+                        _receiver(action.Title, action.Value, action.Type, (ulong)action.Index, extendedProperty);
+                    }
+                    else if (extendedProperty != null)
+                    {
+                        _receiver("", "", "", 0, extendedProperty);
+                    }
                 }
             }
         }

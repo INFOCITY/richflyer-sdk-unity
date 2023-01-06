@@ -25,13 +25,13 @@ public class RFUnityPlayerActivity extends com.google.firebase.MessagingUnityPla
     @Override
     protected void onResume() {
         super.onResume();
+
+        sendRichFlyerActionEvent(null);
     }
 
     @Override
     protected void onNewIntent(Intent intent) {
         super.onNewIntent(intent);
-
-        sendRichFlyerActionEvent(intent);
     }
 
     private void sendRichFlyerActionEvent(Intent intent) {
