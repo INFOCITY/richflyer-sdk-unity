@@ -69,6 +69,19 @@ typedef NS_OPTIONS(NSUInteger, RFLaunchModes) {
 
 + (void)registSegments:(nonnull NSDictionary<NSString*, NSString*>*)segments completion:(nullable void (^)(RFResult* _Nonnull result))completion;
 
++ (void)registDateSegments:(nonnull NSDictionary<NSString*, NSDate*>*)segments completion:(nullable void (^)(RFResult* _Nonnull result))completion;
+
++ (void)registIntegerSegments:(nonnull NSDictionary<NSString*, NSNumber*>*)segments completion:(nullable void (^)(RFResult* _Nonnull result))completion;
+
++ (void)registBooleanSegments:(nonnull NSDictionary<NSString*, NSNumber*>*)segments completion:(nullable void (^)(RFResult* _Nonnull result))completion;
+
++ (void)registSegments:(nullable NSDictionary<NSString*, NSString*>*)stringSegments
+		   intSegments:(nullable NSDictionary<NSString*, NSNumber*>*)intSegments
+		   boolSegments:(nullable NSDictionary<NSString*, NSNumber*>*)boolSegments
+		   dateSegments:(nullable NSDictionary<NSString*, NSDate*>*)dateSegments
+			completion:(nullable void (^)(RFResult* _Nonnull result))completion;
+
+
 + (nullable NSDictionary<NSString*, NSString*>*)getSegments;
 
 + (nullable NSArray<RFContent*>*)getReceivedData;

@@ -5,6 +5,7 @@
 //
 
 #if UNITY_ANDROID
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Firebase.Extensions;
@@ -58,7 +59,7 @@ namespace RichFlyer
             var segmentsDict = new Dictionary<string, string>();
             foreach (RFSegment segment in segments)
             {
-                segmentsDict.Add(segment.Name, segment.Value);
+                segmentsDict.Add(segment.Name, segment.StringValue);
             }
 
             //convert dictionary
