@@ -12,19 +12,20 @@ namespace RichFlyer
     [Serializable]
     public class RFSegment
     {
-        public string Name;
+        [SerializeField]
+        private string Name;
 
         [SerializeField]
         private string Value;
 
         [NonSerialized]
-        public string   StringValue;
+        private string   StringValue;
         [NonSerialized]
-        public bool     BoolValue;
+        private bool     BoolValue;
         [NonSerialized]
-        public int      IntValue;
+        private long      NumberValue;
         [NonSerialized]
-        public DateTime DateValue;
+        private DateTime DateValue;
 
         public RFSegment(string name, string value)
         {
@@ -38,7 +39,7 @@ namespace RichFlyer
             setupValue(value);
         }
 
-        public RFSegment(string name, int value)
+        public RFSegment(string name, long value)
         {
             this.Name = name;
             setupValue(value);
@@ -50,6 +51,32 @@ namespace RichFlyer
             setupValue(value);
         }
 
+        public string getName()
+        {
+            return this.Name;
+        }
+
+        public string getStringValue()
+        {
+            return this.StringValue;
+        }
+
+        public bool getBoolValue()
+        {
+            return this.BoolValue;
+        }
+
+        public long getNumberValue()
+        {
+            return this.NumberValue;
+        }
+
+        public DateTime getDateValue()
+        {
+            return this.DateValue;
+        }
+        
+
         private void setupValue(object value)
         {
             System.Type type = value.GetType();
@@ -58,18 +85,18 @@ namespace RichFlyer
                 this.Value = (string)value;
                 this.StringValue = (string)value;
             }
-            else if (type == typeof(int))
+            else if (type == typeof(long))
             {
-                this.Value = ((int)value).ToString();
+                this.Value = ((long)value).ToString();
                 this.StringValue = this.Value;
-                this.IntValue = (int)value;
-                this.BoolValue = ((int)value > 0);
+                this.NumberValue = (long)value;
+                this.BoolValue = ((long)value > 0);
             }
             else if (type == typeof(bool))
             {
                 this.Value = (bool)value ? "true" : "false";
                 this.StringValue = this.Value;
-                this.IntValue = (bool)value ? 1 : 0;
+                this.NumberValue = (bool)value ? 1 : 0;
                 this.BoolValue = (bool)value;            
             }
             else if (type == typeof(DateTime))
@@ -80,6 +107,7 @@ namespace RichFlyer
 
                 long unixTimestamp = (long)elapsedTime.TotalSeconds;
                 this.Value = unixTimestamp.ToString();
+                this.NumberValue = unixTimestamp;
                 this.StringValue = this.Value;
                 this.DateValue = (DateTime)value;
             }

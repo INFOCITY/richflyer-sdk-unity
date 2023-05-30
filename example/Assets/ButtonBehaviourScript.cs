@@ -93,7 +93,7 @@ public class ButtonBehaviourScript : MonoBehaviour
         RFSegment[] segments = RFPluginScript.GetSegments();
         foreach (RFSegment segment in segments)
         {
-            Debug.Log($"RF-Segment => [{segment.Name}:{segment.StringValue}]");
+            Debug.Log($"RF-Segment => [{segment.getName()}:{segment.getStringValue()}]");
         }
     }
 

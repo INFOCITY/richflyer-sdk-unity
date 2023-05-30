@@ -59,7 +59,7 @@ namespace RichFlyer
             var segmentsDict = new Dictionary<string, string>();
             foreach (RFSegment segment in segments)
             {
-                segmentsDict.Add(segment.Name, segment.StringValue);
+                segmentsDict.Add(segment.getName(), segment.getStringValue());
             }
 
             //convert dictionary
