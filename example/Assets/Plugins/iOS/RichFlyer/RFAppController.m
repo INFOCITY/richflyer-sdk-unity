@@ -57,6 +57,14 @@
 }
 
 -(void)willPresentNotificationWithCenter:(UNUserNotificationCenter *)center notification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler {
+  
+  UNNotificationPresentationOptions options;
+  if (@available(iOS 14.0, *)) {
+    options = UNNotificationPresentationOptionBanner|UNNotificationPresentationOptionList|UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound;
+  } else {
+    options = UNNotificationPresentationOptionAlert|UNNotificationPresentationOptionBadge|UNNotificationPresentationOptionSound;
+  }
+  [RFApp willPresentNotification:options completionHandler:completionHandler];
 }
 
 -(void)dismissedContentDisplay:(RFAction *)action content:(RFContent *)content {
