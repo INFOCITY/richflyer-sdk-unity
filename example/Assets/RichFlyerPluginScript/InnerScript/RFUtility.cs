@@ -33,6 +33,41 @@ namespace RichFlyer
         }
     }
 
+    [Serializable]
+    public class RFEventArrayJson
+    {
+        [SerializeField] public string[] Events = default;
+
+        public RFEventArrayJson(string[] events)
+        {
+            this.Events = events;
+        }
+    }
+
+    [Serializable]
+    public class RFVariable
+    {
+        [SerializeField] public string Name;
+        [SerializeField] public string Value;
+
+        public RFVariable(string name, string value)
+        {
+            this.Name = name;
+            this.Value = value;
+        }
+        
+    }
+
+    [Serializable]
+    public class RFVariablesJson
+    {
+        [SerializeField] public RFVariable[] Variables = default;
+
+        public RFVariablesJson(RFVariable[] variables)
+        {
+            this.Variables = variables;
+        }
+    }
 }
 
 

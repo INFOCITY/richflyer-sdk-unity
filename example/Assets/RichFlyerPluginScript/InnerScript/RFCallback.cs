@@ -23,4 +23,13 @@ namespace RichFlyer
     /// <param name="buttonIndex">selected button index</param>
     public delegate void RFContentDisplayCallback(string buttonTitle, string buttonValue, string buttonValueType, ulong buttonIndex);
 
+    /// <summary>
+    /// callback post message of result.
+    /// </summary>
+    /// <param name="result">true is success, false is failure.</param>
+    /// <param name="code">result code</param>
+    /// <param name="message">error message</param>
+    /// <param name="eventPostIds">event post ids</param>
+    public delegate void RFPostMessageCallback(bool result, long code, string message, string[] eventPostIds);
+
 }

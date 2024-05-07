@@ -4,6 +4,8 @@
 //  Copyright © 2022年 INFOCITY,Inc. All rights reserved.
 //
 
+using System.Collections.Generic;
+
 namespace RichFlyer
 {
     public class RFPluginScript
@@ -79,6 +81,26 @@ namespace RichFlyer
             RFAndroidPluginScript.DisplayContent(notificationId, callback);
 #endif
         }
+
+        public static void PostMessage(string[] events, Dictionary<string, string> variables, int? standbyTime, RFPostMessageCallback onResult)
+        {
+#if UNITY_IOS
+            RFIOSPluginScript.PostMessage(events, variables, standbyTime, onResult);
+#elif UNITY_ANDROID
+            RFAndroidPluginScript.PostMessage(events, variables, standbyTime, onResult);
+#endif
+        }
+
+        public static void CancelPosting(string eventPostId, RFPostMessageCallback onResult)
+        {
+#if UNITY_IOS
+            RFIOSPluginScript.CancelPosting(eventPostId, onResult);
+#elif UNITY_ANDROID
+            RFAndroidPluginScript.CancelPosting(eventPostId, onResult);
+#endif
+
+        }
+
 
         // android only
         public static void BridgeAction(string actionJson, string extendedProperty)

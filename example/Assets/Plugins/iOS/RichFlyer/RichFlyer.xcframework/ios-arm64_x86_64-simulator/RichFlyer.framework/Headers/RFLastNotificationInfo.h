@@ -11,6 +11,7 @@
 @interface RFLastNotificationInfo : NSObject
 
 @property (class, nullable, nonatomic, readonly) NSString* identifier;
+@property (class, nullable, nonatomic, readonly) NSString* eventId;
 @property (class, nullable, nonatomic, readonly) NSString* title;
 @property (class, nullable, nonatomic, readonly) NSString* subTitle;
 
@@ -19,5 +20,7 @@
 
 + (void)saveLastNotificationId:(nonnull UNNotificationContent*)content appGroups:(nonnull NSString*)appGroups;
 + (nullable NSString*)loadLastNotificationId:(nonnull NSString*)appGroups;
++ (nullable NSString*)loadLastEventId:(nonnull NSString*)appGroups;
+
 
 @end

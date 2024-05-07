@@ -24,6 +24,7 @@ typedef NS_ENUM(NSUInteger, RFContentType) {
 @property (nonatomic, readonly) NSString* title;
 @property (nonatomic, readonly) NSString* body;
 @property (nonatomic, readonly) NSString* notificationId;
+@property (nonatomic, readonly) NSString* eventId;
 @property (nonatomic, readonly) NSURL* imagePath;
 @property (nonatomic, readonly) NSDate* receivedDate;
 @property (nonatomic, readonly) NSDate* notificationDate;
@@ -38,6 +39,8 @@ typedef NS_ENUM(NSUInteger, RFContentType) {
 - (BOOL)hasImage;
 - (BOOL)hasGif;
 - (BOOL)hasMovie;
+
+- (BOOL)isEvent;
 
 @end
 

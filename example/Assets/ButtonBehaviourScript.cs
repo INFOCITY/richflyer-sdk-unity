@@ -6,9 +6,11 @@ using RichFlyer;
 
 public class ButtonBehaviourScript : MonoBehaviour
 {
+    private static string eventPostId;
     // Start is called before the first frame update
     void Start()
     {
+        Initialize();
     }
 
     // Update is called once per frame
@@ -47,6 +49,35 @@ public class ButtonBehaviourScript : MonoBehaviour
             case 4:
                 // Get Histories
                 GetHistories();
+                break;
+
+            case 5:
+                // Send Message
+                TMP_InputField EventNameField = GameObject.Find("EventName").GetComponent<TMP_InputField>();
+                TMP_InputField StandbyTimeField = GameObject.Find("StandbyTime").GetComponent<TMP_InputField>();
+
+                TMP_InputField VariableName1Field = GameObject.Find("VariableName1").GetComponent<TMP_InputField>();
+                TMP_InputField VariableValue1Field = GameObject.Find("VariableValue1").GetComponent<TMP_InputField>();
+                TMP_InputField VariableName2Field = GameObject.Find("VariableName2").GetComponent<TMP_InputField>();
+                TMP_InputField VariableValue2Field = GameObject.Find("VariableValue2").GetComponent<TMP_InputField>();
+
+                int? standbyTime = null;
+                if (StandbyTimeField.text.Length > 0)
+                {
+                    standbyTime =  System.Int32.Parse(StandbyTimeField.text);
+                }
+
+                Dictionary<string, string> variables = new Dictionary<string, string>();
+                variables.Add(VariableName1Field.text, VariableValue1Field.text);
+                variables.Add(VariableName2Field.text, VariableValue2Field.text);
+
+                SendMessage(EventNameField.text, standbyTime, variables);
+
+                break;
+
+            case 6:
+                // Cancel Send Message
+                CancelSendMessage();
                 break;
         }
     }
@@ -135,6 +166,44 @@ public class ButtonBehaviourScript : MonoBehaviour
                 Debug.Log($"RF---value: {action.Value}");
             }
         }
+    }
+
+    private void SendMessage(string eventName, int? standbyTime, Dictionary<string,string>variables)
+    {
+        Debug.Log("RF-SendMessage called.");
+
+        if (eventName == null || eventName.Length == 0)
+        {
+            Debug.Log("RF-Event Name not specified.");
+            return;
+        }
+
+        RFPluginScript.PostMessage(new string[] { eventName }, variables, standbyTime,
+            (bool result, long code, string message, string[] eventPostIds) => {
+                Debug.Log($"RF-Post Message. result:{result}, code:{code}, message:{message}");
+                if (eventPostIds != null)
+                {
+                    foreach (string eventPostId in eventPostIds)
+                    {
+                        Debug.Log($"RF-EventPostId: {eventPostId}");
+                        ButtonBehaviourScript.eventPostId = eventPostId;
+                    }
+                }
+            });
+    }
+
+    private void CancelSendMessage()
+    {
+        Debug.Log("RF-CancelSendMessage called.");
+        if (ButtonBehaviourScript.eventPostId == null || ButtonBehaviourScript.eventPostId.Length == 0)
+        {
+            Debug.Log("RF-EventPostId is not exists.");
+            return;
+        }
+        RFPluginScript.CancelPosting(ButtonBehaviourScript.eventPostId, (bool result, long code, string message, string[] eventPostIds) =>
+        {
+            Debug.Log($"RF-cancel Message. result:{result}, code:{code}, message:{message}");
+        });
     }
 
     public static void RFNotificationReceiver(string buttonTitle, string buttonValue, string buttonValueType, ulong buttonIndex, string extendedProperty)

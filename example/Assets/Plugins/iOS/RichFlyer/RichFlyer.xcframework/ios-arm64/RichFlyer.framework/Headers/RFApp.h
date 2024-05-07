@@ -92,4 +92,8 @@ typedef NS_OPTIONS(NSUInteger, RFLaunchModes) {
 
 + (BOOL)isRichFlyerNotification:(nonnull NSDictionary*)userInfo;
 
++ (void)postMessage:(nonnull NSArray*)events variables:(nullable NSDictionary<NSString*, NSString*>*)variables standbyTime:(nullable NSNumber*)standbyTime completion:(nullable void (^)(RFResult* _Nonnull result, NSArray<NSString*>* _Nonnull eventPostIds))completion;
+
++ (void)cancelPosting:(nonnull NSString*)eventPostId completion:(nullable void (^)(RFResult* _Nonnull result))completion;
+
 @end

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 367adf50b625a426e8261e4bad94e9bf
+guid: c16247a1f6f1049819b3adefa9c6b1ba
 folderAsset: yes
 PluginImporter:
   externalObjects: {}
@@ -28,7 +28,7 @@ PluginImporter:
     second:
       enabled: 1
       settings:
-        AddToEmbeddedBinaries: false
+        AddToEmbeddedBinaries: true
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -22,6 +22,9 @@ extern "C" {
   typedef void (*RFContentDisplayCallbackFunction)(const char* buttonTitle, const char* buttonValue, const char* buttonValueType, unsigned long buttonIndex);
   static RFContentDisplayCallbackFunction RFContentDisplayCallback;
 
+  typedef void (*RFPostingResultCallbackFunction)(bool result, long status, const char* message, const char* eventPostIds);
+  static RFPostingResultCallbackFunction RFPostMessageCallback;
+
   void registReceiver(RFNotificationReceiverFunction callback) {
     RFNotificationReceiver = callback;
   }
@@ -129,6 +132,43 @@ extern "C" {
     }];
   }
 
+  void postMessage(const char* events, const char* variables, int standbyTime, RFPostingResultCallbackFunction callback) {
+    NSData *eventsData = [[NSString stringWithUTF8String:events] dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary* eventsDict = [NSJSONSerialization JSONObjectWithData:eventsData options:kNilOptions error:nil];
+    NSArray* eventsArray = eventsDict[@"Events"];
+    
+    NSData *variablesData = [[NSString stringWithUTF8String:variables] dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary* variablesDict = [NSJSONSerialization JSONObjectWithData:variablesData options:kNilOptions error:nil];
+    NSArray* srcVariables = variablesDict[@"Variables"];
+    NSMutableDictionary* useVariables = [NSMutableDictionary dictionary];
+    for (NSDictionary* variable in srcVariables) {
+      [useVariables setObject:variable[@"Value"] forKey:variable[@"Name"]];
+    }
+
+    NSNumber* standbyTimeNumber = nil;
+    if (standbyTime >= 0) {
+      standbyTimeNumber = [NSNumber numberWithLong:standbyTime];
+    }
+    
+    RFPostMessageCallback = callback;
+    [RFPlugin postMessage:eventsArray variables:useVariables standbyTime:standbyTimeNumber completion:^(RFResult* result, NSArray<NSString *>* eventPostIds) {
+
+      NSString* joinedEventPostIds = nil;
+      if (eventPostIds) {
+        joinedEventPostIds = [eventPostIds componentsJoinedByString:@","];
+      }
+      RFPostMessageCallback(result.result, result.code, [result.message UTF8String], [joinedEventPostIds UTF8String]);
+    }];
+  }
+
+  void cancelPosting(const char* eventPostId, RFPostingResultCallbackFunction callback) {
+    RFPostMessageCallback = callback;
+    
+    [RFPlugin cancelPosting:[NSString stringWithUTF8String:eventPostId] completion:^(RFResult* result) {
+      RFPostMessageCallback(result.result, result.code, [result.message UTF8String], nil);
+    }];
+  }
+
 #ifdef __cplusplus
 }
 #endif
@@ -221,6 +261,17 @@ extern "C" {
     [rfDisplay dismiss];
   }];
 }
+
++ (void)postMessage:(nonnull NSArray*)events variables:(nullable NSDictionary<NSString*, NSString*>*)variables standbyTime:(nullable NSNumber*)standbyTime completion:(nullable void (^)(RFResult* _Nonnull result, NSArray<NSString*>* _Nonnull eventPostIds))completion
+{
+  [RFApp postMessage:events variables:variables standbyTime:standbyTime completion:completion];
+}
+
++ (void)cancelPosting:(nonnull NSString*)eventPostId completion:(nullable void (^)(RFResult* _Nonnull result))completion
+{
+  [RFApp cancelPosting:eventPostId completion:completion];
+}
+
 
 + (NSDictionary*)convertDictionary:(RFContent*)content {
 

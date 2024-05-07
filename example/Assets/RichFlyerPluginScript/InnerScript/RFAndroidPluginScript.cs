@@ -148,6 +148,28 @@ namespace RichFlyer
             GetRichFlyerJavaClass().CallStatic("showHistoryNotification", new object[] { GetApplicationContext(), notificationId });
         }
 
+        public static void PostMessage(string[] events, Dictionary<string, string> variables, int? standbyTime, RFPostMessageCallback onResult)
+        {
+            AndroidJavaObject javaVariables = null;
+            if (variables != null)
+            {
+                javaVariables = ConvertDictionaryToJavaMap(variables);
+            }
+            
+            AndroidJavaObject javaStandbyTime = null;
+            if (standbyTime != null)
+            {
+                javaStandbyTime = new AndroidJavaObject("java.lang.Integer", standbyTime);
+            }            
+            
+            GetRichFlyerJavaClass().CallStatic("postMessage", new object[] { events, javaVariables, javaStandbyTime, GetApplicationContext(),  new RFPostingResultListener(onResult)});
+        }
+
+        public static void CancelPosting(string eventPostId, RFPostMessageCallback onResult)
+        {
+            GetRichFlyerJavaClass().CallStatic("cancelPosting", new object[] { eventPostId, GetApplicationContext(), new RFPostingResultListener(onResult) });
+        }
+
         public static void HandleAction(string actionJson, string extendedProperty)
         {
             RFAction action = JsonUtility.FromJson<RFAction>(actionJson);
@@ -223,11 +245,38 @@ namespace RichFlyer
             {
                 if (_handler != null)
                 {
-                    bool boolReslt = result.Call<bool>("isResult");
+                    bool boolResult = result.Call<bool>("isResult");
                     int errorCode = result.Call<int>("getErrorCode");
                     string errorMessage = result.Call<string>("getMessage");
 
-                    _handler.Invoke(boolReslt, errorCode, errorMessage);
+                    _handler.Invoke(boolResult, errorCode, errorMessage);
+                }
+            }
+        }
+
+        private class RFPostingResultListener : AndroidJavaProxy
+        {
+            private RFPostMessageCallback _handler;
+            public RFPostingResultListener(RFPostMessageCallback onResult) : base("jp.co.infocity.richflyer.RichFlyerPostingResultListener")
+            {
+                _handler = onResult;
+            }
+
+            public override AndroidJavaObject Invoke(string methodName, object[] args)
+            {
+                onCompleted((AndroidJavaObject)args[0], (string[])args[1]);
+                return null;
+            }
+
+            public void onCompleted(AndroidJavaObject result, string[] eventPostIds)
+            {
+                if (_handler != null)
+                {
+                    bool boolResult = result.Call<bool>("isResult");
+                    int errorCode = result.Call<int>("getErrorCode");
+                    string errorMessage = result.Call<string>("getMessage");
+
+                    _handler.Invoke(boolResult, errorCode, errorMessage, eventPostIds);
                 }
             }
         }

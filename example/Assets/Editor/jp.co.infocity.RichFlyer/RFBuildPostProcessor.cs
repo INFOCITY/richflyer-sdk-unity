@@ -128,6 +128,15 @@ public class RFBuildPostProcessor
             project.RemoveFile(delFileGuid2);
         }
 
+        string delFileGuid3 = project.FindFileGuidByProjectPath(Path.Combine(FRAMEWORK_TARGET_PATH, XC_FRAMEWORK_NAME));
+        if (delFileGuid3 != null)
+        {
+            project.RemoveFileFromBuild(unityFrameworkTarget, delFileGuid3);
+            project.RemoveFile(delFileGuid3);
+        }
+
+        string frameworkDir = Path.Combine(pathToBuiltProject, FRAMEWORK_TARGET_PATH);
+        Directory.Delete(frameworkDir, true);
 
         bool hasFramwork = project.ContainsFileByProjectPath(Path.Combine("Frameworks", XC_FRAMEWORK_NAME));
 
@@ -403,6 +412,10 @@ public class RFBuildPostProcessor
 
         foreach (var file in Directory.GetFiles(srcPath))
         {
+            if (Path.GetExtension(file).Equals(".meta", System.StringComparison.OrdinalIgnoreCase))
+            {
+                continue;
+            }
             File.Copy(file, Path.Combine(dstPath, Path.GetFileName(file)));
         }
 

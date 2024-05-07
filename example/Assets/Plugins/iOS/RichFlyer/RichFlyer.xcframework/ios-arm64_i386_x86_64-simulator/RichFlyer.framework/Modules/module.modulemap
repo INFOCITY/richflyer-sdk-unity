@@ -1,6 +1,0 @@
-framework module RichFlyer {
-  umbrella header "RichFlyer.h"
-
-  export *
-  module * { export * }
-}

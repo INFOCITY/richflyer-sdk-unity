@@ -6,6 +6,7 @@
 
 #if UNITY_IOS
 
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
@@ -17,6 +18,7 @@ namespace RichFlyer
         static RFCompleted _callback;
         static RFNotificationReceiver _receiver;
         static RFContentDisplayCallback _displayCallback;
+        static RFPostMessageCallback _postMessageCallback;
 
         public static void Initialize(RFNotificationReceiver receiver, RFCompleted onResult)
         {
@@ -84,6 +86,36 @@ namespace RichFlyer
             displayContent(notificationId, OnDismissContentDisplay);
         }
 
+        public static void PostMessage(string[] events, Dictionary<string, string> variables, int? standbyTime, RFPostMessageCallback onResult)
+        {
+            _postMessageCallback = onResult;
+
+            RFEventArrayJson eventArrayJson = new RFEventArrayJson(events);
+            string eventsJson = JsonUtility.ToJson(eventArrayJson);
+
+            List<RFVariable> rfVariables = new List<RFVariable>();
+            foreach (var variable in variables)
+            {
+                RFVariable rfVariable = new RFVariable(variable.Key, variable.Value);
+                rfVariables.Add(rfVariable);
+            }
+            RFVariablesJson rfVariablesJson = new RFVariablesJson(rfVariables.ToArray());
+            string variableJson = JsonUtility.ToJson(rfVariablesJson);
+
+            int rfStandbyTime = -1;
+            if (standbyTime != null) {
+                rfStandbyTime = standbyTime.Value;
+            }
+            postMessage(eventsJson, variableJson, rfStandbyTime, OnPostMessageCallback);
+        }
+
+        public static void CancelPosting(string eventPostId, RFPostMessageCallback onResult)
+        {
+            _postMessageCallback = onResult;
+            cancelPosting(eventPostId, OnPostMessageCallback);
+        }
+
+
 #region P/Invoke
 
         [DllImport("__Internal")]
@@ -124,7 +156,6 @@ namespace RichFlyer
         [DllImport("__Internal")]
         private static extern void setLaunchMode(int mode);
 
-
         [AOT.MonoPInvokeCallback(typeof(RFContentDisplayCallback))]
         private static void OnDismissContentDisplay(string buttonTitle, string buttonValue, string buttonValueType, ulong buttonIndex)
         {
@@ -134,6 +165,26 @@ namespace RichFlyer
         [DllImport("__Internal")]
         private static extern void displayContent(string notificationId, RFContentDisplayCallback callback);
 
+
+        public delegate void RFPostMessageNativeCallback(bool result, long code, string message, string eventPostIds);
+        [AOT.MonoPInvokeCallback(typeof(RFPostMessageNativeCallback))]
+        private static void OnPostMessageCallback(bool result, long code, string message, string eventPostIds)
+        {
+            if (eventPostIds != null && eventPostIds.Length > 0)
+            {
+                string[] eventPostIdArray = eventPostIds.Split(',');
+                _postMessageCallback(result, code, message, eventPostIdArray);
+            } else
+            {
+                _postMessageCallback(result, code, message, null);
+            }
+        }
+
+        [DllImport("__Internal")]
+        private static extern void postMessage(string events, string variables, int standbyTime, RFPostMessageNativeCallback callback);
+
+        [DllImport("__Internal")]
+        private static extern void cancelPosting(string eventPostId, RFPostMessageNativeCallback callback);
 
 #endregion P/Invoke
     }
