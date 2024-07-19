@@ -1,1 +1,1 @@
-RichFlyer Plugin for Unity v1.2.0
+RichFlyer Plugin for Unity v1.2.1
