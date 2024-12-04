@@ -212,7 +212,7 @@ namespace RichFlyer
             content.ReceivedDateUnixTime = javaRFContent.Call<long>("getReceivedDate");
             content.NotificationId = javaRFContent.Call<string>("getNotificationId");
             content.Type = (RFContentType)javaRFContent.Call<int>("getContentType");
-
+            content.ExtendedProperty = javaRFContent.Call<string>("getExtendedProperty");
 
             AndroidJavaObject[] actions = javaRFContent.Call<AndroidJavaObject[]>("getActionButtonArray");
             if (actions.Length > 0)

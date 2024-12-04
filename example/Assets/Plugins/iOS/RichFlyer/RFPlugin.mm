@@ -328,6 +328,10 @@ extern "C" {
     [contentDictionary setObject:actions forKey:@"ActionButtons"];
   }
 
+  if (content.extendedProperty) {
+    [contentDictionary setObject:content.extendedProperty forKey:@"ExtendedProperty"];
+  }
+
   return contentDictionary;
 }
 

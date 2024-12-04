@@ -46,6 +46,7 @@ namespace RichFlyer
         public RFContentType Type;
 
         [SerializeField] public RFAction[] ActionButtons;
+        public string ExtendedProperty;
 
         public DateTime getReceivedDate()
         {
