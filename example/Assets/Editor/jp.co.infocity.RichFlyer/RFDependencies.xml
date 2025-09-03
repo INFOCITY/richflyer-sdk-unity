@@ -1,6 +1,6 @@
 <dependencies>
   <androidPackages>
-    <androidPackage spec="jp.co.infocity:RichFlyer:1.6.9">
+    <androidPackage spec="jp.co.infocity:RichFlyer:1.6.11">
       <repositories>
         <repository>https://infocity.github.io/richflyer-maven</repository>
       </repositories>
