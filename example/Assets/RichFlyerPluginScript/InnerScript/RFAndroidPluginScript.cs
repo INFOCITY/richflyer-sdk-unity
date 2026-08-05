@@ -23,14 +23,31 @@ namespace RichFlyer
         /// <param name="onResult">callback result.</param>
         public static void Initialize(string objectName, RFNotificationReceiver receiver, RFCompleted onResult)
         {
-            SaveRFPreferences("RFContentCallbackTargetObject", objectName);
-
             if (receiver == null)
             {
-                onResult(false, 400, "Receiver not found.");
+                onResult?.Invoke(false, 400, "Receiver not found.");
                 return;
             }
-            _receiver = receiver;
+
+            if (string.IsNullOrEmpty(objectName))
+            {
+                onResult?.Invoke(false, 400, "Target object name is empty.");
+                return;
+            }
+
+            try
+            {
+                SaveRFPreferences("RFContentCallbackTargetObject", objectName);
+                _receiver = receiver;
+                GetCurrentActivity().Call("setRichFlyerBridgeReady");
+            }
+            catch (Exception exception)
+            {
+                _receiver = null;
+                Debug.LogException(exception);
+                onResult?.Invoke(false, 600, exception.Message);
+                return;
+            }
 
             // Initialize fcm.
             InitializeFCM((bool result, long code, string message) =>
@@ -40,11 +57,12 @@ namespace RichFlyer
                     // Initialize RichFlyer
                     InitializeRichFlyer((bool result, long code, string message) =>
                     {
-                        onResult.Invoke(result, code, message);
+                        onResult?.Invoke(result, code, message);
                     });
                 } else
                 {
                     Debug.LogError(message);
+                    onResult?.Invoke(false, code, message);
                 }
             });
         }
@@ -57,7 +75,7 @@ namespace RichFlyer
         public static void RegistSegments(RFSegment[] segments, RFCompleted onResult)
         {
             var segmentsDict = new Dictionary<string, string>();
-            foreach (RFSegment segment in segments)
+            foreach (RFSegment segment in segments ?? Array.Empty<RFSegment>())
             {
                 segmentsDict.Add(segment.getName(), segment.getStringValue());
             }
@@ -88,11 +106,16 @@ namespace RichFlyer
         public static RFContent[] GetReceivedData()
         {
             AndroidJavaObject contentList = GetRichFlyerJavaClass().CallStatic<AndroidJavaObject>("getHistory", new object[] { GetApplicationContext() });
+            if (contentList == null)
+            {
+                return Array.Empty<RFContent>();
+            }
+
             AndroidJavaObject[] contentArray = contentList.Call<AndroidJavaObject[]>("toArray");
 
             if (contentArray == null || contentArray.Length == 0)
             {
-                return null;
+                return Array.Empty<RFContent>();
             }
 
             List<RFContent> rfContentList = new List<RFContent>(contentArray.Length);
@@ -172,11 +195,18 @@ namespace RichFlyer
 
         public static void HandleAction(string actionJson, string extendedProperty)
         {
-            RFAction action = JsonUtility.FromJson<RFAction>(actionJson);
+            RFAction action = string.IsNullOrEmpty(actionJson)
+                ? null
+                : JsonUtility.FromJson<RFAction>(actionJson);
             if (_displayCallback != null)
             {
-                _displayCallback(action.Title, action.Value, action.Type, (ulong)action.Index);
+                RFContentDisplayCallback callback = _displayCallback;
                 _displayCallback = null;
+                callback(
+                    action?.Title ?? string.Empty,
+                    action?.Value ?? string.Empty,
+                    action?.Type ?? string.Empty,
+                    action == null ? 0 : (ulong)action.Index);
             }
             else
             {
@@ -215,7 +245,7 @@ namespace RichFlyer
             content.ExtendedProperty = javaRFContent.Call<string>("getExtendedProperty");
 
             AndroidJavaObject[] actions = javaRFContent.Call<AndroidJavaObject[]>("getActionButtonArray");
-            if (actions.Length > 0)
+            if (actions != null && actions.Length > 0)
             {
                 List<RFAction> rfActions = new List<RFAction>(actions.Length);
                 foreach (AndroidJavaObject actionObject in actions)
@@ -264,7 +294,10 @@ namespace RichFlyer
 
             public override AndroidJavaObject Invoke(string methodName, object[] args)
             {
-                onCompleted((AndroidJavaObject)args[0], (string[])args[1]);
+                if (methodName == "onCompleted" && args != null && args.Length >= 2)
+                {
+                    onCompleted((AndroidJavaObject)args[0], args[1] as string[]);
+                }
                 return null;
             }
 
@@ -284,6 +317,12 @@ namespace RichFlyer
         private static void InitializeFCM(RFCompleted onResult)
         {
             Firebase.FirebaseApp.CheckAndFixDependenciesAsync().ContinueWithOnMainThread(task => {
+                if (task.IsCanceled || task.IsFaulted)
+                {
+                    string error = task.Exception?.GetBaseException().Message ?? "Firebase dependency check was canceled.";
+                    onResult?.Invoke(false, 600, error);
+                    return;
+                }
 
                 Firebase.DependencyStatus dependencyStatus = task.Result;
                 if (dependencyStatus == Firebase.DependencyStatus.Available)
@@ -297,11 +336,11 @@ namespace RichFlyer
                      }
                     );
                     //isFirebaseInitialized = true;
-                    onResult.Invoke(true, 0, "Initialized FCM succeeded.");
+                    onResult?.Invoke(true, 0, "Initialized FCM succeeded.");
                 }
                 else
                 {
-                    onResult.Invoke(false, 0, "Initialized FCM failed.");
+                    onResult?.Invoke(false, 600, $"Firebase dependencies are unavailable: {dependencyStatus}");
                 }
             });
 
@@ -311,25 +350,41 @@ namespace RichFlyer
         {
             Firebase.Messaging.FirebaseMessaging.GetTokenAsync().ContinueWithOnMainThread(task =>
             {
-                string token = task.Result;
-
-                GetRichFlyerJavaClass().CallStatic("checkNotificationPermission", new object[] { GetCurrentActivity() });
-
-                RFAndroidSettings settings = RFAndroidSettings.LoadFromAppAsset();
-                string sdkKey = settings.sdkKey;
-                string themeColor = settings.themeColor;
-                int launchMode = settings.launchMode;
-
-                AndroidJavaObject targetClass = GetCurrentActivity().Call<AndroidJavaObject>("getClass");
-
-                AndroidJavaObject richflyer = new AndroidJavaObject("jp.co.infocity.richflyer.RichFlyer",
-                    new object[] { GetApplicationContext(), token, sdkKey, themeColor, targetClass });
-
-                if (richflyer != null)
+                if (task.IsCanceled || task.IsFaulted)
                 {
-                    richflyer.Call("startSetting", new RFResultListener(onResult));
+                    string error = task.Exception?.GetBaseException().Message ?? "Firebase token request was canceled.";
+                    onResult?.Invoke(false, 601, error);
+                    return;
+                }
 
+                string token = task.Result;
+                if (string.IsNullOrEmpty(token))
+                {
+                    onResult?.Invoke(false, 601, "Firebase token is empty.");
+                    return;
+                }
+
+                try
+                {
+                    GetRichFlyerJavaClass().CallStatic("checkNotificationPermission", new object[] { GetCurrentActivity() });
+
+                    RFAndroidSettings settings = RFAndroidSettings.LoadFromAppAsset();
+                    string sdkKey = settings.sdkKey;
+                    string themeColor = settings.themeColor;
+                    int launchMode = settings.launchMode;
+
+                    AndroidJavaObject targetClass = GetCurrentActivity().Call<AndroidJavaObject>("getClass");
+
+                    AndroidJavaObject richflyer = new AndroidJavaObject("jp.co.infocity.richflyer.RichFlyer",
+                        new object[] { GetApplicationContext(), token, sdkKey, themeColor, targetClass });
+
+                    richflyer.Call("startSetting", new RFResultListener(onResult));
                     SetLaunchMode(launchMode);
+                }
+                catch (Exception exception)
+                {
+                    Debug.LogException(exception);
+                    onResult?.Invoke(false, 600, exception.Message);
                 }
             });
         }
@@ -354,14 +409,11 @@ namespace RichFlyer
         {
 
             AndroidJavaObject map = new AndroidJavaObject("java.util.HashMap");
-            System.IntPtr putMethod = AndroidJNIHelper.GetMethodID(map.GetRawClass(), "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;");
             foreach (var entry in dictionary)
             {
-                AndroidJNI.CallObjectMethod(
-                    map.GetRawObject(),
-                    putMethod,
-                    AndroidJNIHelper.CreateJNIArgArray(new object[] { entry.Key, entry.Value })
-                );
+                using (AndroidJavaObject previousValue = map.Call<AndroidJavaObject>("put", entry.Key, entry.Value))
+                {
+                }
             }
             return map;
         }

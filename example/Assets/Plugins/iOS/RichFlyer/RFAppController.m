@@ -6,6 +6,7 @@
 //
 
 #import "RFAppController.h"
+#import "RFPlugin.h"
 #import "RFReceiverBridge.h"
 
 @implementation RFAppController
@@ -30,6 +31,8 @@
     if (launchMode) {
       [RFApp setLaunchMode:[launchMode intValue]];
     }
+  } else {
+    [RFPlugin completeInitializationWithResult:NO code:604 message:@"RichFlyer settings were not found in Info.plist."];
   }
 
   
@@ -38,14 +41,19 @@
 
 - (void)application:(UIApplication*)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData*)deviceToken {
   [RFApp registDevice:deviceToken completion:^(RFResult* result) {
-    if (result.result) {
-      // register device succeeded.
-    } else {
-      // register device failed.
-    }
+    [RFPlugin completeInitializationWithResult:result.result code:result.code message:result.message];
   }];
 
-//  [super application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+#if UNITY_USES_REMOTE_NOTIFICATIONS
+  [super application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
+#endif
+}
+
+- (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error {
+  [RFPlugin completeInitializationWithResult:NO code:601 message:error.localizedDescription];
+#if UNITY_USES_REMOTE_NOTIFICATIONS
+  [super application:application didFailToRegisterForRemoteNotificationsWithError:error];
+#endif
 }
 
 

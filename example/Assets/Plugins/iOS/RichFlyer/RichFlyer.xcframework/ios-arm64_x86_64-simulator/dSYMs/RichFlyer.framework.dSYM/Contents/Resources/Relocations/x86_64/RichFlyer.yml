@@ -2,631 +2,638 @@
 triple:          'x86_64-apple-darwin'
 binary-path:     '/Users/hybook0265/Library/Developer/Xcode/DerivedData/RichFlyer-fxomgovojtcxychbwsdfhystxahs/Build/Products/Release-iphonesimulator/RichFlyer.framework/RichFlyer'
 relocations:
-  - { offset: 0x79DA2, size: 0x8, addend: 0x0, symName: _RichFlyerVersionString, symObjAddr: 0x0, symBinAddr: 0x24F70, symSize: 0x0 }
-  - { offset: 0x79DD7, size: 0x8, addend: 0x0, symName: _RichFlyerVersionNumber, symObjAddr: 0x30, symBinAddr: 0x24FA0, symSize: 0x0 }
-  - { offset: 0x79E14, size: 0x8, addend: 0x0, symName: '-[RFMessageView create:sizeHandler:]', symObjAddr: 0x0, symBinAddr: 0x1DC0, symSize: 0x6D0 }
-  - { offset: 0x79E8A, size: 0x8, addend: 0x0, symName: '-[RFMessageView create:sizeHandler:]', symObjAddr: 0x0, symBinAddr: 0x1DC0, symSize: 0x6D0 }
-  - { offset: 0x7A207, size: 0x8, addend: 0x0, symName: '-[RFMessageView makeBodyView:text:]', symObjAddr: 0x6D0, symBinAddr: 0x2490, symSize: 0x150 }
-  - { offset: 0x7A410, size: 0x8, addend: 0x0, symName: '-[RFApiClient init]', symObjAddr: 0x0, symBinAddr: 0x25E0, symSize: 0x285 }
-  - { offset: 0x7A42A, size: 0x8, addend: 0x0, symName: _successSegmentsSeveKey, symObjAddr: 0xA2C8, symBinAddr: 0x2B318, symSize: 0x0 }
-  - { offset: 0x7A44A, size: 0x8, addend: 0x0, symName: _failedEventLogSaveKey, symObjAddr: 0xA2D0, symBinAddr: 0x2B320, symSize: 0x0 }
-  - { offset: 0x7A460, size: 0x8, addend: 0x0, symName: _contentTypeHeaderKey, symObjAddr: 0xA2D8, symBinAddr: 0x2B328, symSize: 0x0 }
-  - { offset: 0x7A476, size: 0x8, addend: 0x0, symName: _serviceKeyHeaderKey, symObjAddr: 0xA2E0, symBinAddr: 0x2B330, symSize: 0x0 }
-  - { offset: 0x7A48C, size: 0x8, addend: 0x0, symName: _apiVersionHeaderKey, symObjAddr: 0xA2E8, symBinAddr: 0x2B338, symSize: 0x0 }
-  - { offset: 0x7A4A2, size: 0x8, addend: 0x0, symName: _userAgentHeaderKey, symObjAddr: 0xA2F0, symBinAddr: 0x2B340, symSize: 0x0 }
-  - { offset: 0x7A4B8, size: 0x8, addend: 0x0, symName: _authHeaderKey, symObjAddr: 0xA2F8, symBinAddr: 0x2B348, symSize: 0x0 }
-  - { offset: 0x7A4CE, size: 0x8, addend: 0x0, symName: _deviceTokenJsonKey, symObjAddr: 0xA300, symBinAddr: 0x2B350, symSize: 0x0 }
-  - { offset: 0x7A4E4, size: 0x8, addend: 0x0, symName: _deviceTypeJsonKey, symObjAddr: 0xA308, symBinAddr: 0x2B358, symSize: 0x0 }
-  - { offset: 0x7A4FA, size: 0x8, addend: 0x0, symName: _segmentsJsonKey, symObjAddr: 0xA310, symBinAddr: 0x2B360, symSize: 0x0 }
-  - { offset: 0x7A510, size: 0x8, addend: 0x0, symName: _notificationIdJsonKey, symObjAddr: 0xA318, symBinAddr: 0x2B368, symSize: 0x0 }
-  - { offset: 0x7A526, size: 0x8, addend: 0x0, symName: _eventIdJsonKey, symObjAddr: 0xA320, symBinAddr: 0x2B370, symSize: 0x0 }
-  - { offset: 0x7A53C, size: 0x8, addend: 0x0, symName: _eventTimeJsonKey, symObjAddr: 0xA328, symBinAddr: 0x2B378, symSize: 0x0 }
-  - { offset: 0x7A552, size: 0x8, addend: 0x0, symName: _eventsJsonKey, symObjAddr: 0xA330, symBinAddr: 0x2B380, symSize: 0x0 }
-  - { offset: 0x7A568, size: 0x8, addend: 0x0, symName: _variablesJsonKey, symObjAddr: 0xA338, symBinAddr: 0x2B388, symSize: 0x0 }
-  - { offset: 0x7A57E, size: 0x8, addend: 0x0, symName: _standbyTimeJsonKey, symObjAddr: 0xA340, symBinAddr: 0x2B390, symSize: 0x0 }
-  - { offset: 0x7A594, size: 0x8, addend: 0x0, symName: _valueJsonKey, symObjAddr: 0xA348, symBinAddr: 0x2B398, symSize: 0x0 }
-  - { offset: 0x7A5AA, size: 0x8, addend: 0x0, symName: _unitJsonKey, symObjAddr: 0xA350, symBinAddr: 0x2B3A0, symSize: 0x0 }
-  - { offset: 0x7A5C0, size: 0x8, addend: 0x0, symName: _bearer, symObjAddr: 0xA358, symBinAddr: 0x2B3A8, symSize: 0x0 }
-  - { offset: 0x7A5D6, size: 0x8, addend: 0x0, symName: _typeJson, symObjAddr: 0xA360, symBinAddr: 0x2B3B0, symSize: 0x0 }
-  - { offset: 0x7A5EC, size: 0x8, addend: 0x0, symName: _apiVersion, symObjAddr: 0xA368, symBinAddr: 0x2B3B8, symSize: 0x0 }
-  - { offset: 0x7A602, size: 0x8, addend: 0x0, symName: _userAgent, symObjAddr: 0x5F910, symBinAddr: 0x35240, symSize: 0x0 }
-  - { offset: 0x7A61F, size: 0x8, addend: 0x0, symName: __registDeviceProcessing, symObjAddr: 0x5F918, symBinAddr: 0x35248, symSize: 0x0 }
-  - { offset: 0x7A643, size: 0x8, addend: 0x0, symName: __registSegmentProcessing, symObjAddr: 0x5F919, symBinAddr: 0x35249, symSize: 0x0 }
-  - { offset: 0x7A660, size: 0x8, addend: 0x0, symName: __updateDeviceProcessing, symObjAddr: 0x5F91A, symBinAddr: 0x3524A, symSize: 0x0 }
-  - { offset: 0x7A6DD, size: 0x8, addend: 0x0, symName: '-[RFApiClient init]', symObjAddr: 0x0, symBinAddr: 0x25E0, symSize: 0x285 }
-  - { offset: 0x7A89F, size: 0x8, addend: 0x0, symName: '-[RFApiClient registDevice:completion:]', symObjAddr: 0x285, symBinAddr: 0x2865, symSize: 0x30B }
-  - { offset: 0x7AA61, size: 0x8, addend: 0x0, symName: '___39-[RFApiClient registDevice:completion:]_block_invoke', symObjAddr: 0x590, symBinAddr: 0x2B70, symSize: 0x15C }
-  - { offset: 0x7ABA4, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b, symObjAddr: 0x6EC, symBinAddr: 0x2CCC, symSize: 0x30 }
-  - { offset: 0x7ABD9, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0x71C, symBinAddr: 0x2CFC, symSize: 0x25 }
-  - { offset: 0x7AC10, size: 0x8, addend: 0x0, symName: '-[RFApiClient createAuthTokenWithCompletion:]', symObjAddr: 0x741, symBinAddr: 0x2D21, symSize: 0x283 }
-  - { offset: 0x7AD82, size: 0x8, addend: 0x0, symName: '___45-[RFApiClient createAuthTokenWithCompletion:]_block_invoke', symObjAddr: 0x9C4, symBinAddr: 0x2FA4, symSize: 0xFF }
-  - { offset: 0x7AE95, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegments:intSegments:boolSegments:dateSegments:completion:]', symObjAddr: 0xAC3, symBinAddr: 0x30A3, symSize: 0x13B }
-  - { offset: 0x7AFF3, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegments:completion:]', symObjAddr: 0xBFE, symBinAddr: 0x31DE, symSize: 0x96 }
-  - { offset: 0x7B0B6, size: 0x8, addend: 0x0, symName: '-[RFApiClient registReservedSegments:]', symObjAddr: 0xC94, symBinAddr: 0x3274, symSize: 0x360 }
-  - { offset: 0x7B2BF, size: 0x8, addend: 0x0, symName: '___38-[RFApiClient registReservedSegments:]_block_invoke', symObjAddr: 0xFF4, symBinAddr: 0x35D4, symSize: 0x13D }
-  - { offset: 0x7B3E6, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48b, symObjAddr: 0x1131, symBinAddr: 0x3711, symSize: 0x44 }
-  - { offset: 0x7B427, size: 0x8, addend: 0x0, symName: '-[RFApiClient getSegments]', symObjAddr: 0x11A1, symBinAddr: 0x3755, symSize: 0x12 }
-  - { offset: 0x7B469, size: 0x8, addend: 0x0, symName: '-[RFApiClient updateDeviceWithCompletion:]', symObjAddr: 0x11B3, symBinAddr: 0x3767, symSize: 0x311 }
-  - { offset: 0x7B639, size: 0x8, addend: 0x0, symName: '___42-[RFApiClient updateDeviceWithCompletion:]_block_invoke', symObjAddr: 0x14C4, symBinAddr: 0x3A78, symSize: 0x12F }
-  - { offset: 0x7B743, size: 0x8, addend: 0x0, symName: '-[RFApiClient eventLog:eventId:eventTime:completion:]', symObjAddr: 0x15F3, symBinAddr: 0x3BA7, symSize: 0x29D }
-  - { offset: 0x7B8ED, size: 0x8, addend: 0x0, symName: '___53-[RFApiClient eventLog:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x1890, symBinAddr: 0x3E44, symSize: 0xF3 }
-  - { offset: 0x7B9DF, size: 0x8, addend: 0x0, symName: '-[RFApiClient requestOneshotPost:templteId:variables:standbyTime:completion:]', symObjAddr: 0x1983, symBinAddr: 0x3F37, symSize: 0x2B1 }
-  - { offset: 0x7BB99, size: 0x8, addend: 0x0, symName: '___77-[RFApiClient requestOneshotPost:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x1C34, symBinAddr: 0x41E8, symSize: 0x107 }
-  - { offset: 0x7BCB4, size: 0x8, addend: 0x0, symName: '-[RFApiClient cancelOneshotPost:completion:]', symObjAddr: 0x1D3B, symBinAddr: 0x42EF, symSize: 0x291 }
-  - { offset: 0x7BE3C, size: 0x8, addend: 0x0, symName: '___44-[RFApiClient cancelOneshotPost:completion:]_block_invoke', symObjAddr: 0x1FCC, symBinAddr: 0x4580, symSize: 0xF3 }
-  - { offset: 0x7BF2E, size: 0x8, addend: 0x0, symName: '-[RFApiClient makeUserAgent]', symObjAddr: 0x20BF, symBinAddr: 0x4673, symSize: 0x211 }
-  - { offset: 0x7C0D0, size: 0x8, addend: 0x0, symName: '-[RFApiClient checkServiceKey]', symObjAddr: 0x22D0, symBinAddr: 0x4884, symSize: 0x29 }
-  - { offset: 0x7C114, size: 0x8, addend: 0x0, symName: '-[RFApiClient checkException:authTokenCheck:]', symObjAddr: 0x22F9, symBinAddr: 0x48AD, symSize: 0x9C }
-  - { offset: 0x7C1DA, size: 0x8, addend: 0x0, symName: '-[RFApiClient registDeviceWithDeviceTokenProc:completion:]', symObjAddr: 0x2395, symBinAddr: 0x4949, symSize: 0x3DA }
-  - { offset: 0x7C3F3, size: 0x8, addend: 0x0, symName: '___58-[RFApiClient registDeviceWithDeviceTokenProc:completion:]_block_invoke', symObjAddr: 0x276F, symBinAddr: 0x4D23, symSize: 0x191 }
-  - { offset: 0x7C585, size: 0x8, addend: 0x0, symName: '-[RFApiClient createAuthTokenProc:]', symObjAddr: 0x2900, symBinAddr: 0x4EB4, symSize: 0x13C }
-  - { offset: 0x7C685, size: 0x8, addend: 0x0, symName: '___35-[RFApiClient createAuthTokenProc:]_block_invoke', symObjAddr: 0x2A3C, symBinAddr: 0x4FF0, symSize: 0x1A2 }
-  - { offset: 0x7C827, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForCreateAuthToken:]', symObjAddr: 0x2BDE, symBinAddr: 0x5192, symSize: 0x2B5 }
-  - { offset: 0x7C98E, size: 0x8, addend: 0x0, symName: '-[RFApiClient createAuthTokenAfterRegistDevice:]', symObjAddr: 0x2E93, symBinAddr: 0x5447, symSize: 0x2F5 }
-  - { offset: 0x7CB56, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient createAuthTokenAfterRegistDevice:]_block_invoke', symObjAddr: 0x3188, symBinAddr: 0x573C, symSize: 0x155 }
-  - { offset: 0x7CC91, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyCreateAuthToken:]', symObjAddr: 0x32DD, symBinAddr: 0x5891, symSize: 0x37F }
-  - { offset: 0x7CEBA, size: 0x8, addend: 0x0, symName: '___37-[RFApiClient doOnlyCreateAuthToken:]_block_invoke', symObjAddr: 0x365C, symBinAddr: 0x5C10, symSize: 0x175 }
-  - { offset: 0x7D02F, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x37E8, symBinAddr: 0x5D88, symSize: 0xF }
-  - { offset: 0x7D05A, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegmentsProc:completion:]', symObjAddr: 0x37F7, symBinAddr: 0x5D97, symSize: 0x1CA }
-  - { offset: 0x7D1C4, size: 0x8, addend: 0x0, symName: '___45-[RFApiClient registSegmentsProc:completion:]_block_invoke', symObjAddr: 0x39C1, symBinAddr: 0x5F61, symSize: 0x1DE }
-  - { offset: 0x7D3A3, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegmentsAfterCreateAuthToken:completion:]', symObjAddr: 0x3B9F, symBinAddr: 0x613F, symSize: 0xB7 }
-  - { offset: 0x7D465, size: 0x8, addend: 0x0, symName: '___61-[RFApiClient registSegmentsAfterCreateAuthToken:completion:]_block_invoke', symObjAddr: 0x3C56, symBinAddr: 0x61F6, symSize: 0xA4 }
-  - { offset: 0x7D56D, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegmentsAfterRegistDevice:completion:]', symObjAddr: 0x3CFA, symBinAddr: 0x629A, symSize: 0xB7 }
-  - { offset: 0x7D62F, size: 0x8, addend: 0x0, symName: '___58-[RFApiClient registSegmentsAfterRegistDevice:completion:]_block_invoke', symObjAddr: 0x3DB1, symBinAddr: 0x6351, symSize: 0xA4 }
-  - { offset: 0x7D737, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyRegistSegments:completion:]', symObjAddr: 0x3E55, symBinAddr: 0x63F5, symSize: 0x377 }
-  - { offset: 0x7D954, size: 0x8, addend: 0x0, symName: '___47-[RFApiClient doOnlyRegistSegments:completion:]_block_invoke', symObjAddr: 0x41CC, symBinAddr: 0x676C, symSize: 0x12B }
-  - { offset: 0x7DAC5, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForRegistSegments:]', symObjAddr: 0x42F7, symBinAddr: 0x6897, symSize: 0x432 }
-  - { offset: 0x7DCE3, size: 0x8, addend: 0x0, symName: '-[RFApiClient modifiedSegments:]', symObjAddr: 0x4729, symBinAddr: 0x6CC9, symSize: 0x3D8 }
-  - { offset: 0x7DF19, size: 0x8, addend: 0x0, symName: '-[RFApiClient mergeSavedSegments:]', symObjAddr: 0x4B01, symBinAddr: 0x70A1, symSize: 0x248 }
-  - { offset: 0x7E044, size: 0x8, addend: 0x0, symName: '-[RFApiClient saveSuccessSegments:]', symObjAddr: 0x4D49, symBinAddr: 0x72E9, symSize: 0x8B }
-  - { offset: 0x7E0DE, size: 0x8, addend: 0x0, symName: '-[RFApiClient extractRegisterableSegment:]', symObjAddr: 0x4DD4, symBinAddr: 0x7374, symSize: 0x2CA }
-  - { offset: 0x7E256, size: 0x8, addend: 0x0, symName: '-[RFApiClient loadSuccessSegments]', symObjAddr: 0x509E, symBinAddr: 0x763E, symSize: 0x5E }
-  - { offset: 0x7E2AE, size: 0x8, addend: 0x0, symName: '-[RFApiClient updateDeviceTokenProc:completion:]', symObjAddr: 0x50FC, symBinAddr: 0x769C, symSize: 0x1BC }
-  - { offset: 0x7E3EA, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient updateDeviceTokenProc:completion:]_block_invoke', symObjAddr: 0x52B8, symBinAddr: 0x7858, symSize: 0x1C }
-  - { offset: 0x7E470, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient updateDeviceTokenProc:completion:]_block_invoke.281', symObjAddr: 0x52D4, symBinAddr: 0x7874, symSize: 0x21E }
-  - { offset: 0x7E63B, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient updateDeviceTokenProc:completion:]_block_invoke_2', symObjAddr: 0x54F2, symBinAddr: 0x7A92, symSize: 0x1C }
-  - { offset: 0x7E6C1, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyUpdateDeviceToken:completion:]', symObjAddr: 0x550E, symBinAddr: 0x7AAE, symSize: 0x376 }
-  - { offset: 0x7E8DE, size: 0x8, addend: 0x0, symName: '___50-[RFApiClient doOnlyUpdateDeviceToken:completion:]_block_invoke', symObjAddr: 0x5884, symBinAddr: 0x7E24, symSize: 0xF4 }
-  - { offset: 0x7E9FF, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForUpdateDeviceToken:]', symObjAddr: 0x5978, symBinAddr: 0x7F18, symSize: 0x452 }
-  - { offset: 0x7EC18, size: 0x8, addend: 0x0, symName: '-[RFApiClient updateDeviceTokenAfterCreateAuthToken:completion:]', symObjAddr: 0x5DCA, symBinAddr: 0x836A, symSize: 0xB7 }
-  - { offset: 0x7ECDA, size: 0x8, addend: 0x0, symName: '___64-[RFApiClient updateDeviceTokenAfterCreateAuthToken:completion:]_block_invoke', symObjAddr: 0x5E81, symBinAddr: 0x8421, symSize: 0xA4 }
-  - { offset: 0x7EDE2, size: 0x8, addend: 0x0, symName: '-[RFApiClient eventLogProc:eventId:eventTime:completion:]', symObjAddr: 0x5F25, symBinAddr: 0x84C5, symSize: 0x1DB }
-  - { offset: 0x7EF58, size: 0x8, addend: 0x0, symName: '___57-[RFApiClient eventLogProc:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x6100, symBinAddr: 0x86A0, symSize: 0x18D }
-  - { offset: 0x7F0F5, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56b, symObjAddr: 0x628D, symBinAddr: 0x882D, symSize: 0x4B }
-  - { offset: 0x7F142, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s, symObjAddr: 0x62D8, symBinAddr: 0x8878, symSize: 0x33 }
-  - { offset: 0x7F191, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForEventLog:eventId:eventTime:]', symObjAddr: 0x630B, symBinAddr: 0x88AB, symSize: 0x500 }
-  - { offset: 0x7F408, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyEventLog:eventId:eventTime:completion:]', symObjAddr: 0x680B, symBinAddr: 0x8DAB, symSize: 0x3F9 }
-  - { offset: 0x7F6A7, size: 0x8, addend: 0x0, symName: '___59-[RFApiClient doOnlyEventLog:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x6C04, symBinAddr: 0x91A4, symSize: 0x129 }
-  - { offset: 0x7F828, size: 0x8, addend: 0x0, symName: '-[RFApiClient eventLogAfterRegistDevice:eventId:eventTime:completion:]', symObjAddr: 0x6D2D, symBinAddr: 0x92CD, symSize: 0xE9 }
-  - { offset: 0x7F93C, size: 0x8, addend: 0x0, symName: '___70-[RFApiClient eventLogAfterRegistDevice:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x6E16, symBinAddr: 0x93B6, symSize: 0xB9 }
-  - { offset: 0x7FA72, size: 0x8, addend: 0x0, symName: '-[RFApiClient eventLogAfterCreateAuthToken:eventId:eventTime:completion:]', symObjAddr: 0x6ECF, symBinAddr: 0x946F, symSize: 0xE9 }
-  - { offset: 0x7FB86, size: 0x8, addend: 0x0, symName: '___73-[RFApiClient eventLogAfterCreateAuthToken:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x6FB8, symBinAddr: 0x9558, symSize: 0xB9 }
-  - { offset: 0x7FCBC, size: 0x8, addend: 0x0, symName: '-[RFApiClient saveFailedEventLog:eventId:eventTime:]', symObjAddr: 0x7071, symBinAddr: 0x9611, symSize: 0x1CB }
-  - { offset: 0x7FDF0, size: 0x8, addend: 0x0, symName: '-[RFApiClient loadFailedEventLog]', symObjAddr: 0x723C, symBinAddr: 0x97DC, symSize: 0x5E }
-  - { offset: 0x7FE48, size: 0x8, addend: 0x0, symName: '-[RFApiClient deleteLastFailedEventLog]', symObjAddr: 0x729A, symBinAddr: 0x983A, symSize: 0x4B }
-  - { offset: 0x7FE9C, size: 0x8, addend: 0x0, symName: '-[RFApiClient retryFailedEventLog]', symObjAddr: 0x72E5, symBinAddr: 0x9885, symSize: 0x126 }
-  - { offset: 0x7FF9B, size: 0x8, addend: 0x0, symName: '___34-[RFApiClient retryFailedEventLog]_block_invoke', symObjAddr: 0x740B, symBinAddr: 0x99AB, symSize: 0x21 }
-  - { offset: 0x80014, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x742C, symBinAddr: 0x99CC, symSize: 0xF }
-  - { offset: 0x80047, size: 0x8, addend: 0x0, symName: '-[RFApiClient requestOneshotPostProc:templteId:variables:standbyTime:completion:]', symObjAddr: 0x743B, symBinAddr: 0x99DB, symSize: 0x22E }
-  - { offset: 0x8022D, size: 0x8, addend: 0x0, symName: '___81-[RFApiClient requestOneshotPostProc:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x7669, symBinAddr: 0x9C09, symSize: 0x1B8 }
-  - { offset: 0x80413, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64s72b, symObjAddr: 0x7821, symBinAddr: 0x9DC1, symSize: 0x59 }
-  - { offset: 0x80478, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64s72s, symObjAddr: 0x787A, symBinAddr: 0x9E1A, symSize: 0x41 }
-  - { offset: 0x804DF, size: 0x8, addend: 0x0, symName: '-[RFApiClient requestOneshotPostAfterRegistDevice:templteId:variables:standbyTime:completion:]', symObjAddr: 0x78BB, symBinAddr: 0x9E5B, symSize: 0x13E }
-  - { offset: 0x80663, size: 0x8, addend: 0x0, symName: '___94-[RFApiClient requestOneshotPostAfterRegistDevice:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x79F9, symBinAddr: 0x9F99, symSize: 0xBA }
-  - { offset: 0x8079E, size: 0x8, addend: 0x0, symName: '-[RFApiClient requestOneshotPostAfterCreateAuthToken:templteId:variables:standbyTime:completion:]', symObjAddr: 0x7AB3, symBinAddr: 0xA053, symSize: 0x13E }
-  - { offset: 0x80922, size: 0x8, addend: 0x0, symName: '___97-[RFApiClient requestOneshotPostAfterCreateAuthToken:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x7BF1, symBinAddr: 0xA191, symSize: 0xBA }
-  - { offset: 0x80A5D, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyOneshotPost:templteId:variables:standbyTime:completion:]', symObjAddr: 0x7CAB, symBinAddr: 0xA24B, symSize: 0x3E5 }
-  - { offset: 0x80D00, size: 0x8, addend: 0x0, symName: '___76-[RFApiClient doOnlyOneshotPost:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x8090, symBinAddr: 0xA630, symSize: 0x11E }
-  - { offset: 0x80E45, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForOneshotPost:templteId:variables:standbyTime:]', symObjAddr: 0x81AE, symBinAddr: 0xA74E, symSize: 0x784 }
-  - { offset: 0x81201, size: 0x8, addend: 0x0, symName: '-[RFApiClient cancelOneshotPostProc:completion:]', symObjAddr: 0x8932, symBinAddr: 0xAED2, symSize: 0x163 }
-  - { offset: 0x81319, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient cancelOneshotPostProc:completion:]_block_invoke', symObjAddr: 0x8A95, symBinAddr: 0xB035, symSize: 0x15B }
-  - { offset: 0x81488, size: 0x8, addend: 0x0, symName: '-[RFApiClient cancelOneshotPostAfterRegistDevice:completion:]', symObjAddr: 0x8BF0, symBinAddr: 0xB190, symSize: 0xB7 }
-  - { offset: 0x8154A, size: 0x8, addend: 0x0, symName: '___61-[RFApiClient cancelOneshotPostAfterRegistDevice:completion:]_block_invoke', symObjAddr: 0x8CA7, symBinAddr: 0xB247, symSize: 0xA4 }
-  - { offset: 0x81652, size: 0x8, addend: 0x0, symName: '-[RFApiClient cancelOneshotPostAfterCreateAuthToken:completion:]', symObjAddr: 0x8D4B, symBinAddr: 0xB2EB, symSize: 0xB7 }
-  - { offset: 0x81714, size: 0x8, addend: 0x0, symName: '___64-[RFApiClient cancelOneshotPostAfterCreateAuthToken:completion:]_block_invoke', symObjAddr: 0x8E02, symBinAddr: 0xB3A2, symSize: 0xA4 }
-  - { offset: 0x8181C, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyCancelOneshotPost:completion:]', symObjAddr: 0x8EA6, symBinAddr: 0xB446, symSize: 0x376 }
-  - { offset: 0x81A39, size: 0x8, addend: 0x0, symName: '___50-[RFApiClient doOnlyCancelOneshotPost:completion:]_block_invoke', symObjAddr: 0x921C, symBinAddr: 0xB7BC, symSize: 0xFB }
-  - { offset: 0x81B66, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForCancelOneshotPost:]', symObjAddr: 0x9317, symBinAddr: 0xB8B7, symSize: 0x3EC }
-  - { offset: 0x81D4F, size: 0x8, addend: 0x0, symName: '-[RFApiClient encodeExceptionToString:]', symObjAddr: 0x9703, symBinAddr: 0xBCA3, symSize: 0x1F }
-  - { offset: 0x81D92, size: 0x8, addend: 0x0, symName: '-[RFApiClient lockRegistDevice]', symObjAddr: 0x9722, symBinAddr: 0xBCC2, symSize: 0xD }
-  - { offset: 0x81DC2, size: 0x8, addend: 0x0, symName: '-[RFApiClient unlockRegistDevice]', symObjAddr: 0x972F, symBinAddr: 0xBCCF, symSize: 0xD }
-  - { offset: 0x81DF2, size: 0x8, addend: 0x0, symName: '-[RFApiClient tryRegistDevice]', symObjAddr: 0x973C, symBinAddr: 0xBCDC, symSize: 0xE }
-  - { offset: 0x81E26, size: 0x8, addend: 0x0, symName: '-[RFApiClient lockRegistSegment]', symObjAddr: 0x974A, symBinAddr: 0xBCEA, symSize: 0xD }
-  - { offset: 0x81E56, size: 0x8, addend: 0x0, symName: '-[RFApiClient unlockRegistSegment]', symObjAddr: 0x9757, symBinAddr: 0xBCF7, symSize: 0xD }
-  - { offset: 0x81E86, size: 0x8, addend: 0x0, symName: '-[RFApiClient tryRegistSegment]', symObjAddr: 0x9764, symBinAddr: 0xBD04, symSize: 0xE }
-  - { offset: 0x81EBA, size: 0x8, addend: 0x0, symName: '-[RFApiClient lockUpdateDevice]', symObjAddr: 0x9772, symBinAddr: 0xBD12, symSize: 0xD }
-  - { offset: 0x81EEA, size: 0x8, addend: 0x0, symName: '-[RFApiClient unlockUpdateDevice]', symObjAddr: 0x977F, symBinAddr: 0xBD1F, symSize: 0xD }
-  - { offset: 0x81F1A, size: 0x8, addend: 0x0, symName: '-[RFApiClient tryUpdateDevice]', symObjAddr: 0x978C, symBinAddr: 0xBD2C, symSize: 0xE }
-  - { offset: 0x81F4E, size: 0x8, addend: 0x0, symName: '-[RFApiClient .cxx_destruct]', symObjAddr: 0x979A, symBinAddr: 0xBD3A, symSize: 0x33 }
-  - { offset: 0x83312, size: 0x8, addend: 0x0, symName: '-[RFAlertAction initWithTitle:tag:style:handler:]', symObjAddr: 0x0, symBinAddr: 0xBD6D, symSize: 0xB8 }
-  - { offset: 0x8341D, size: 0x8, addend: 0x0, symName: '-[RFAlertAction initWithTitle:tag:style:handler:]', symObjAddr: 0x0, symBinAddr: 0xBD6D, symSize: 0xB8 }
-  - { offset: 0x834D0, size: 0x8, addend: 0x0, symName: '-[RFAlertAction executeHandler]', symObjAddr: 0xB8, symBinAddr: 0xBE25, symSize: 0x19 }
-  - { offset: 0x8350F, size: 0x8, addend: 0x0, symName: '-[RFAlertAction getTitle]', symObjAddr: 0xD1, symBinAddr: 0xBE3E, symSize: 0xE }
-  - { offset: 0x83546, size: 0x8, addend: 0x0, symName: '-[RFAlertAction getTag]', symObjAddr: 0xDF, symBinAddr: 0xBE4C, symSize: 0x9 }
-  - { offset: 0x8357B, size: 0x8, addend: 0x0, symName: '-[RFAlertAction getStyle]', symObjAddr: 0xE8, symBinAddr: 0xBE55, symSize: 0x9 }
-  - { offset: 0x835B0, size: 0x8, addend: 0x0, symName: '-[RFAlertAction .cxx_destruct]', symObjAddr: 0xF1, symBinAddr: 0xBE5E, symSize: 0x28 }
-  - { offset: 0x83652, size: 0x8, addend: 0x0, symName: '-[RFAlertController viewDidLoad]', symObjAddr: 0x0, symBinAddr: 0xBE90, symSize: 0xFD }
-  - { offset: 0x83734, size: 0x8, addend: 0x0, symName: '-[RFAlertController viewDidLoad]', symObjAddr: 0x0, symBinAddr: 0xBE90, symSize: 0xFD }
-  - { offset: 0x8382A, size: 0x8, addend: 0x0, symName: '-[RFAlertController initWithApplication:title:message:]', symObjAddr: 0xFD, symBinAddr: 0xBF8D, symSize: 0x1B4 }
-  - { offset: 0x83995, size: 0x8, addend: 0x0, symName: '___55-[RFAlertController initWithApplication:title:message:]_block_invoke', symObjAddr: 0x2B1, symBinAddr: 0xC141, symSize: 0x6 }
-  - { offset: 0x839C8, size: 0x8, addend: 0x0, symName: '-[RFAlertController onClickButtonAtIndex:]', symObjAddr: 0x2B7, symBinAddr: 0xC147, symSize: 0x34 }
-  - { offset: 0x83A1F, size: 0x8, addend: 0x0, symName: '-[RFAlertController addView:]', symObjAddr: 0x2EB, symBinAddr: 0xC17B, symSize: 0x2B }
-  - { offset: 0x83A72, size: 0x8, addend: 0x0, symName: '-[RFAlertController addImage:]', symObjAddr: 0x316, symBinAddr: 0xC1A6, symSize: 0x2B }
-  - { offset: 0x83AC5, size: 0x8, addend: 0x0, symName: '-[RFAlertController present:completeHandler:]', symObjAddr: 0x341, symBinAddr: 0xC1D1, symSize: 0x15A }
-  - { offset: 0x83BE4, size: 0x8, addend: 0x0, symName: '-[RFAlertController getRootViewController:]', symObjAddr: 0x49B, symBinAddr: 0xC32B, symSize: 0x231 }
-  - { offset: 0x83D8A, size: 0x8, addend: 0x0, symName: '-[RFAlertController present:]', symObjAddr: 0x6CC, symBinAddr: 0xC55C, symSize: 0x86 }
-  - { offset: 0x83E25, size: 0x8, addend: 0x0, symName: '-[RFAlertController adjustView]', symObjAddr: 0x752, symBinAddr: 0xC5E2, symSize: 0x308 }
-  - { offset: 0x83FE2, size: 0x8, addend: 0x0, symName: '-[RFAlertController didReceiveMemoryWarning]', symObjAddr: 0xA5A, symBinAddr: 0xC8EA, symSize: 0x2F }
-  - { offset: 0x84015, size: 0x8, addend: 0x0, symName: '-[RFAlertController .cxx_destruct]', symObjAddr: 0xA89, symBinAddr: 0xC919, symSize: 0x47 }
-  - { offset: 0x84181, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getAPSWithAttemptContent:]', symObjAddr: 0x0, symBinAddr: 0xC960, symSize: 0x5F }
-  - { offset: 0x8418F, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getAPSWithAttemptContent:]', symObjAddr: 0x0, symBinAddr: 0xC960, symSize: 0x5F }
-  - { offset: 0x8420A, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getAPS:]', symObjAddr: 0x5F, symBinAddr: 0xC9BF, symSize: 0x1C }
-  - { offset: 0x84259, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getCustomWithAttemptContent:]', symObjAddr: 0x7B, symBinAddr: 0xC9DB, symSize: 0x5F }
-  - { offset: 0x842D4, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getCustom:]', symObjAddr: 0xDA, symBinAddr: 0xCA3A, symSize: 0x1C }
-  - { offset: 0x84323, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getUserInfo:]', symObjAddr: 0xF6, symBinAddr: 0xCA56, symSize: 0x31 }
-  - { offset: 0x843DC, size: 0x8, addend: 0x0, symName: '+[Reachability reachabilityWithHostName:]', symObjAddr: 0x0, symBinAddr: 0xCA87, symSize: 0x7D }
-  - { offset: 0x843F6, size: 0x8, addend: 0x0, symName: _kReachabilityChangedNotification, symObjAddr: 0x498, symBinAddr: 0x34F78, symSize: 0x0 }
-  - { offset: 0x8445E, size: 0x8, addend: 0x0, symName: '+[Reachability reachabilityWithHostName:]', symObjAddr: 0x0, symBinAddr: 0xCA87, symSize: 0x7D }
-  - { offset: 0x84529, size: 0x8, addend: 0x0, symName: '+[Reachability reachabilityWithAddress:]', symObjAddr: 0x7D, symBinAddr: 0xCB04, symSize: 0x5D }
-  - { offset: 0x845CF, size: 0x8, addend: 0x0, symName: '+[Reachability reachabilityForInternetConnection]', symObjAddr: 0xDA, symBinAddr: 0xCB61, symSize: 0x5C }
-  - { offset: 0x84621, size: 0x8, addend: 0x0, symName: '-[Reachability startNotifier]', symObjAddr: 0x136, symBinAddr: 0xCBBD, symSize: 0x68 }
-  - { offset: 0x846F3, size: 0x8, addend: 0x0, symName: _ReachabilityCallback, symObjAddr: 0x19E, symBinAddr: 0xCC25, symSize: 0x74 }
-  - { offset: 0x8477E, size: 0x8, addend: 0x0, symName: '-[Reachability stopNotifier]', symObjAddr: 0x212, symBinAddr: 0xCC99, symSize: 0x36 }
-  - { offset: 0x847EA, size: 0x8, addend: 0x0, symName: '-[Reachability dealloc]', symObjAddr: 0x248, symBinAddr: 0xCCCF, symSize: 0x4C }
-  - { offset: 0x84859, size: 0x8, addend: 0x0, symName: '-[Reachability networkStatusForFlags:]', symObjAddr: 0x294, symBinAddr: 0xCD1B, symSize: 0xEF }
-  - { offset: 0x848EA, size: 0x8, addend: 0x0, symName: '-[Reachability connectionRequired]', symObjAddr: 0x383, symBinAddr: 0xCE0A, symSize: 0x2C }
-  - { offset: 0x8495C, size: 0x8, addend: 0x0, symName: '-[Reachability currentReachabilityStatus]', symObjAddr: 0x3AF, symBinAddr: 0xCE36, symSize: 0x38 }
-  - { offset: 0x84A73, size: 0x8, addend: 0x0, symName: '-[RFViewModel getAttachmentUrl]', symObjAddr: 0x0, symBinAddr: 0xCE6E, symSize: 0xE }
-  - { offset: 0x84B55, size: 0x8, addend: 0x0, symName: '-[RFViewModel getAttachmentUrl]', symObjAddr: 0x0, symBinAddr: 0xCE6E, symSize: 0xE }
-  - { offset: 0x84B8C, size: 0x8, addend: 0x0, symName: '-[RFViewModel getImageUrl]', symObjAddr: 0xE, symBinAddr: 0xCE7C, symSize: 0xE }
-  - { offset: 0x84BC3, size: 0x8, addend: 0x0, symName: '-[RFViewModel getGifUrl]', symObjAddr: 0x1C, symBinAddr: 0xCE8A, symSize: 0xE }
-  - { offset: 0x84BFA, size: 0x8, addend: 0x0, symName: '-[RFViewModel getMovieUrl]', symObjAddr: 0x2A, symBinAddr: 0xCE98, symSize: 0xE }
-  - { offset: 0x84C31, size: 0x8, addend: 0x0, symName: '-[RFViewModel getSharedImageUrl]', symObjAddr: 0x38, symBinAddr: 0xCEA6, symSize: 0xE }
-  - { offset: 0x84C68, size: 0x8, addend: 0x0, symName: '-[RFViewModel getSharedGifUrl]', symObjAddr: 0x46, symBinAddr: 0xCEB4, symSize: 0xE }
-  - { offset: 0x84C9F, size: 0x8, addend: 0x0, symName: '-[RFViewModel getSharedMovieUrl]', symObjAddr: 0x54, symBinAddr: 0xCEC2, symSize: 0xE }
-  - { offset: 0x84CD6, size: 0x8, addend: 0x0, symName: '-[RFViewModel getMediaType]', symObjAddr: 0x62, symBinAddr: 0xCED0, symSize: 0x9 }
-  - { offset: 0x84D0B, size: 0x8, addend: 0x0, symName: '-[RFViewModel setMediaType:]', symObjAddr: 0x6B, symBinAddr: 0xCED9, symSize: 0x9 }
-  - { offset: 0x84D4A, size: 0x8, addend: 0x0, symName: '-[RFViewModel initialize:]', symObjAddr: 0x74, symBinAddr: 0xCEE2, symSize: 0x111 }
-  - { offset: 0x84E31, size: 0x8, addend: 0x0, symName: '-[RFViewModel setSharedImageUrl:]', symObjAddr: 0x185, symBinAddr: 0xCFF3, symSize: 0x1BE }
-  - { offset: 0x84FC4, size: 0x8, addend: 0x0, symName: '-[RFViewModel setSharedGifUrl:]', symObjAddr: 0x343, symBinAddr: 0xD1B1, symSize: 0x190 }
-  - { offset: 0x8513B, size: 0x8, addend: 0x0, symName: '-[RFViewModel setSharedMovieUrl:]', symObjAddr: 0x4D3, symBinAddr: 0xD341, symSize: 0x190 }
-  - { offset: 0x852B2, size: 0x8, addend: 0x0, symName: '-[RFViewModel setAttachmentUrl:]', symObjAddr: 0x663, symBinAddr: 0xD4D1, symSize: 0x8B }
-  - { offset: 0x8534D, size: 0x8, addend: 0x0, symName: '-[RFViewModel confirmMediaType:]', symObjAddr: 0x6EE, symBinAddr: 0xD55C, symSize: 0x2D0 }
-  - { offset: 0x855A9, size: 0x8, addend: 0x0, symName: '-[RFViewModel useAttachmentUrl:]', symObjAddr: 0x9BE, symBinAddr: 0xD82C, symSize: 0xF1 }
-  - { offset: 0x85698, size: 0x8, addend: 0x0, symName: '-[RFViewModel .cxx_destruct]', symObjAddr: 0xAAF, symBinAddr: 0xD91D, symSize: 0x6A }
-  - { offset: 0x857A2, size: 0x8, addend: 0x0, symName: '-[RFLogoView create]', symObjAddr: 0x0, symBinAddr: 0xD987, symSize: 0x13C }
-  - { offset: 0x857C1, size: 0x8, addend: 0x0, symName: '-[RFLogoView create]', symObjAddr: 0x0, symBinAddr: 0xD987, symSize: 0x13C }
-  - { offset: 0x85884, size: 0x8, addend: 0x0, symName: '-[RFLogoView updateFrame:]', symObjAddr: 0x13C, symBinAddr: 0xDAC3, symSize: 0x51 }
-  - { offset: 0x8591D, size: 0x8, addend: 0x0, symName: '-[RFContent initWithUNNotificationContent:receivedDate:]', symObjAddr: 0x0, symBinAddr: 0xDB14, symSize: 0x7F0 }
-  - { offset: 0x85B0D, size: 0x8, addend: 0x0, symName: '-[RFContent initWithUNNotificationContent:receivedDate:]', symObjAddr: 0x0, symBinAddr: 0xDB14, symSize: 0x7F0 }
-  - { offset: 0x85FB0, size: 0x8, addend: 0x0, symName: '-[RFContent convertToUNNotificationContent]', symObjAddr: 0x7F0, symBinAddr: 0xE304, symSize: 0xA09 }
-  - { offset: 0x864F9, size: 0x8, addend: 0x0, symName: '-[RFContent hasImage]', symObjAddr: 0x11F9, symBinAddr: 0xED0D, symSize: 0x9F }
-  - { offset: 0x86584, size: 0x8, addend: 0x0, symName: '-[RFContent hasGif]', symObjAddr: 0x1298, symBinAddr: 0xEDAC, symSize: 0x9F }
-  - { offset: 0x8660F, size: 0x8, addend: 0x0, symName: '-[RFContent hasMovie]', symObjAddr: 0x1337, symBinAddr: 0xEE4B, symSize: 0x9F }
-  - { offset: 0x8669A, size: 0x8, addend: 0x0, symName: '-[RFContent isEvent]', symObjAddr: 0x13D6, symBinAddr: 0xEEEA, symSize: 0x80 }
-  - { offset: 0x8670D, size: 0x8, addend: 0x0, symName: '-[RFContent title]', symObjAddr: 0x1456, symBinAddr: 0xEF6A, symSize: 0xA }
-  - { offset: 0x86742, size: 0x8, addend: 0x0, symName: '-[RFContent body]', symObjAddr: 0x1460, symBinAddr: 0xEF74, symSize: 0xA }
-  - { offset: 0x86777, size: 0x8, addend: 0x0, symName: '-[RFContent notificationId]', symObjAddr: 0x146A, symBinAddr: 0xEF7E, symSize: 0xA }
-  - { offset: 0x867AC, size: 0x8, addend: 0x0, symName: '-[RFContent eventId]', symObjAddr: 0x1474, symBinAddr: 0xEF88, symSize: 0xA }
-  - { offset: 0x867E1, size: 0x8, addend: 0x0, symName: '-[RFContent imagePath]', symObjAddr: 0x147E, symBinAddr: 0xEF92, symSize: 0xA }
-  - { offset: 0x86816, size: 0x8, addend: 0x0, symName: '-[RFContent receivedDate]', symObjAddr: 0x1488, symBinAddr: 0xEF9C, symSize: 0xA }
-  - { offset: 0x8684B, size: 0x8, addend: 0x0, symName: '-[RFContent notificationDate]', symObjAddr: 0x1492, symBinAddr: 0xEFA6, symSize: 0xA }
-  - { offset: 0x86880, size: 0x8, addend: 0x0, symName: '-[RFContent extendedProperty]', symObjAddr: 0x149C, symBinAddr: 0xEFB0, symSize: 0xA }
-  - { offset: 0x868B5, size: 0x8, addend: 0x0, symName: '-[RFContent actionButtons]', symObjAddr: 0x14A6, symBinAddr: 0xEFBA, symSize: 0xA }
-  - { offset: 0x868EA, size: 0x8, addend: 0x0, symName: '-[RFContent type]', symObjAddr: 0x14B0, symBinAddr: 0xEFC4, symSize: 0xA }
-  - { offset: 0x8691F, size: 0x8, addend: 0x0, symName: '-[RFContent imageUrl]', symObjAddr: 0x14BA, symBinAddr: 0xEFCE, symSize: 0xA }
-  - { offset: 0x86954, size: 0x8, addend: 0x0, symName: '-[RFContent gifUrl]', symObjAddr: 0x14C4, symBinAddr: 0xEFD8, symSize: 0xA }
-  - { offset: 0x86989, size: 0x8, addend: 0x0, symName: '-[RFContent gifPath]', symObjAddr: 0x14CE, symBinAddr: 0xEFE2, symSize: 0xA }
-  - { offset: 0x869BE, size: 0x8, addend: 0x0, symName: '-[RFContent movieUrl]', symObjAddr: 0x14D8, symBinAddr: 0xEFEC, symSize: 0xA }
-  - { offset: 0x869F3, size: 0x8, addend: 0x0, symName: '-[RFContent moviePath]', symObjAddr: 0x14E2, symBinAddr: 0xEFF6, symSize: 0xA }
-  - { offset: 0x86A28, size: 0x8, addend: 0x0, symName: '-[RFContent .cxx_destruct]', symObjAddr: 0x14EC, symBinAddr: 0xF000, symSize: 0xAC }
-  - { offset: 0x86B28, size: 0x8, addend: 0x0, symName: '-[NotificationHistory addContent:]', symObjAddr: 0x0, symBinAddr: 0xF0AC, symSize: 0x2FF }
-  - { offset: 0x86B73, size: 0x8, addend: 0x0, symName: '-[NotificationHistory addContent:]', symObjAddr: 0x0, symBinAddr: 0xF0AC, symSize: 0x2FF }
-  - { offset: 0x86D8E, size: 0x8, addend: 0x0, symName: '-[NotificationHistory getLatestContent]', symObjAddr: 0x2FF, symBinAddr: 0xF3AB, symSize: 0x1DE }
-  - { offset: 0x86EF1, size: 0x8, addend: 0x0, symName: '-[NotificationHistory getHistory]', symObjAddr: 0x4DD, symBinAddr: 0xF589, symSize: 0x3BF }
-  - { offset: 0x870DA, size: 0x8, addend: 0x0, symName: '-[NotificationHistory removeContent:]', symObjAddr: 0x89C, symBinAddr: 0xF948, symSize: 0x456 }
-  - { offset: 0x8755E, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil makeQueryForKey:]', symObjAddr: 0x0, symBinAddr: 0xFD9E, symSize: 0xFC }
-  - { offset: 0x87580, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil makeQueryForKey:]', symObjAddr: 0x0, symBinAddr: 0xFD9E, symSize: 0xFC }
-  - { offset: 0x8765B, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil loadForKey:]', symObjAddr: 0xFC, symBinAddr: 0xFE9A, symSize: 0x12B }
-  - { offset: 0x877A3, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil saveForKey:value:]', symObjAddr: 0x227, symBinAddr: 0xFFC5, symSize: 0x137 }
-  - { offset: 0x87919, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil deleteForKey:]', symObjAddr: 0x35E, symBinAddr: 0x100FC, symSize: 0x3C }
-  - { offset: 0x879A1, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil saveDeviceId:]', symObjAddr: 0x39A, symBinAddr: 0x10138, symSize: 0x23 }
-  - { offset: 0x879EC, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil loadDeviceId]', symObjAddr: 0x3BD, symBinAddr: 0x1015B, symSize: 0x20 }
-  - { offset: 0x87A2B, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil deleteDeviceId]', symObjAddr: 0x3DD, symBinAddr: 0x1017B, symSize: 0x20 }
-  - { offset: 0x87A66, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil saveAuthToken:]', symObjAddr: 0x3FD, symBinAddr: 0x1019B, symSize: 0x23 }
-  - { offset: 0x87AB1, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil loadAuthToken]', symObjAddr: 0x420, symBinAddr: 0x101BE, symSize: 0x20 }
-  - { offset: 0x87AF0, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil deleteAuthToken]', symObjAddr: 0x440, symBinAddr: 0x101DE, symSize: 0x20 }
-  - { offset: 0x87B2B, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil saveDeviceToken:]', symObjAddr: 0x460, symBinAddr: 0x101FE, symSize: 0x23 }
-  - { offset: 0x87B76, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil loadDeviceToken]', symObjAddr: 0x483, symBinAddr: 0x10221, symSize: 0x20 }
-  - { offset: 0x87BB5, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil deleteDeviceToken]', symObjAddr: 0x4A3, symBinAddr: 0x10241, symSize: 0x20 }
-  - { offset: 0x87C55, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController init]', symObjAddr: 0x0, symBinAddr: 0x10270, symSize: 0x13E }
-  - { offset: 0x87F6B, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController init]', symObjAddr: 0x0, symBinAddr: 0x10270, symSize: 0x13E }
-  - { offset: 0x88055, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController initWithContent:]', symObjAddr: 0x13E, symBinAddr: 0x103AE, symSize: 0xFE }
-  - { offset: 0x880F0, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController loadView]', symObjAddr: 0x23C, symBinAddr: 0x104AC, symSize: 0x1D }
-  - { offset: 0x8812D, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController setContent:]', symObjAddr: 0x259, symBinAddr: 0x104C9, symSize: 0x4A }
-  - { offset: 0x88194, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController setTintColor:]', symObjAddr: 0x2A3, symBinAddr: 0x10513, symSize: 0x1D }
-  - { offset: 0x881E1, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController present:completeHandler:]', symObjAddr: 0x2C0, symBinAddr: 0x10530, symSize: 0xAC }
-  - { offset: 0x8827C, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController dismiss]', symObjAddr: 0x36C, symBinAddr: 0x105DC, symSize: 0x19 }
-  - { offset: 0x882B9, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController viewDidLoad]', symObjAddr: 0x385, symBinAddr: 0x105F5, symSize: 0xBD }
-  - { offset: 0x88334, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController viewWillTransitionToSize:withTransitionCoordinator:]', symObjAddr: 0x442, symBinAddr: 0x106B2, symSize: 0x59 }
-  - { offset: 0x8838F, size: 0x8, addend: 0x0, symName: '___83-[RFNotificationViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke', symObjAddr: 0x49B, symBinAddr: 0x1070B, symSize: 0x6 }
-  - { offset: 0x883C2, size: 0x8, addend: 0x0, symName: '___83-[RFNotificationViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke_2', symObjAddr: 0x4A1, symBinAddr: 0x10711, symSize: 0x21 }
-  - { offset: 0x88419, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController onButtonTapped:]', symObjAddr: 0x4E0, symBinAddr: 0x10740, symSize: 0x183 }
-  - { offset: 0x884D7, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController onCloseSelected:]', symObjAddr: 0x663, symBinAddr: 0x108C3, symSize: 0x36 }
-  - { offset: 0x8852E, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController contentSizeHandler:]', symObjAddr: 0x699, symBinAddr: 0x108F9, symSize: 0x3D }
-  - { offset: 0x88591, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController mediaPlayingPaused]', symObjAddr: 0x6D6, symBinAddr: 0x10936, symSize: 0x6 }
-  - { offset: 0x885C0, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController mediaPlayingStarted]', symObjAddr: 0x6DC, symBinAddr: 0x1093C, symSize: 0x6 }
-  - { offset: 0x885EF, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController .cxx_destruct]', symObjAddr: 0x6E2, symBinAddr: 0x10942, symSize: 0x42 }
-  - { offset: 0x88622, size: 0x8, addend: 0x0, symName: '-[RFNotificationView init]', symObjAddr: 0x724, symBinAddr: 0x10984, symSize: 0x2F }
-  - { offset: 0x88659, size: 0x8, addend: 0x0, symName: '-[RFNotificationView initWithRFContent:]', symObjAddr: 0x753, symBinAddr: 0x109B3, symSize: 0x8B }
-  - { offset: 0x886E8, size: 0x8, addend: 0x0, symName: '-[RFNotificationView layoutSubviews]', symObjAddr: 0x7DE, symBinAddr: 0x10A3E, symSize: 0xD7 }
-  - { offset: 0x88763, size: 0x8, addend: 0x0, symName: '-[RFNotificationView adjustBaseView]', symObjAddr: 0x8B5, symBinAddr: 0x10B15, symSize: 0x12D }
-  - { offset: 0x88802, size: 0x8, addend: 0x0, symName: '-[RFNotificationView adjustMediaView]', symObjAddr: 0x9E2, symBinAddr: 0x10C42, symSize: 0x767 }
-  - { offset: 0x888FB, size: 0x8, addend: 0x0, symName: '-[RFNotificationView adjustMessageView:]', symObjAddr: 0x1149, symBinAddr: 0x113A9, symSize: 0x4F9 }
-  - { offset: 0x889F6, size: 0x8, addend: 0x0, symName: '-[RFNotificationView layoutActionButtons]', symObjAddr: 0x1642, symBinAddr: 0x118A2, symSize: 0x726 }
-  - { offset: 0x88C52, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createViews]', symObjAddr: 0x1D68, symBinAddr: 0x11FC8, symSize: 0x13A }
-  - { offset: 0x88D3F, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createBaseView]', symObjAddr: 0x1EA2, symBinAddr: 0x12102, symSize: 0x10B }
-  - { offset: 0x88E34, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createMediaView]', symObjAddr: 0x1FAD, symBinAddr: 0x1220D, symSize: 0x1E9 }
-  - { offset: 0x88F8C, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createMessageView]', symObjAddr: 0x2196, symBinAddr: 0x123F6, symSize: 0x2B8 }
-  - { offset: 0x890DC, size: 0x8, addend: 0x0, symName: '___39-[RFNotificationView createMessageView]_block_invoke', symObjAddr: 0x244E, symBinAddr: 0x126AE, symSize: 0x6 }
-  - { offset: 0x89112, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createButtons]', symObjAddr: 0x2454, symBinAddr: 0x126B4, symSize: 0x890 }
-  - { offset: 0x895A7, size: 0x8, addend: 0x0, symName: '-[RFNotificationView baseRect]', symObjAddr: 0x2CE4, symBinAddr: 0x12F44, symSize: 0x171 }
-  - { offset: 0x89690, size: 0x8, addend: 0x0, symName: '-[RFNotificationView resizeViews]', symObjAddr: 0x2E55, symBinAddr: 0x130B5, symSize: 0x1D6 }
-  - { offset: 0x8978B, size: 0x8, addend: 0x0, symName: '-[RFNotificationView getMessageViewMaxHeight:buttonCount:]', symObjAddr: 0x302B, symBinAddr: 0x1328B, symSize: 0x6D }
-  - { offset: 0x89803, size: 0x8, addend: 0x0, symName: '-[RFNotificationView getMediaViewMaxHeight]', symObjAddr: 0x3098, symBinAddr: 0x132F8, symSize: 0x3B }
-  - { offset: 0x8984C, size: 0x8, addend: 0x0, symName: '-[RFNotificationView parentController]', symObjAddr: 0x30D3, symBinAddr: 0x13333, symSize: 0xC1 }
-  - { offset: 0x89901, size: 0x8, addend: 0x0, symName: '-[RFNotificationView imageWithColor:]', symObjAddr: 0x3194, symBinAddr: 0x133F4, symSize: 0xB5 }
-  - { offset: 0x89A97, size: 0x8, addend: 0x0, symName: '-[RFNotificationView rfContent]', symObjAddr: 0x3249, symBinAddr: 0x134A9, symSize: 0x11 }
-  - { offset: 0x89ACC, size: 0x8, addend: 0x0, symName: '-[RFNotificationView setRfContent:]', symObjAddr: 0x325A, symBinAddr: 0x134BA, symSize: 0x14 }
-  - { offset: 0x89B0D, size: 0x8, addend: 0x0, symName: '-[RFNotificationView tintColor]', symObjAddr: 0x326E, symBinAddr: 0x134CE, symSize: 0x11 }
-  - { offset: 0x89B42, size: 0x8, addend: 0x0, symName: '-[RFNotificationView setTintColor:]', symObjAddr: 0x327F, symBinAddr: 0x134DF, symSize: 0x14 }
-  - { offset: 0x89B83, size: 0x8, addend: 0x0, symName: '-[RFNotificationView .cxx_destruct]', symObjAddr: 0x3293, symBinAddr: 0x134F3, symSize: 0x9D }
-  - { offset: 0x89E8F, size: 0x8, addend: 0x0, symName: '+[ConfirmConnectingWiFi isReachableViaWiFi]', symObjAddr: 0x0, symBinAddr: 0x13590, symSize: 0x50 }
-  - { offset: 0x89EBF, size: 0x8, addend: 0x0, symName: '+[ConfirmConnectingWiFi isReachableViaWiFi]', symObjAddr: 0x0, symBinAddr: 0x13590, symSize: 0x50 }
-  - { offset: 0x89F36, size: 0x8, addend: 0x0, symName: '+[ConfirmConnectingWiFi isWifiMode:]', symObjAddr: 0x50, symBinAddr: 0x135E0, symSize: 0x5B }
-  - { offset: 0x89FBD, size: 0x8, addend: 0x0, symName: '+[ConfirmConnectingWiFi useWifiMode:]', symObjAddr: 0xAB, symBinAddr: 0x1363B, symSize: 0x3B }
-  - { offset: 0x8A0C2, size: 0x8, addend: 0x0, symName: '-[RFImageView layoutSubviews]', symObjAddr: 0x0, symBinAddr: 0x13676, symSize: 0x95 }
-  - { offset: 0x8A129, size: 0x8, addend: 0x0, symName: '-[RFImageView layoutSubviews]', symObjAddr: 0x0, symBinAddr: 0x13676, symSize: 0x95 }
-  - { offset: 0x8A168, size: 0x8, addend: 0x0, symName: '-[RFImageView create:delegate:]', symObjAddr: 0x95, symBinAddr: 0x1370B, symSize: 0x29A }
-  - { offset: 0x8A325, size: 0x8, addend: 0x0, symName: '___31-[RFImageView create:delegate:]_block_invoke', symObjAddr: 0x32F, symBinAddr: 0x139A5, symSize: 0x79 }
-  - { offset: 0x8A3AC, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40w, symObjAddr: 0x3A8, symBinAddr: 0x13A1E, symSize: 0x2E }
-  - { offset: 0x8A3E1, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40w, symObjAddr: 0x3D6, symBinAddr: 0x13A4C, symSize: 0x22 }
-  - { offset: 0x8A40C, size: 0x8, addend: 0x0, symName: '-[RFImageView loadAtachmentImage:]', symObjAddr: 0x3F8, symBinAddr: 0x13A6E, symSize: 0x67 }
-  - { offset: 0x8A483, size: 0x8, addend: 0x0, symName: '-[RFImageView loadImage:]', symObjAddr: 0x45F, symBinAddr: 0x13AD5, symSize: 0x129 }
-  - { offset: 0x8A552, size: 0x8, addend: 0x0, symName: '___25-[RFImageView loadImage:]_block_invoke', symObjAddr: 0x588, symBinAddr: 0x13BFE, symSize: 0xCC }
-  - { offset: 0x8A61D, size: 0x8, addend: 0x0, symName: '-[RFImageView adjustment:]', symObjAddr: 0x6C4, symBinAddr: 0x13CCA, symSize: 0x89 }
-  - { offset: 0x8A6C6, size: 0x8, addend: 0x0, symName: '___26-[RFImageView adjustment:]_block_invoke', symObjAddr: 0x74D, symBinAddr: 0x13D53, symSize: 0x33A }
-  - { offset: 0x8A7E4, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s, symObjAddr: 0xA87, symBinAddr: 0x1408D, symSize: 0x25 }
-  - { offset: 0x8A825, size: 0x8, addend: 0x0, symName: '-[RFImageView setCustomPlayButton]', symObjAddr: 0xAD1, symBinAddr: 0x140B2, symSize: 0x16E }
-  - { offset: 0x8A8FC, size: 0x8, addend: 0x0, symName: '-[RFImageView getPlayButton]', symObjAddr: 0xC3F, symBinAddr: 0x14220, symSize: 0x15 }
-  - { offset: 0x8A933, size: 0x8, addend: 0x0, symName: '-[RFImageView resizeView:]', symObjAddr: 0xC54, symBinAddr: 0x14235, symSize: 0x2E9 }
-  - { offset: 0x8AA7D, size: 0x8, addend: 0x0, symName: '-[RFImageView .cxx_destruct]', symObjAddr: 0xF3D, symBinAddr: 0x1451E, symSize: 0x2F }
-  - { offset: 0x8ACD8, size: 0x8, addend: 0x0, symName: '-[RFAction getTitle]', symObjAddr: 0x0, symBinAddr: 0x1454D, symSize: 0xE }
-  - { offset: 0x8AD37, size: 0x8, addend: 0x0, symName: '-[RFAction getTitle]', symObjAddr: 0x0, symBinAddr: 0x1454D, symSize: 0xE }
-  - { offset: 0x8AD6E, size: 0x8, addend: 0x0, symName: '-[RFAction getType]', symObjAddr: 0xE, symBinAddr: 0x1455B, symSize: 0xE }
-  - { offset: 0x8ADA5, size: 0x8, addend: 0x0, symName: '-[RFAction getValue]', symObjAddr: 0x1C, symBinAddr: 0x14569, symSize: 0xE }
-  - { offset: 0x8ADDC, size: 0x8, addend: 0x0, symName: '-[RFAction getIndex]', symObjAddr: 0x2A, symBinAddr: 0x14577, symSize: 0xA }
-  - { offset: 0x8AE11, size: 0x8, addend: 0x0, symName: '-[RFAction initWithTitle:type:value:index:]', symObjAddr: 0x34, symBinAddr: 0x14581, symSize: 0xC7 }
-  - { offset: 0x8AED0, size: 0x8, addend: 0x0, symName: '-[RFAction .cxx_destruct]', symObjAddr: 0xFB, symBinAddr: 0x14648, symSize: 0x33 }
-  - { offset: 0x8AF77, size: 0x8, addend: 0x0, symName: '+[RFApp isSandbox]', symObjAddr: 0x0, symBinAddr: 0x14680, symSize: 0xC }
-  - { offset: 0x8AF91, size: 0x8, addend: 0x0, symName: _RF_ID, symObjAddr: 0x2000, symBinAddr: 0x2B808, symSize: 0x0 }
-  - { offset: 0x8AFB1, size: 0x8, addend: 0x0, symName: __delegateHandler, symObjAddr: 0x25BE8, symBinAddr: 0x35250, symSize: 0x0 }
-  - { offset: 0x8B012, size: 0x8, addend: 0x0, symName: __serviceKey, symObjAddr: 0x25BF0, symBinAddr: 0x35258, symSize: 0x0 }
-  - { offset: 0x8B028, size: 0x8, addend: 0x0, symName: __appDelegate, symObjAddr: 0x25BF8, symBinAddr: 0x35260, symSize: 0x0 }
-  - { offset: 0x8B07D, size: 0x8, addend: 0x0, symName: __sandbox, symObjAddr: 0x25C00, symBinAddr: 0x35268, symSize: 0x0 }
-  - { offset: 0x8B177, size: 0x8, addend: 0x0, symName: '+[RFApp isSandbox]', symObjAddr: 0x0, symBinAddr: 0x14680, symSize: 0xC }
-  - { offset: 0x8B1AA, size: 0x8, addend: 0x0, symName: '+[RFApp setServiceKey:appGroupId:sandbox:]', symObjAddr: 0xC, symBinAddr: 0x1468C, symSize: 0x13C }
-  - { offset: 0x8B2EF, size: 0x8, addend: 0x0, symName: '+[RFApp serviceKey]', symObjAddr: 0x148, symBinAddr: 0x147C8, symSize: 0x11 }
-  - { offset: 0x8B322, size: 0x8, addend: 0x0, symName: '+[RFApp onRegisterNotification:notificationType:]', symObjAddr: 0x159, symBinAddr: 0x147D9, symSize: 0x8B }
-  - { offset: 0x8B3C9, size: 0x8, addend: 0x0, symName: '+[RFApp registDevice:completion:]', symObjAddr: 0x1E4, symBinAddr: 0x14864, symSize: 0x149 }
-  - { offset: 0x8B4EB, size: 0x8, addend: 0x0, symName: '___33+[RFApp registDevice:completion:]_block_invoke', symObjAddr: 0x32D, symBinAddr: 0x149AD, symSize: 0x7B }
-  - { offset: 0x8B5B1, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0x3A8, symBinAddr: 0x14A28, symSize: 0x17 }
-  - { offset: 0x8B5DA, size: 0x8, addend: 0x0, symName: '+[RFApp registDevice:]', symObjAddr: 0x3CE, symBinAddr: 0x14A4E, symSize: 0xDA }
-  - { offset: 0x8B6BC, size: 0x8, addend: 0x0, symName: '+[RFApp stringFromDeviceToken:]', symObjAddr: 0x4A8, symBinAddr: 0x14B28, symSize: 0xC7 }
-  - { offset: 0x8B794, size: 0x8, addend: 0x0, symName: '+[RFApp registDeviceToServer:completion:]', symObjAddr: 0x56F, symBinAddr: 0x14BEF, symSize: 0xD4 }
-  - { offset: 0x8B85F, size: 0x8, addend: 0x0, symName: '___41+[RFApp registDeviceToServer:completion:]_block_invoke', symObjAddr: 0x643, symBinAddr: 0x14CC3, symSize: 0x8B }
-  - { offset: 0x8B8FA, size: 0x8, addend: 0x0, symName: '___41+[RFApp registDeviceToServer:completion:]_block_invoke_2', symObjAddr: 0x6CE, symBinAddr: 0x14D4E, symSize: 0xF }
-  - { offset: 0x8B977, size: 0x8, addend: 0x0, symName: '+[RFApp createAuthToken:]', symObjAddr: 0x6DD, symBinAddr: 0x14D5D, symSize: 0xB9 }
-  - { offset: 0x8BA1A, size: 0x8, addend: 0x0, symName: '___25+[RFApp createAuthToken:]_block_invoke', symObjAddr: 0x796, symBinAddr: 0x14E16, symSize: 0xF }
-  - { offset: 0x8BA97, size: 0x8, addend: 0x0, symName: '+[RFApp updateDevice]', symObjAddr: 0x7A5, symBinAddr: 0x14E25, symSize: 0x46 }
-  - { offset: 0x8BAFA, size: 0x8, addend: 0x0, symName: '+[RFApp setBadgeNumber:badge:]', symObjAddr: 0x7EB, symBinAddr: 0x14E6B, symSize: 0x95 }
-  - { offset: 0x8BB91, size: 0x8, addend: 0x0, symName: '+[RFApp resetBadgeNumber:]', symObjAddr: 0x880, symBinAddr: 0x14F00, symSize: 0x50 }
-  - { offset: 0x8BC04, size: 0x8, addend: 0x0, symName: '+[RFApp registSegments:completion:]', symObjAddr: 0x8D0, symBinAddr: 0x14F50, symSize: 0xDD }
-  - { offset: 0x8BCCF, size: 0x8, addend: 0x0, symName: '___35+[RFApp registSegments:completion:]_block_invoke', symObjAddr: 0x9AD, symBinAddr: 0x1502D, symSize: 0x92 }
-  - { offset: 0x8BD95, size: 0x8, addend: 0x0, symName: '+[RFApp registDateSegments:completion:]', symObjAddr: 0xA3F, symBinAddr: 0x150BF, symSize: 0xDC }
-  - { offset: 0x8BE60, size: 0x8, addend: 0x0, symName: '___39+[RFApp registDateSegments:completion:]_block_invoke', symObjAddr: 0xB1B, symBinAddr: 0x1519B, symSize: 0x92 }
-  - { offset: 0x8BF26, size: 0x8, addend: 0x0, symName: '+[RFApp registIntegerSegments:completion:]', symObjAddr: 0xBAD, symBinAddr: 0x1522D, symSize: 0xDD }
-  - { offset: 0x8BFF1, size: 0x8, addend: 0x0, symName: '___42+[RFApp registIntegerSegments:completion:]_block_invoke', symObjAddr: 0xC8A, symBinAddr: 0x1530A, symSize: 0x92 }
-  - { offset: 0x8C0B7, size: 0x8, addend: 0x0, symName: '+[RFApp registBooleanSegments:completion:]', symObjAddr: 0xD1C, symBinAddr: 0x1539C, symSize: 0xDC }
-  - { offset: 0x8C182, size: 0x8, addend: 0x0, symName: '___42+[RFApp registBooleanSegments:completion:]_block_invoke', symObjAddr: 0xDF8, symBinAddr: 0x15478, symSize: 0x92 }
-  - { offset: 0x8C248, size: 0x8, addend: 0x0, symName: '+[RFApp registSegments:intSegments:boolSegments:dateSegments:completion:]', symObjAddr: 0xE8A, symBinAddr: 0x1550A, symSize: 0x11F }
-  - { offset: 0x8C38A, size: 0x8, addend: 0x0, symName: '___73+[RFApp registSegments:intSegments:boolSegments:dateSegments:completion:]_block_invoke', symObjAddr: 0xFA9, symBinAddr: 0x15629, symSize: 0x92 }
-  - { offset: 0x8C450, size: 0x8, addend: 0x0, symName: '+[RFApp getSegments]', symObjAddr: 0x103B, symBinAddr: 0x156BB, symSize: 0x57 }
-  - { offset: 0x8C4B7, size: 0x8, addend: 0x0, symName: '+[RFApp postMessage:variables:standbyTime:completion:]', symObjAddr: 0x1092, symBinAddr: 0x15712, symSize: 0x113 }
-  - { offset: 0x8C5D3, size: 0x8, addend: 0x0, symName: '___54+[RFApp postMessage:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x11A5, symBinAddr: 0x15825, symSize: 0x270 }
-  - { offset: 0x8C77D, size: 0x8, addend: 0x0, symName: '+[RFApp cancelPosting:completion:]', symObjAddr: 0x1415, symBinAddr: 0x15A95, symSize: 0xD4 }
-  - { offset: 0x8C84C, size: 0x8, addend: 0x0, symName: '___34+[RFApp cancelPosting:completion:]_block_invoke', symObjAddr: 0x14E9, symBinAddr: 0x15B69, symSize: 0x92 }
-  - { offset: 0x8C919, size: 0x8, addend: 0x0, symName: '+[RFApp requestAuthorization:applicationDelegate:]', symObjAddr: 0x157B, symBinAddr: 0x15BFB, symSize: 0x1A }
-  - { offset: 0x8C977, size: 0x8, addend: 0x0, symName: '+[RFApp requestAuthorizationWithOptions:options:applicationDelegate:]', symObjAddr: 0x1595, symBinAddr: 0x15C15, symSize: 0xF0 }
-  - { offset: 0x8CA57, size: 0x8, addend: 0x0, symName: '+[RFApp RFtoUNAuthorizationOptions:]', symObjAddr: 0x1685, symBinAddr: 0x15D05, symSize: 0xC }
-  - { offset: 0x8CAAD, size: 0x8, addend: 0x0, symName: '+[RFApp RFtoUIUserNotificationType:]', symObjAddr: 0x1691, symBinAddr: 0x15D11, symSize: 0xC }
-  - { offset: 0x8CB03, size: 0x8, addend: 0x0, symName: '+[RFApp onRequestAuthorizationWithAuthorizationOptions:authorizationOptions:]', symObjAddr: 0x169D, symBinAddr: 0x15D1D, symSize: 0xC4 }
-  - { offset: 0x8CBA9, size: 0x8, addend: 0x0, symName: '___77+[RFApp onRequestAuthorizationWithAuthorizationOptions:authorizationOptions:]_block_invoke', symObjAddr: 0x1761, symBinAddr: 0x15DE1, symSize: 0x74 }
-  - { offset: 0x8CC50, size: 0x8, addend: 0x0, symName: '___77+[RFApp onRequestAuthorizationWithAuthorizationOptions:authorizationOptions:]_block_invoke_2', symObjAddr: 0x17D5, symBinAddr: 0x15E55, symSize: 0x16 }
-  - { offset: 0x8CC9A, size: 0x8, addend: 0x0, symName: '+[RFApp setRFNotificationDelegate:]', symObjAddr: 0x17FA, symBinAddr: 0x15E7A, symSize: 0x106 }
-  - { offset: 0x8CD5F, size: 0x8, addend: 0x0, symName: '+[RFApp willPresentNotification:completionHandler:]', symObjAddr: 0x1900, symBinAddr: 0x15F80, symSize: 0x11 }
-  - { offset: 0x8CDBB, size: 0x8, addend: 0x0, symName: '+[RFApp sendNotificationOpenEvent:]', symObjAddr: 0x1911, symBinAddr: 0x15F91, symSize: 0x145 }
-  - { offset: 0x8CEAF, size: 0x8, addend: 0x0, symName: '+[RFApp didReceiveNotification:handler:]', symObjAddr: 0x1A56, symBinAddr: 0x160D6, symSize: 0xCA }
-  - { offset: 0x8CF9F, size: 0x8, addend: 0x0, symName: '+[RFApp getReceivedData]', symObjAddr: 0x1B20, symBinAddr: 0x161A0, symSize: 0x57 }
-  - { offset: 0x8D008, size: 0x8, addend: 0x0, symName: '+[RFApp getLatestReceivedData]', symObjAddr: 0x1B77, symBinAddr: 0x161F7, symSize: 0x57 }
-  - { offset: 0x8D071, size: 0x8, addend: 0x0, symName: '+[RFApp setLaunchMode:]', symObjAddr: 0x1BCE, symBinAddr: 0x1624E, symSize: 0xF6 }
-  - { offset: 0x8D140, size: 0x8, addend: 0x0, symName: '+[RFApp isRichFlyerNotification:]', symObjAddr: 0x1CC4, symBinAddr: 0x16344, symSize: 0x96 }
-  - { offset: 0x8D1F2, size: 0x8, addend: 0x0, symName: '-[RFResult initWithResult:message:code:]', symObjAddr: 0x1D5A, symBinAddr: 0x163DA, symSize: 0x6D }
-  - { offset: 0x8D275, size: 0x8, addend: 0x0, symName: '-[RFResult getResult]', symObjAddr: 0x1DC7, symBinAddr: 0x16447, symSize: 0x9 }
-  - { offset: 0x8D2AB, size: 0x8, addend: 0x0, symName: '-[RFResult getMessage]', symObjAddr: 0x1DD0, symBinAddr: 0x16450, symSize: 0xE }
-  - { offset: 0x8D2E3, size: 0x8, addend: 0x0, symName: '-[RFResult getCode]', symObjAddr: 0x1DDE, symBinAddr: 0x1645E, symSize: 0xA }
-  - { offset: 0x8D319, size: 0x8, addend: 0x0, symName: '-[RFResult result]', symObjAddr: 0x1DE8, symBinAddr: 0x16468, symSize: 0xB }
-  - { offset: 0x8D34E, size: 0x8, addend: 0x0, symName: '-[RFResult message]', symObjAddr: 0x1DF3, symBinAddr: 0x16473, symSize: 0xA }
-  - { offset: 0x8D383, size: 0x8, addend: 0x0, symName: '-[RFResult code]', symObjAddr: 0x1DFD, symBinAddr: 0x1647D, symSize: 0xA }
-  - { offset: 0x8D3B8, size: 0x8, addend: 0x0, symName: '-[RFResult .cxx_destruct]', symObjAddr: 0x1E07, symBinAddr: 0x16487, symSize: 0x19 }
-  - { offset: 0x8DCC6, size: 0x8, addend: 0x0, symName: '+[RFActionManager getAction:]', symObjAddr: 0x0, symBinAddr: 0x164A0, symSize: 0x470 }
-  - { offset: 0x8DCD4, size: 0x8, addend: 0x0, symName: '+[RFActionManager getAction:]', symObjAddr: 0x0, symBinAddr: 0x164A0, symSize: 0x470 }
-  - { offset: 0x8DFB0, size: 0x8, addend: 0x0, symName: '+[RFActionManager getExtensionProperty:]', symObjAddr: 0x470, symBinAddr: 0x16910, symSize: 0xFE }
-  - { offset: 0x8E097, size: 0x8, addend: 0x0, symName: '+[RFActionManager createActionId:buttonIndex:]', symObjAddr: 0x56E, symBinAddr: 0x16A0E, symSize: 0x28 }
-  - { offset: 0x8E0F6, size: 0x8, addend: 0x0, symName: '+[RFActionManager isValidAction:notificationId:buttonIndex:]', symObjAddr: 0x596, symBinAddr: 0x16A36, symSize: 0xB2 }
-  - { offset: 0x8E26F, size: 0x8, addend: 0x0, symName: '+[ContentUtil urlToFileName:]', symObjAddr: 0x0, symBinAddr: 0x16AE8, symSize: 0x15 }
-  - { offset: 0x8E27D, size: 0x8, addend: 0x0, symName: '+[ContentUtil urlToFileName:]', symObjAddr: 0x0, symBinAddr: 0x16AE8, symSize: 0x15 }
-  - { offset: 0x8E2CC, size: 0x8, addend: 0x0, symName: '+[ContentUtil urlToCustomFileName:name:]', symObjAddr: 0x15, symBinAddr: 0x16AFD, symSize: 0x96 }
-  - { offset: 0x8E35B, size: 0x8, addend: 0x0, symName: '+[ContentUtil confirmExistResource:]', symObjAddr: 0xAB, symBinAddr: 0x16B93, symSize: 0x34 }
-  - { offset: 0x8E3CA, size: 0x8, addend: 0x0, symName: '+[ContentUtil createTemporary:]', symObjAddr: 0xDF, symBinAddr: 0x16BC7, symSize: 0xA8 }
-  - { offset: 0x8E485, size: 0x8, addend: 0x0, symName: '+[ContentUtil confirmExist:]', symObjAddr: 0x187, symBinAddr: 0x16C6F, symSize: 0x7C }
-  - { offset: 0x8E518, size: 0x8, addend: 0x0, symName: '+[ContentUtil createAppShared:notificationId:]', symObjAddr: 0x203, symBinAddr: 0x16CEB, symSize: 0xD4 }
-  - { offset: 0x8E661, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent onTapMessage]', symObjAddr: 0x0, symBinAddr: 0x16DC0, symSize: 0x96 }
-  - { offset: 0x8E6ED, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent onTapMessage]', symObjAddr: 0x0, symBinAddr: 0x16DC0, symSize: 0x96 }
-  - { offset: 0x8E75C, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent onTapImage]', symObjAddr: 0x96, symBinAddr: 0x16E56, symSize: 0x96 }
-  - { offset: 0x8E7CB, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent didReceiveNotification:]', symObjAddr: 0x12C, symBinAddr: 0x16EEC, symSize: 0x1EA }
-  - { offset: 0x8E91A, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayPauseButtonType]', symObjAddr: 0x316, symBinAddr: 0x170D6, symSize: 0x37 }
-  - { offset: 0x8E9B4, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayPauseButtonFrame]', symObjAddr: 0x34D, symBinAddr: 0x1710D, symSize: 0x2A3 }
-  - { offset: 0x8EB08, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayPauseButtonTintColor]', symObjAddr: 0x5F0, symBinAddr: 0x173B0, symSize: 0x2F }
-  - { offset: 0x8EB47, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlay]', symObjAddr: 0x61F, symBinAddr: 0x173DF, symSize: 0x24 }
-  - { offset: 0x8EB86, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPause]', symObjAddr: 0x643, symBinAddr: 0x17403, symSize: 0x24 }
-  - { offset: 0x8EBC5, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent createMediaView:]', symObjAddr: 0x667, symBinAddr: 0x17427, symSize: 0x115 }
-  - { offset: 0x8EC80, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent createMessageView:]', symObjAddr: 0x77C, symBinAddr: 0x1753C, symSize: 0x25F }
-  - { offset: 0x8EDF6, size: 0x8, addend: 0x0, symName: '___43-[RFNotificationContent createMessageView:]_block_invoke', symObjAddr: 0x9DB, symBinAddr: 0x1779B, symSize: 0xC7 }
-  - { offset: 0x8EEA8, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent setViewSize:]', symObjAddr: 0xAC0, symBinAddr: 0x17870, symSize: 0x270 }
-  - { offset: 0x8EFAF, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent getAppGroupId:]', symObjAddr: 0xD30, symBinAddr: 0x17AE0, symSize: 0xAE }
-  - { offset: 0x8F062, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent contentSizeHandler:]', symObjAddr: 0xDDE, symBinAddr: 0x17B8E, symSize: 0x1D1 }
-  - { offset: 0x8F10D, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayingPaused]', symObjAddr: 0xFAF, symBinAddr: 0x17D5F, symSize: 0x3D }
-  - { offset: 0x8F164, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayingStarted]', symObjAddr: 0xFEC, symBinAddr: 0x17D9C, symSize: 0x3D }
-  - { offset: 0x8F1BB, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent .cxx_destruct]', symObjAddr: 0x1029, symBinAddr: 0x17DD9, symSize: 0x47 }
-  - { offset: 0x8F337, size: 0x8, addend: 0x0, symName: '-[RFGifView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x17E20, symSize: 0x29F }
-  - { offset: 0x8F426, size: 0x8, addend: 0x0, symName: '-[RFGifView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x17E20, symSize: 0x29F }
-  - { offset: 0x8F61E, size: 0x8, addend: 0x0, symName: '-[RFGifView initWithFrame:maxSize:]', symObjAddr: 0x29F, symBinAddr: 0x180BF, symSize: 0x24 }
-  - { offset: 0x8F680, size: 0x8, addend: 0x0, symName: '-[RFGifView layoutSubviews]', symObjAddr: 0x2C3, symBinAddr: 0x180E3, symSize: 0x9C }
-  - { offset: 0x8F6BF, size: 0x8, addend: 0x0, symName: '-[RFGifView create:delegate:]', symObjAddr: 0x35F, symBinAddr: 0x1817F, symSize: 0x174 }
-  - { offset: 0x8F7E6, size: 0x8, addend: 0x0, symName: '-[RFGifView resizeView:maxSize:]', symObjAddr: 0x4D3, symBinAddr: 0x182F3, symSize: 0x11E }
-  - { offset: 0x8F879, size: 0x8, addend: 0x0, symName: '-[RFGifView getMimeType:]', symObjAddr: 0x5F1, symBinAddr: 0x18411, symSize: 0x79 }
-  - { offset: 0x8F8D8, size: 0x8, addend: 0x0, symName: '-[RFGifView loadGif:saveUrl:baseURL:]', symObjAddr: 0x66A, symBinAddr: 0x1848A, symSize: 0x17D }
-  - { offset: 0x8F9F6, size: 0x8, addend: 0x0, symName: '___37-[RFGifView loadGif:saveUrl:baseURL:]_block_invoke', symObjAddr: 0x7E7, symBinAddr: 0x18607, symSize: 0x107 }
-  - { offset: 0x8FB1F, size: 0x8, addend: 0x0, symName: '___37-[RFGifView loadGif:saveUrl:baseURL:]_block_invoke_2', symObjAddr: 0x8EE, symBinAddr: 0x1870E, symSize: 0xF2 }
-  - { offset: 0x8FBFE, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56w64w, symObjAddr: 0x9E0, symBinAddr: 0x18800, symSize: 0x56 }
-  - { offset: 0x8FC4B, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56w64w, symObjAddr: 0xA36, symBinAddr: 0x18856, symSize: 0x41 }
-  - { offset: 0x8FC8E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64w72w, symObjAddr: 0xA77, symBinAddr: 0x18897, symSize: 0x5D }
-  - { offset: 0x8FCE7, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64w72w, symObjAddr: 0xAD4, symBinAddr: 0x188F4, symSize: 0x48 }
-  - { offset: 0x8FD36, size: 0x8, addend: 0x0, symName: '-[RFGifView adjustment:]', symObjAddr: 0xB1C, symBinAddr: 0x1893C, symSize: 0x73B }
-  - { offset: 0x8FF22, size: 0x8, addend: 0x0, symName: '-[RFGifView .cxx_destruct]', symObjAddr: 0x1257, symBinAddr: 0x19077, symSize: 0x51 }
-  - { offset: 0x9015F, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setIdentifier:]', symObjAddr: 0x0, symBinAddr: 0x190C8, symSize: 0x14 }
-  - { offset: 0x90179, size: 0x8, addend: 0x0, symName: __identifier, symObjAddr: 0xC148, symBinAddr: 0x35270, symSize: 0x0 }
-  - { offset: 0x90194, size: 0x8, addend: 0x0, symName: __eventId, symObjAddr: 0xC150, symBinAddr: 0x35278, symSize: 0x0 }
-  - { offset: 0x901AA, size: 0x8, addend: 0x0, symName: __title, symObjAddr: 0xC158, symBinAddr: 0x35280, symSize: 0x0 }
-  - { offset: 0x901C0, size: 0x8, addend: 0x0, symName: __subTitle, symObjAddr: 0xC160, symBinAddr: 0x35288, symSize: 0x0 }
-  - { offset: 0x901D6, size: 0x8, addend: 0x0, symName: _lastNotificationIdKey, symObjAddr: 0xA88, symBinAddr: 0x2B960, symSize: 0x0 }
-  - { offset: 0x901F1, size: 0x8, addend: 0x0, symName: _lastEventIdKey, symObjAddr: 0xA90, symBinAddr: 0x2B968, symSize: 0x0 }
-  - { offset: 0x90207, size: 0x8, addend: 0x0, symName: _lastNotificationDateKey, symObjAddr: 0xA98, symBinAddr: 0x2B970, symSize: 0x0 }
-  - { offset: 0x9021D, size: 0x8, addend: 0x0, symName: _lastNotificationInfoKey, symObjAddr: 0xAA0, symBinAddr: 0x2B978, symSize: 0x0 }
-  - { offset: 0x90227, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setIdentifier:]', symObjAddr: 0x0, symBinAddr: 0x190C8, symSize: 0x14 }
-  - { offset: 0x90266, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo identifier]', symObjAddr: 0x14, symBinAddr: 0x190DC, symSize: 0x80 }
-  - { offset: 0x902E8, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setEventId:]', symObjAddr: 0x94, symBinAddr: 0x1915C, symSize: 0x14 }
-  - { offset: 0x90327, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo eventId]', symObjAddr: 0xA8, symBinAddr: 0x19170, symSize: 0x92 }
-  - { offset: 0x903B5, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setTitle:]', symObjAddr: 0x13A, symBinAddr: 0x19202, symSize: 0x14 }
-  - { offset: 0x903F4, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo title]', symObjAddr: 0x14E, symBinAddr: 0x19216, symSize: 0x11 }
-  - { offset: 0x90427, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setSubTitle:]', symObjAddr: 0x15F, symBinAddr: 0x19227, symSize: 0x14 }
-  - { offset: 0x90466, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo subTitle]', symObjAddr: 0x173, symBinAddr: 0x1923B, symSize: 0x11 }
-  - { offset: 0x90499, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo reset]', symObjAddr: 0x184, symBinAddr: 0x1924C, symSize: 0x5A }
-  - { offset: 0x904F8, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo updateWithResponse:]', symObjAddr: 0x1DE, symBinAddr: 0x192A6, symSize: 0x24D }
-  - { offset: 0x906CA, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo saveLastNotificationId:appGroups:]', symObjAddr: 0x42B, symBinAddr: 0x194F3, symSize: 0x208 }
-  - { offset: 0x90890, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo loadLastNotificationId:]', symObjAddr: 0x633, symBinAddr: 0x196FB, symSize: 0x180 }
-  - { offset: 0x909D7, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo loadLastEventId:]', symObjAddr: 0x7B3, symBinAddr: 0x1987B, symSize: 0x180 }
-  - { offset: 0x90BC6, size: 0x8, addend: 0x0, symName: '-[RFMovieView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x19A00, symSize: 0x1E1 }
-  - { offset: 0x90CEC, size: 0x8, addend: 0x0, symName: '-[RFMovieView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x19A00, symSize: 0x1E1 }
-  - { offset: 0x90E11, size: 0x8, addend: 0x0, symName: '-[RFMovieView dealloc]', symObjAddr: 0x1E1, symBinAddr: 0x19BE1, symSize: 0x65 }
-  - { offset: 0x90E5C, size: 0x8, addend: 0x0, symName: '-[RFMovieView layoutSubviews]', symObjAddr: 0x246, symBinAddr: 0x19C46, symSize: 0xC0 }
-  - { offset: 0x90EA7, size: 0x8, addend: 0x0, symName: '-[RFMovieView getPlayButton]', symObjAddr: 0x306, symBinAddr: 0x19D06, symSize: 0x15 }
-  - { offset: 0x90EDE, size: 0x8, addend: 0x0, symName: '-[RFMovieView getStopButton]', symObjAddr: 0x31B, symBinAddr: 0x19D1B, symSize: 0x15 }
-  - { offset: 0x90F15, size: 0x8, addend: 0x0, symName: '-[RFMovieView setCustomPlayButton]', symObjAddr: 0x330, symBinAddr: 0x19D30, symSize: 0x23E }
-  - { offset: 0x910C5, size: 0x8, addend: 0x0, symName: '-[RFMovieView create:delegate:]', symObjAddr: 0x56E, symBinAddr: 0x19F6E, symSize: 0x446 }
-  - { offset: 0x91374, size: 0x8, addend: 0x0, symName: '-[RFMovieView display]', symObjAddr: 0x9B4, symBinAddr: 0x1A3B4, symSize: 0x182 }
-  - { offset: 0x91472, size: 0x8, addend: 0x0, symName: '-[RFMovieView getPlayButtonRect]', symObjAddr: 0xB36, symBinAddr: 0x1A536, symSize: 0x60 }
-  - { offset: 0x914FF, size: 0x8, addend: 0x0, symName: '-[RFMovieView adjustment:]', symObjAddr: 0xB96, symBinAddr: 0x1A596, symSize: 0x327 }
-  - { offset: 0x915ED, size: 0x8, addend: 0x0, symName: '-[RFMovieView play]', symObjAddr: 0xEBD, symBinAddr: 0x1A8BD, symSize: 0x99 }
-  - { offset: 0x9165C, size: 0x8, addend: 0x0, symName: '-[RFMovieView pause]', symObjAddr: 0xF56, symBinAddr: 0x1A956, symSize: 0x99 }
-  - { offset: 0x916CB, size: 0x8, addend: 0x0, symName: '-[RFMovieView observeValueForKeyPath:ofObject:change:context:]', symObjAddr: 0xFEF, symBinAddr: 0x1A9EF, symSize: 0x1EE }
-  - { offset: 0x9180A, size: 0x8, addend: 0x0, symName: '-[RFMovieView registNotification]', symObjAddr: 0x11DD, symBinAddr: 0x1ABDD, symSize: 0x67 }
-  - { offset: 0x91862, size: 0x8, addend: 0x0, symName: '-[RFMovieView removeNotification]', symObjAddr: 0x1244, symBinAddr: 0x1AC44, symSize: 0x60 }
-  - { offset: 0x918BA, size: 0x8, addend: 0x0, symName: '-[RFMovieView playerItemReachedEnd:]', symObjAddr: 0x12A4, symBinAddr: 0x1ACA4, symSize: 0x391 }
-  - { offset: 0x91B18, size: 0x8, addend: 0x0, symName: '___36-[RFMovieView playerItemReachedEnd:]_block_invoke', symObjAddr: 0x1635, symBinAddr: 0x1B035, symSize: 0x93 }
-  - { offset: 0x91BB4, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48w, symObjAddr: 0x16C8, symBinAddr: 0x1B0C8, symSize: 0x42 }
-  - { offset: 0x91BF5, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48w, symObjAddr: 0x170A, symBinAddr: 0x1B10A, symSize: 0x2E }
-  - { offset: 0x91C2C, size: 0x8, addend: 0x0, symName: '-[RFMovieView setSaveCache:]', symObjAddr: 0x1738, symBinAddr: 0x1B138, symSize: 0x10 }
-  - { offset: 0x91C6D, size: 0x8, addend: 0x0, symName: '-[RFMovieView resizeView:]', symObjAddr: 0x1748, symBinAddr: 0x1B148, symSize: 0x1FE }
-  - { offset: 0x91D1E, size: 0x8, addend: 0x0, symName: '-[RFMovieView .cxx_destruct]', symObjAddr: 0x1946, symBinAddr: 0x1B346, symSize: 0xBA }
-  - { offset: 0x91EB1, size: 0x8, addend: 0x0, symName: '-[RFAlertView initWithFrame:title:message:]', symObjAddr: 0x0, symBinAddr: 0x1B400, symSize: 0x30B }
-  - { offset: 0x91F9A, size: 0x8, addend: 0x0, symName: '-[RFAlertView initWithFrame:title:message:]', symObjAddr: 0x0, symBinAddr: 0x1B400, symSize: 0x30B }
-  - { offset: 0x9214C, size: 0x8, addend: 0x0, symName: '-[RFAlertView createTitleLabel:]', symObjAddr: 0x30B, symBinAddr: 0x1B70B, symSize: 0x2FE }
-  - { offset: 0x922EC, size: 0x8, addend: 0x0, symName: '-[RFAlertView createMessageLabel:]', symObjAddr: 0x609, symBinAddr: 0x1BA09, symSize: 0x2FB }
-  - { offset: 0x92457, size: 0x8, addend: 0x0, symName: '-[RFAlertView setContentEffectViewHeight:]', symObjAddr: 0x904, symBinAddr: 0x1BD04, symSize: 0x137 }
-  - { offset: 0x924A6, size: 0x8, addend: 0x0, symName: '-[RFAlertView addDelegate:]', symObjAddr: 0xA3B, symBinAddr: 0x1BE3B, symSize: 0x14 }
-  - { offset: 0x924E9, size: 0x8, addend: 0x0, symName: '-[RFAlertView addView:]', symObjAddr: 0xA4F, symBinAddr: 0x1BE4F, symSize: 0x211 }
-  - { offset: 0x92586, size: 0x8, addend: 0x0, symName: '-[RFAlertView addImage:]', symObjAddr: 0xC60, symBinAddr: 0x1C060, symSize: 0xFB }
-  - { offset: 0x92669, size: 0x8, addend: 0x0, symName: '-[RFAlertView addAction:]', symObjAddr: 0xD5B, symBinAddr: 0x1C15B, symSize: 0x73 }
-  - { offset: 0x926DC, size: 0x8, addend: 0x0, symName: '-[RFAlertView adjustment]', symObjAddr: 0xDCE, symBinAddr: 0x1C1CE, symSize: 0x218 }
-  - { offset: 0x927D3, size: 0x8, addend: 0x0, symName: '-[RFAlertView createSingleButton]', symObjAddr: 0xFE6, symBinAddr: 0x1C3E6, symSize: 0x237 }
-  - { offset: 0x928D0, size: 0x8, addend: 0x0, symName: '-[RFAlertView createButton:action:]', symObjAddr: 0x121D, symBinAddr: 0x1C61D, symSize: 0x34F }
-  - { offset: 0x92AEA, size: 0x8, addend: 0x0, symName: '-[RFAlertView onClickAction:]', symObjAddr: 0x156C, symBinAddr: 0x1C96C, symSize: 0xEF }
-  - { offset: 0x92BB1, size: 0x8, addend: 0x0, symName: '-[RFAlertView .cxx_destruct]', symObjAddr: 0x165B, symBinAddr: 0x1CA5B, symSize: 0x65 }
-  - { offset: 0x92C59, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil setAppGroupId:]', symObjAddr: 0x0, symBinAddr: 0x1CAC0, symSize: 0x6B }
-  - { offset: 0x92C73, size: 0x8, addend: 0x0, symName: __appGroupId, symObjAddr: 0x7A48, symBinAddr: 0x35290, symSize: 0x0 }
-  - { offset: 0x92C82, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil setAppGroupId:]', symObjAddr: 0x0, symBinAddr: 0x1CAC0, symSize: 0x6B }
-  - { offset: 0x92CF1, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil getAppGroupId]', symObjAddr: 0x6B, symBinAddr: 0x1CB2B, symSize: 0x11 }
-  - { offset: 0x92D24, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil savePreference:key:]', symObjAddr: 0x7C, symBinAddr: 0x1CB3C, symSize: 0xBF }
-  - { offset: 0x92DF3, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil getPreference:]', symObjAddr: 0x13B, symBinAddr: 0x1CBFB, symSize: 0xA2 }
-  - { offset: 0x92E8E, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil moveFile:destFileName:]', symObjAddr: 0x1DD, symBinAddr: 0x1CC9D, symSize: 0x151 }
-  - { offset: 0x92FB9, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil saveHistory:]', symObjAddr: 0x32E, symBinAddr: 0x1CDEE, symSize: 0xFB }
-  - { offset: 0x930A4, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil getHistory]', symObjAddr: 0x429, symBinAddr: 0x1CEE9, symSize: 0xF3 }
-  - { offset: 0x93186, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil makeContainerFileUrl:]', symObjAddr: 0x51C, symBinAddr: 0x1CFDC, symSize: 0xAC }
-  - { offset: 0x932A6, size: 0x8, addend: 0x0, symName: '-[RFMediaView layoutSubviews]', symObjAddr: 0x0, symBinAddr: 0x1D088, symSize: 0xF6 }
-  - { offset: 0x933CB, size: 0x8, addend: 0x0, symName: '-[RFMediaView layoutSubviews]', symObjAddr: 0x0, symBinAddr: 0x1D088, symSize: 0xF6 }
-  - { offset: 0x93422, size: 0x8, addend: 0x0, symName: '-[RFMediaView initialized:delegate:]', symObjAddr: 0xF6, symBinAddr: 0x1D17E, symSize: 0x57 }
-  - { offset: 0x9348D, size: 0x8, addend: 0x0, symName: '-[RFMediaView initialized:custom:delegate:]', symObjAddr: 0x14D, symBinAddr: 0x1D1D5, symSize: 0x57 }
-  - { offset: 0x93504, size: 0x8, addend: 0x0, symName: '-[RFMediaView create]', symObjAddr: 0x1A4, symBinAddr: 0x1D22C, symSize: 0x12 }
-  - { offset: 0x93541, size: 0x8, addend: 0x0, symName: '-[RFMediaView adjustment:]', symObjAddr: 0x1B6, symBinAddr: 0x1D23E, symSize: 0x13D }
-  - { offset: 0x935C0, size: 0x8, addend: 0x0, symName: '-[RFMediaView createImageView]', symObjAddr: 0x2F3, symBinAddr: 0x1D37B, symSize: 0xCE }
-  - { offset: 0x9364B, size: 0x8, addend: 0x0, symName: '-[RFMediaView createGifView]', symObjAddr: 0x3C1, symBinAddr: 0x1D449, symSize: 0x10B }
-  - { offset: 0x936BE, size: 0x8, addend: 0x0, symName: '-[RFMediaView playGifView]', symObjAddr: 0x4CC, symBinAddr: 0x1D554, symSize: 0x4D }
-  - { offset: 0x93709, size: 0x8, addend: 0x0, symName: '-[RFMediaView createMovieView]', symObjAddr: 0x519, symBinAddr: 0x1D5A1, symSize: 0x1D9 }
-  - { offset: 0x9380C, size: 0x8, addend: 0x0, symName: '-[RFMediaView playMovieView]', symObjAddr: 0x6F2, symBinAddr: 0x1D77A, symSize: 0x4D }
-  - { offset: 0x93857, size: 0x8, addend: 0x0, symName: '-[RFMediaView mediaPlay]', symObjAddr: 0x73F, symBinAddr: 0x1D7C7, symSize: 0x10A }
-  - { offset: 0x938F6, size: 0x8, addend: 0x0, symName: '-[RFMediaView mediaPause]', symObjAddr: 0x849, symBinAddr: 0x1D8D1, symSize: 0xB7 }
-  - { offset: 0x93971, size: 0x8, addend: 0x0, symName: '-[RFMediaView onTapPlay]', symObjAddr: 0x900, symBinAddr: 0x1D988, symSize: 0x7D }
-  - { offset: 0x939D4, size: 0x8, addend: 0x0, symName: '-[RFMediaView onTapStop]', symObjAddr: 0x97D, symBinAddr: 0x1DA05, symSize: 0x7D }
-  - { offset: 0x93A37, size: 0x8, addend: 0x0, symName: '-[RFMediaView setMaxSize:]', symObjAddr: 0x9FA, symBinAddr: 0x1DA82, symSize: 0x18 }
-  - { offset: 0x93A78, size: 0x8, addend: 0x0, symName: '-[RFMediaView resize:maxSize:]', symObjAddr: 0xA12, symBinAddr: 0x1DA9A, symSize: 0xC8 }
-  - { offset: 0x93AEF, size: 0x8, addend: 0x0, symName: '-[RFMediaView imageContentSizeHandler:]', symObjAddr: 0xADA, symBinAddr: 0x1DB62, symSize: 0x55 }
-  - { offset: 0x93B67, size: 0x8, addend: 0x0, symName: '___39-[RFMediaView imageContentSizeHandler:]_block_invoke', symObjAddr: 0xB2F, symBinAddr: 0x1DBB7, symSize: 0x138 }
-  - { offset: 0x93C22, size: 0x8, addend: 0x0, symName: '-[RFMediaView gifContentSizeHandler:]', symObjAddr: 0xC85, symBinAddr: 0x1DCEF, symSize: 0x75 }
-  - { offset: 0x93CA1, size: 0x8, addend: 0x0, symName: '-[RFMediaView movieContentSizeHandler:]', symObjAddr: 0xCFA, symBinAddr: 0x1DD64, symSize: 0x4F }
-  - { offset: 0x93D08, size: 0x8, addend: 0x0, symName: '-[RFMediaView movieMediaPlayingStarted]', symObjAddr: 0xD49, symBinAddr: 0x1DDB3, symSize: 0x7C }
-  - { offset: 0x93D6C, size: 0x8, addend: 0x0, symName: '-[RFMediaView movieMediaPlayingPaused]', symObjAddr: 0xDC5, symBinAddr: 0x1DE2F, symSize: 0x7C }
-  - { offset: 0x93DD0, size: 0x8, addend: 0x0, symName: '-[RFMediaView .cxx_destruct]', symObjAddr: 0xE41, symBinAddr: 0x1DEAB, symSize: 0x84 }
-  - { offset: 0x93F20, size: 0x8, addend: 0x0, symName: '+[RFNotificationService configureRFNotification:appGroupId:displayNavigate:completeHandler:]', symObjAddr: 0x0, symBinAddr: 0x1DF30, symSize: 0x143 }
-  - { offset: 0x93F59, size: 0x8, addend: 0x0, symName: '+[RFNotificationService configureRFNotification:appGroupId:displayNavigate:completeHandler:]', symObjAddr: 0x0, symBinAddr: 0x1DF30, symSize: 0x143 }
-  - { offset: 0x94084, size: 0x8, addend: 0x0, symName: '___92+[RFNotificationService configureRFNotification:appGroupId:displayNavigate:completeHandler:]_block_invoke', symObjAddr: 0x143, symBinAddr: 0x1E073, symSize: 0x1FE }
-  - { offset: 0x94236, size: 0x8, addend: 0x0, symName: '___92+[RFNotificationService configureRFNotification:appGroupId:displayNavigate:completeHandler:]_block_invoke_2', symObjAddr: 0x341, symBinAddr: 0x1E271, symSize: 0xAE }
-  - { offset: 0x94310, size: 0x8, addend: 0x0, symName: '+[RFNotificationService configureRFNotification:appGroupId:completeHandler:]', symObjAddr: 0x46A, symBinAddr: 0x1E32A, symSize: 0x22 }
-  - { offset: 0x94377, size: 0x8, addend: 0x0, symName: '+[RFNotificationService appendMessage:]', symObjAddr: 0x48C, symBinAddr: 0x1E34C, symSize: 0x34D }
-  - { offset: 0x94628, size: 0x8, addend: 0x0, symName: '+[RFNotificationService getTypeToShowDetail]', symObjAddr: 0x7D9, symBinAddr: 0x1E699, symSize: 0x1CE }
-  - { offset: 0x94767, size: 0x8, addend: 0x0, symName: '+[RFNotificationService createNavigationMessage]', symObjAddr: 0x9A7, symBinAddr: 0x1E867, symSize: 0xAE }
-  - { offset: 0x947FA, size: 0x8, addend: 0x0, symName: '+[RFNotificationService createNavigationMessageForMovie]', symObjAddr: 0xA55, symBinAddr: 0x1E915, symSize: 0xAE }
-  - { offset: 0x9488D, size: 0x8, addend: 0x0, symName: '+[RFNotificationService appendGroupId:]', symObjAddr: 0xB03, symBinAddr: 0x1E9C3, symSize: 0x16C }
-  - { offset: 0x949E4, size: 0x8, addend: 0x0, symName: '+[RFNotificationService applyAction:]', symObjAddr: 0xC6F, symBinAddr: 0x1EB2F, symSize: 0x21 }
-  - { offset: 0x94CA1, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay init]', symObjAddr: 0x0, symBinAddr: 0x1EB50, symSize: 0x69 }
-  - { offset: 0x94D0E, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay init]', symObjAddr: 0x0, symBinAddr: 0x1EB50, symSize: 0x69 }
-  - { offset: 0x94D5D, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay initWithContent:]', symObjAddr: 0x69, symBinAddr: 0x1EBB9, symSize: 0x82 }
-  - { offset: 0x94DD4, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay setContent:]', symObjAddr: 0xEB, symBinAddr: 0x1EC3B, symSize: 0x16 }
-  - { offset: 0x94E21, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay setButtonColor:]', symObjAddr: 0x101, symBinAddr: 0x1EC51, symSize: 0x16 }
-  - { offset: 0x94E6E, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay present:completeHandler:]', symObjAddr: 0x117, symBinAddr: 0x1EC67, symSize: 0x16 }
-  - { offset: 0x94EC9, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay dismiss]', symObjAddr: 0x12D, symBinAddr: 0x1EC7D, symSize: 0x16 }
-  - { offset: 0x94F08, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay .cxx_destruct]', symObjAddr: 0x143, symBinAddr: 0x1EC93, symSize: 0x10 }
-  - { offset: 0x95145, size: 0x8, addend: 0x0, symName: '+[Category create:]', symObjAddr: 0x0, symBinAddr: 0x1ECA3, symSize: 0x151 }
-  - { offset: 0x9519A, size: 0x8, addend: 0x0, symName: '+[Category create:]', symObjAddr: 0x0, symBinAddr: 0x1ECA3, symSize: 0x151 }
-  - { offset: 0x952C1, size: 0x8, addend: 0x0, symName: '___19+[Category create:]_block_invoke', symObjAddr: 0x151, symBinAddr: 0x1EDF4, symSize: 0xFC }
-  - { offset: 0x953D3, size: 0x8, addend: 0x0, symName: '+[Category createActs:completeHandler:]', symObjAddr: 0x297, symBinAddr: 0x1EEF0, symSize: 0x576 }
-  - { offset: 0x95754, size: 0x8, addend: 0x0, symName: '+[Category transformOptionsWithOptions:]', symObjAddr: 0x80D, symBinAddr: 0x1F466, symSize: 0x1C3 }
-  - { offset: 0x95A1D, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector initWithUrl:]', symObjAddr: 0x0, symBinAddr: 0x1F629, symSize: 0xBA }
-  - { offset: 0x95B06, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector initWithUrl:]', symObjAddr: 0x0, symBinAddr: 0x1F629, symSize: 0xBA }
-  - { offset: 0x95BA1, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector initWithUrl:method:]', symObjAddr: 0xBA, symBinAddr: 0x1F6E3, symSize: 0xBD }
-  - { offset: 0x95C4C, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector initWithUrl:method:params:]', symObjAddr: 0x177, symBinAddr: 0x1F7A0, symSize: 0xE0 }
-  - { offset: 0x95D37, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector method:]', symObjAddr: 0x257, symBinAddr: 0x1F880, symSize: 0xD }
-  - { offset: 0x95D7C, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector headers:]', symObjAddr: 0x264, symBinAddr: 0x1F88D, symSize: 0x1F9 }
-  - { offset: 0x95E52, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector jsonBody:]', symObjAddr: 0x45D, symBinAddr: 0x1FA86, symSize: 0x31 }
-  - { offset: 0x95EB1, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector params:]', symObjAddr: 0x48E, symBinAddr: 0x1FAB7, symSize: 0x31 }
-  - { offset: 0x95F10, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector replace:]', symObjAddr: 0x4BF, symBinAddr: 0x1FAE8, symSize: 0x341 }
-  - { offset: 0x9609D, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector makeQueryString:]', symObjAddr: 0x800, symBinAddr: 0x1FE29, symSize: 0x2C1 }
-  - { offset: 0x961DF, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector requestUrl]', symObjAddr: 0xAC1, symBinAddr: 0x200EA, symSize: 0x12A }
-  - { offset: 0x962AE, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector setMethod:]', symObjAddr: 0xBEB, symBinAddr: 0x20214, symSize: 0x48 }
-  - { offset: 0x96315, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector setHeader:]', symObjAddr: 0xC33, symBinAddr: 0x2025C, symSize: 0x1E6 }
-  - { offset: 0x963EF, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector setJsonBody:]', symObjAddr: 0xE19, symBinAddr: 0x20442, symSize: 0xC9 }
-  - { offset: 0x964B2, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector request:]', symObjAddr: 0xEE2, symBinAddr: 0x2050B, symSize: 0xFA }
-  - { offset: 0x965A9, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector startCommunication:completion:]', symObjAddr: 0xFDC, symBinAddr: 0x20605, symSize: 0x13C }
-  - { offset: 0x966D1, size: 0x8, addend: 0x0, symName: '___49-[RFHttpConnector startCommunication:completion:]_block_invoke', symObjAddr: 0x1118, symBinAddr: 0x20741, symSize: 0x8A }
-  - { offset: 0x967B3, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector .cxx_destruct]', symObjAddr: 0x11F7, symBinAddr: 0x207CB, symSize: 0x3E }
-  - { offset: 0x969B7, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate initWithDelegateHandler:]', symObjAddr: 0x0, symBinAddr: 0x20810, symSize: 0x3E }
-  - { offset: 0x969D1, size: 0x8, addend: 0x0, symName: _openEventKey, symObjAddr: 0xE98, symBinAddr: 0x2BAD8, symSize: 0x0 }
-  - { offset: 0x96A1F, size: 0x8, addend: 0x0, symName: _openNotificationId, symObjAddr: 0xEA0, symBinAddr: 0x2BAE0, symSize: 0x0 }
-  - { offset: 0x96A35, size: 0x8, addend: 0x0, symName: _openEventId, symObjAddr: 0xEA8, symBinAddr: 0x2BAE8, symSize: 0x0 }
-  - { offset: 0x96A4B, size: 0x8, addend: 0x0, symName: _openAppEvent, symObjAddr: 0xEB0, symBinAddr: 0x2BAF0, symSize: 0x0 }
-  - { offset: 0x96A61, size: 0x8, addend: 0x0, symName: _kLaunchModeMovie, symObjAddr: 0xF58, symBinAddr: 0x351C0, symSize: 0x0 }
-  - { offset: 0x96A77, size: 0x8, addend: 0x0, symName: _kLaunchModeGif, symObjAddr: 0xF60, symBinAddr: 0x351C8, symSize: 0x0 }
-  - { offset: 0x96A8D, size: 0x8, addend: 0x0, symName: _kLaunchModeImage, symObjAddr: 0xF68, symBinAddr: 0x351D0, symSize: 0x0 }
-  - { offset: 0x96AA3, size: 0x8, addend: 0x0, symName: _kLaunchModeText, symObjAddr: 0xF70, symBinAddr: 0x351D8, symSize: 0x0 }
-  - { offset: 0x96B5B, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate initWithDelegateHandler:]', symObjAddr: 0x0, symBinAddr: 0x20810, symSize: 0x3E }
-  - { offset: 0x96BAE, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate configure]', symObjAddr: 0x3E, symBinAddr: 0x2084E, symSize: 0xFE }
-  - { offset: 0x96C4D, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate appWillResignActive:]', symObjAddr: 0x13C, symBinAddr: 0x2094C, symSize: 0x153 }
-  - { offset: 0x96D63, size: 0x8, addend: 0x0, symName: '___43-[AppInternalDelegate appWillResignActive:]_block_invoke', symObjAddr: 0x28F, symBinAddr: 0x20A9F, symSize: 0x1E }
-  - { offset: 0x96DD2, size: 0x8, addend: 0x0, symName: '___43-[AppInternalDelegate appWillResignActive:]_block_invoke.40', symObjAddr: 0x2CB, symBinAddr: 0x20ACB, symSize: 0x6 }
-  - { offset: 0x96E1D, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate appWillterminate:]', symObjAddr: 0x2D1, symBinAddr: 0x20AD1, symSize: 0x6 }
-  - { offset: 0x96E58, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate appDidBecomeActive:]', symObjAddr: 0x2D7, symBinAddr: 0x20AD7, symSize: 0x10E }
-  - { offset: 0x96F5B, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate getRootViewController:]', symObjAddr: 0x3E5, symBinAddr: 0x20BE5, symSize: 0x231 }
-  - { offset: 0x97101, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate displayLatestContent:content:]', symObjAddr: 0x616, symBinAddr: 0x20E16, symSize: 0x10B }
-  - { offset: 0x971F8, size: 0x8, addend: 0x0, symName: '___52-[AppInternalDelegate displayLatestContent:content:]_block_invoke', symObjAddr: 0x721, symBinAddr: 0x20F21, symSize: 0xD1 }
-  - { offset: 0x972FE, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s, symObjAddr: 0x7F2, symBinAddr: 0x20FF2, symSize: 0x2C }
-  - { offset: 0x9734B, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s, symObjAddr: 0x81E, symBinAddr: 0x2101E, symSize: 0x2C }
-  - { offset: 0x9738E, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate hasDisplayed:]', symObjAddr: 0x84A, symBinAddr: 0x2104A, symSize: 0x189 }
-  - { offset: 0x974DD, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate canDisplayWithMode:]', symObjAddr: 0x9D3, symBinAddr: 0x211D3, symSize: 0x16C }
-  - { offset: 0x97610, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate getLaunchMode]', symObjAddr: 0xB3F, symBinAddr: 0x2133F, symSize: 0x5E }
-  - { offset: 0x97677, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate setLaunchMode:]', symObjAddr: 0xB9D, symBinAddr: 0x2139D, symSize: 0x81 }
-  - { offset: 0x9770E, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate delegateHandler]', symObjAddr: 0xC1E, symBinAddr: 0x2141E, symSize: 0xA }
-  - { offset: 0x97743, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate setDelegateHandler:]', symObjAddr: 0xC28, symBinAddr: 0x21428, symSize: 0x18 }
-  - { offset: 0x97AD0, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil sendEventLog:param:]', symObjAddr: 0x0, symBinAddr: 0x21440, symSize: 0x19 }
-  - { offset: 0x97ADF, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil sendEventLog:param:]', symObjAddr: 0x0, symBinAddr: 0x21440, symSize: 0x19 }
-  - { offset: 0x97B34, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil sendReservedEventLog]', symObjAddr: 0x19, symBinAddr: 0x21459, symSize: 0x3E4 }
-  - { offset: 0x97D79, size: 0x8, addend: 0x0, symName: '___39+[RFLogEventsUtil sendReservedEventLog]_block_invoke', symObjAddr: 0x3FD, symBinAddr: 0x2183D, symSize: 0x3F }
-  - { offset: 0x97E44, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64s72s, symObjAddr: 0x43C, symBinAddr: 0x2187C, symSize: 0x41 }
-  - { offset: 0x97EB5, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil reserveSendLog:]', symObjAddr: 0x4BE, symBinAddr: 0x218BD, symSize: 0x136 }
-  - { offset: 0x97FF8, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil logForRF:param:]', symObjAddr: 0x5F4, symBinAddr: 0x219F3, symSize: 0x145 }
-  - { offset: 0x98126, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil reset]', symObjAddr: 0x739, symBinAddr: 0x21B38, symSize: 0x19 }
-  - { offset: 0x98161, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil currentNotificationId]', symObjAddr: 0x752, symBinAddr: 0x21B51, symSize: 0x19 }
-  - { offset: 0x98361, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler userNotificationCenter:willPresentNotification:withCompletionHandler:]', symObjAddr: 0x0, symBinAddr: 0x21B6A, symSize: 0xEE }
-  - { offset: 0x983C3, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler userNotificationCenter:willPresentNotification:withCompletionHandler:]', symObjAddr: 0x0, symBinAddr: 0x21B6A, symSize: 0xEE }
-  - { offset: 0x984AA, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:]', symObjAddr: 0xEE, symBinAddr: 0x21C58, symSize: 0x105 }
-  - { offset: 0x9859D, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler delegate]', symObjAddr: 0x1F3, symBinAddr: 0x21D5D, symSize: 0x16 }
-  - { offset: 0x985D4, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler setDelegate:]', symObjAddr: 0x209, symBinAddr: 0x21D73, symSize: 0x11 }
-  - { offset: 0x98615, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler .cxx_destruct]', symObjAddr: 0x21A, symBinAddr: 0x21D84, symSize: 0xE }
-  - { offset: 0x98775, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager reserveEventLog:eventPostId:eventId:eventTime:]', symObjAddr: 0x0, symBinAddr: 0x21D92, symSize: 0x5C2 }
-  - { offset: 0x9878F, size: 0x8, addend: 0x0, symName: _evnetLogkey, symObjAddr: 0x1AD0, symBinAddr: 0x2BBC8, symSize: 0x0 }
-  - { offset: 0x987AF, size: 0x8, addend: 0x0, symName: _evnetLogHistorykey, symObjAddr: 0x1AD8, symBinAddr: 0x2BBD0, symSize: 0x0 }
-  - { offset: 0x987C5, size: 0x8, addend: 0x0, symName: _segmentKey, symObjAddr: 0x1AE0, symBinAddr: 0x2BBD8, symSize: 0x0 }
-  - { offset: 0x987E5, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager reserveEventLog:eventPostId:eventId:eventTime:]', symObjAddr: 0x0, symBinAddr: 0x21D92, symSize: 0x5C2 }
-  - { offset: 0x98B1E, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager loadReservedEventLogs]', symObjAddr: 0x5C2, symBinAddr: 0x22354, symSize: 0x19 }
-  - { offset: 0x98B5F, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager removeReservedEventLogs]', symObjAddr: 0x5DB, symBinAddr: 0x2236D, symSize: 0x19 }
-  - { offset: 0x98B9C, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager addEventLogToHistories:]', symObjAddr: 0x5F4, symBinAddr: 0x22386, symSize: 0x220 }
-  - { offset: 0x98D78, size: 0x8, addend: 0x0, symName: '___43-[RFApiDataManager addEventLogToHistories:]_block_invoke', symObjAddr: 0x814, symBinAddr: 0x225A6, symSize: 0xC0 }
-  - { offset: 0x98E52, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager hasEventLogInHistories:eventPostId:eventId:]', symObjAddr: 0x8D4, symBinAddr: 0x22666, symSize: 0x404 }
-  - { offset: 0x9907B, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager reserveRegisterSegments:]', symObjAddr: 0xCD8, symBinAddr: 0x22A6A, symSize: 0x259 }
-  - { offset: 0x991C0, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager reserveRegisterSegments:intSegments:boolSegments:dateSegments:]', symObjAddr: 0xF31, symBinAddr: 0x22CC3, symSize: 0x6BD }
-  - { offset: 0x994A7, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager loadReservedSegments]', symObjAddr: 0x15EE, symBinAddr: 0x23380, symSize: 0x19 }
-  - { offset: 0x994E8, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager removeReservedSegments]', symObjAddr: 0x1607, symBinAddr: 0x23399, symSize: 0x19 }
-  - { offset: 0x99525, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager saveArray:data:]', symObjAddr: 0x1620, symBinAddr: 0x233B2, symSize: 0xC3 }
-  - { offset: 0x995EC, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager loadArray:]', symObjAddr: 0x16E3, symBinAddr: 0x23475, symSize: 0x7E }
-  - { offset: 0x9966B, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager saveDictionary:data:]', symObjAddr: 0x1761, symBinAddr: 0x234F3, symSize: 0xC3 }
-  - { offset: 0x99732, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager loadDictionary:]', symObjAddr: 0x1824, symBinAddr: 0x235B6, symSize: 0x7E }
-  - { offset: 0x997B1, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager remove:]', symObjAddr: 0x18A2, symBinAddr: 0x23634, symSize: 0x6D }
-  - { offset: 0x99941, size: 0x8, addend: 0x0, symName: '+[Media addAttachment:completeHandler:]', symObjAddr: 0x0, symBinAddr: 0x236A1, symSize: 0x137 }
-  - { offset: 0x99950, size: 0x8, addend: 0x0, symName: '+[Media addAttachment:completeHandler:]', symObjAddr: 0x0, symBinAddr: 0x236A1, symSize: 0x137 }
-  - { offset: 0x99A77, size: 0x8, addend: 0x0, symName: '+[Media get:attemptContent:completeHandler:]', symObjAddr: 0x137, symBinAddr: 0x237D8, symSize: 0x162 }
-  - { offset: 0x99BBE, size: 0x8, addend: 0x0, symName: '___44+[Media get:attemptContent:completeHandler:]_block_invoke', symObjAddr: 0x299, symBinAddr: 0x2393A, symSize: 0x286 }
-  - { offset: 0x99DD3, size: 0x8, addend: 0x0, symName: '+[Media moveToGroupContainer:from:]', symObjAddr: 0x58F, symBinAddr: 0x23BC0, symSize: 0x1D0 }
-  - { offset: 0x99F8E, size: 0x8, addend: 0x0, symName: '+[Media hasMovie:]', symObjAddr: 0x75F, symBinAddr: 0x23D90, symSize: 0xFD }
-  - { offset: 0x9A0D0, size: 0x8, addend: 0x0, symName: '+[Media addPlayButton:destUrl:]', symObjAddr: 0x85C, symBinAddr: 0x23E8D, symSize: 0x316 }
-  - { offset: 0x9A435, size: 0x8, addend: 0x0, symName: '+[Media dataTask:]', symObjAddr: 0xB72, symBinAddr: 0x241A3, symSize: 0x8C }
-  - { offset: 0x9A4D4, size: 0x8, addend: 0x0, symName: '+[Media dataTaskWithCompleteHandler:completeHandler:]', symObjAddr: 0xBFE, symBinAddr: 0x2422F, symSize: 0xF7 }
-  - { offset: 0x9A5A7, size: 0x8, addend: 0x0, symName: '___53+[Media dataTaskWithCompleteHandler:completeHandler:]_block_invoke', symObjAddr: 0xCF5, symBinAddr: 0x24326, symSize: 0xC4 }
-  - { offset: 0x9A942, size: 0x8, addend: 0x0, symName: '-[RFApiResponse initWithResponse:data:]', symObjAddr: 0x0, symBinAddr: 0x243EA, symSize: 0x1FF }
-  - { offset: 0x9A9F3, size: 0x8, addend: 0x0, symName: '-[RFApiResponse initWithResponse:data:]', symObjAddr: 0x0, symBinAddr: 0x243EA, symSize: 0x1FF }
-  - { offset: 0x9ABAF, size: 0x8, addend: 0x0, symName: '-[RFApiResponse status]', symObjAddr: 0x1FF, symBinAddr: 0x245E9, symSize: 0xA }
-  - { offset: 0x9ABE4, size: 0x8, addend: 0x0, symName: '-[RFApiResponse message]', symObjAddr: 0x209, symBinAddr: 0x245F3, symSize: 0xA }
-  - { offset: 0x9AC19, size: 0x8, addend: 0x0, symName: '-[RFApiResponse deviceId]', symObjAddr: 0x213, symBinAddr: 0x245FD, symSize: 0xA }
-  - { offset: 0x9AC4E, size: 0x8, addend: 0x0, symName: '-[RFApiResponse authToken]', symObjAddr: 0x21D, symBinAddr: 0x24607, symSize: 0xA }
-  - { offset: 0x9AC83, size: 0x8, addend: 0x0, symName: '-[RFApiResponse postingIds]', symObjAddr: 0x227, symBinAddr: 0x24611, symSize: 0xA }
-  - { offset: 0x9ACB8, size: 0x8, addend: 0x0, symName: '-[RFApiResponse .cxx_destruct]', symObjAddr: 0x231, symBinAddr: 0x2461B, symSize: 0x3E }
+  - { offset: 0xC771E, size: 0x8, addend: 0x0, symName: _RichFlyerVersionString, symObjAddr: 0x0, symBinAddr: 0x23380, symSize: 0x0 }
+  - { offset: 0xC7753, size: 0x8, addend: 0x0, symName: _RichFlyerVersionNumber, symObjAddr: 0x30, symBinAddr: 0x233B0, symSize: 0x0 }
+  - { offset: 0xC7790, size: 0x8, addend: 0x0, symName: '-[RFMessageView create:sizeHandler:]', symObjAddr: 0x0, symBinAddr: 0xF00, symSize: 0x683 }
+  - { offset: 0xC7806, size: 0x8, addend: 0x0, symName: '-[RFMessageView create:sizeHandler:]', symObjAddr: 0x0, symBinAddr: 0xF00, symSize: 0x683 }
+  - { offset: 0xC7B83, size: 0x8, addend: 0x0, symName: '-[RFMessageView makeBodyView:text:]', symObjAddr: 0x683, symBinAddr: 0x1583, symSize: 0x15D }
+  - { offset: 0xC7D8C, size: 0x8, addend: 0x0, symName: '-[RFApiClient init]', symObjAddr: 0x0, symBinAddr: 0x16E0, symSize: 0x285 }
+  - { offset: 0xC7DA6, size: 0x8, addend: 0x0, symName: _successSegmentsSeveKey, symObjAddr: 0x9100, symBinAddr: 0x2A328, symSize: 0x0 }
+  - { offset: 0xC7DC6, size: 0x8, addend: 0x0, symName: _failedEventLogSaveKey, symObjAddr: 0x9108, symBinAddr: 0x2A330, symSize: 0x0 }
+  - { offset: 0xC7DDC, size: 0x8, addend: 0x0, symName: _contentTypeHeaderKey, symObjAddr: 0x9110, symBinAddr: 0x2A338, symSize: 0x0 }
+  - { offset: 0xC7DF2, size: 0x8, addend: 0x0, symName: _serviceKeyHeaderKey, symObjAddr: 0x9118, symBinAddr: 0x2A340, symSize: 0x0 }
+  - { offset: 0xC7E08, size: 0x8, addend: 0x0, symName: _apiVersionHeaderKey, symObjAddr: 0x9120, symBinAddr: 0x2A348, symSize: 0x0 }
+  - { offset: 0xC7E1E, size: 0x8, addend: 0x0, symName: _userAgentHeaderKey, symObjAddr: 0x9128, symBinAddr: 0x2A350, symSize: 0x0 }
+  - { offset: 0xC7E34, size: 0x8, addend: 0x0, symName: _authHeaderKey, symObjAddr: 0x9130, symBinAddr: 0x2A358, symSize: 0x0 }
+  - { offset: 0xC7E4A, size: 0x8, addend: 0x0, symName: _deviceTokenJsonKey, symObjAddr: 0x9138, symBinAddr: 0x2A360, symSize: 0x0 }
+  - { offset: 0xC7E60, size: 0x8, addend: 0x0, symName: _deviceTypeJsonKey, symObjAddr: 0x9140, symBinAddr: 0x2A368, symSize: 0x0 }
+  - { offset: 0xC7E76, size: 0x8, addend: 0x0, symName: _segmentsJsonKey, symObjAddr: 0x9148, symBinAddr: 0x2A370, symSize: 0x0 }
+  - { offset: 0xC7E8C, size: 0x8, addend: 0x0, symName: _notificationIdJsonKey, symObjAddr: 0x9150, symBinAddr: 0x2A378, symSize: 0x0 }
+  - { offset: 0xC7EA2, size: 0x8, addend: 0x0, symName: _eventIdJsonKey, symObjAddr: 0x9158, symBinAddr: 0x2A380, symSize: 0x0 }
+  - { offset: 0xC7EB8, size: 0x8, addend: 0x0, symName: _eventTimeJsonKey, symObjAddr: 0x9160, symBinAddr: 0x2A388, symSize: 0x0 }
+  - { offset: 0xC7ECE, size: 0x8, addend: 0x0, symName: _eventsJsonKey, symObjAddr: 0x9168, symBinAddr: 0x2A390, symSize: 0x0 }
+  - { offset: 0xC7EE4, size: 0x8, addend: 0x0, symName: _variablesJsonKey, symObjAddr: 0x9170, symBinAddr: 0x2A398, symSize: 0x0 }
+  - { offset: 0xC7EFA, size: 0x8, addend: 0x0, symName: _standbyTimeJsonKey, symObjAddr: 0x9178, symBinAddr: 0x2A3A0, symSize: 0x0 }
+  - { offset: 0xC7F10, size: 0x8, addend: 0x0, symName: _valueJsonKey, symObjAddr: 0x9180, symBinAddr: 0x2A3A8, symSize: 0x0 }
+  - { offset: 0xC7F26, size: 0x8, addend: 0x0, symName: _unitJsonKey, symObjAddr: 0x9188, symBinAddr: 0x2A3B0, symSize: 0x0 }
+  - { offset: 0xC7F3C, size: 0x8, addend: 0x0, symName: _bearer, symObjAddr: 0x9190, symBinAddr: 0x2A3B8, symSize: 0x0 }
+  - { offset: 0xC7F52, size: 0x8, addend: 0x0, symName: _typeJson, symObjAddr: 0x9198, symBinAddr: 0x2A3C0, symSize: 0x0 }
+  - { offset: 0xC7F68, size: 0x8, addend: 0x0, symName: _apiVersion, symObjAddr: 0x91A0, symBinAddr: 0x2A3C8, symSize: 0x0 }
+  - { offset: 0xC7F7E, size: 0x8, addend: 0x0, symName: _userAgent, symObjAddr: 0x58368, symBinAddr: 0x34390, symSize: 0x0 }
+  - { offset: 0xC7F9B, size: 0x8, addend: 0x0, symName: __registDeviceProcessing, symObjAddr: 0x58370, symBinAddr: 0x34398, symSize: 0x0 }
+  - { offset: 0xC7FBF, size: 0x8, addend: 0x0, symName: __registSegmentProcessing, symObjAddr: 0x58371, symBinAddr: 0x34399, symSize: 0x0 }
+  - { offset: 0xC7FDC, size: 0x8, addend: 0x0, symName: __updateDeviceProcessing, symObjAddr: 0x58372, symBinAddr: 0x3439A, symSize: 0x0 }
+  - { offset: 0xC8059, size: 0x8, addend: 0x0, symName: '-[RFApiClient init]', symObjAddr: 0x0, symBinAddr: 0x16E0, symSize: 0x285 }
+  - { offset: 0xC821B, size: 0x8, addend: 0x0, symName: '-[RFApiClient registDevice:completion:]', symObjAddr: 0x285, symBinAddr: 0x1965, symSize: 0x1C5 }
+  - { offset: 0xC8379, size: 0x8, addend: 0x0, symName: '___39-[RFApiClient registDevice:completion:]_block_invoke', symObjAddr: 0x44A, symBinAddr: 0x1B2A, symSize: 0x160 }
+  - { offset: 0xC84BC, size: 0x8, addend: 0x0, symName: '-[RFApiClient createAuthTokenWithCompletion:]', symObjAddr: 0x5FF, symBinAddr: 0x1C8A, symSize: 0x149 }
+  - { offset: 0xC85C2, size: 0x8, addend: 0x0, symName: '___45-[RFApiClient createAuthTokenWithCompletion:]_block_invoke', symObjAddr: 0x748, symBinAddr: 0x1DD3, symSize: 0x103 }
+  - { offset: 0xC86D5, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegments:intSegments:boolSegments:dateSegments:completion:]', symObjAddr: 0x84B, symBinAddr: 0x1ED6, symSize: 0x13B }
+  - { offset: 0xC8833, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegments:completion:]', symObjAddr: 0x986, symBinAddr: 0x2011, symSize: 0x93 }
+  - { offset: 0xC88F6, size: 0x8, addend: 0x0, symName: '-[RFApiClient registReservedSegments:]', symObjAddr: 0xA19, symBinAddr: 0x20A4, symSize: 0x22D }
+  - { offset: 0xC8A9B, size: 0x8, addend: 0x0, symName: '___38-[RFApiClient registReservedSegments:]_block_invoke', symObjAddr: 0xC46, symBinAddr: 0x22D1, symSize: 0x145 }
+  - { offset: 0xC8BC2, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48b, symObjAddr: 0xD8B, symBinAddr: 0x2416, symSize: 0x44 }
+  - { offset: 0xC8C03, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s, symObjAddr: 0xDCF, symBinAddr: 0x245A, symSize: 0x2C }
+  - { offset: 0xC8C46, size: 0x8, addend: 0x0, symName: '-[RFApiClient getSegments]', symObjAddr: 0xDFB, symBinAddr: 0x2486, symSize: 0x12 }
+  - { offset: 0xC8C88, size: 0x8, addend: 0x0, symName: '-[RFApiClient updateDeviceWithCompletion:]', symObjAddr: 0xE0D, symBinAddr: 0x2498, symSize: 0x1E4 }
+  - { offset: 0xC8DEC, size: 0x8, addend: 0x0, symName: '___42-[RFApiClient updateDeviceWithCompletion:]_block_invoke', symObjAddr: 0xFF1, symBinAddr: 0x267C, symSize: 0x133 }
+  - { offset: 0xC8EF6, size: 0x8, addend: 0x0, symName: '-[RFApiClient eventLog:eventId:eventTime:completion:]', symObjAddr: 0x1124, symBinAddr: 0x27AF, symSize: 0x15D }
+  - { offset: 0xC9034, size: 0x8, addend: 0x0, symName: '___53-[RFApiClient eventLog:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x1281, symBinAddr: 0x290C, symSize: 0xF7 }
+  - { offset: 0xC9126, size: 0x8, addend: 0x0, symName: '-[RFApiClient requestOneshotPost:templteId:variables:standbyTime:completion:]', symObjAddr: 0x1378, symBinAddr: 0x2A03, symSize: 0x170 }
+  - { offset: 0xC9274, size: 0x8, addend: 0x0, symName: '___77-[RFApiClient requestOneshotPost:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x14E8, symBinAddr: 0x2B73, symSize: 0x11F }
+  - { offset: 0xC938F, size: 0x8, addend: 0x0, symName: '-[RFApiClient cancelOneshotPost:completion:]', symObjAddr: 0x1607, symBinAddr: 0x2C92, symSize: 0x155 }
+  - { offset: 0xC94AB, size: 0x8, addend: 0x0, symName: '___44-[RFApiClient cancelOneshotPost:completion:]_block_invoke', symObjAddr: 0x175C, symBinAddr: 0x2DE7, symSize: 0xF7 }
+  - { offset: 0xC959D, size: 0x8, addend: 0x0, symName: '-[RFApiClient makeUserAgent]', symObjAddr: 0x1853, symBinAddr: 0x2EDE, symSize: 0x211 }
+  - { offset: 0xC973F, size: 0x8, addend: 0x0, symName: '-[RFApiClient checkServiceKey]', symObjAddr: 0x1A64, symBinAddr: 0x30EF, symSize: 0x28 }
+  - { offset: 0xC9783, size: 0x8, addend: 0x0, symName: '-[RFApiClient checkException:authTokenCheck:]', symObjAddr: 0x1A8C, symBinAddr: 0x3117, symSize: 0x9C }
+  - { offset: 0xC9849, size: 0x8, addend: 0x0, symName: '-[RFApiClient registDeviceWithDeviceTokenProc:completion:]', symObjAddr: 0x1B28, symBinAddr: 0x31B3, symSize: 0x3DA }
+  - { offset: 0xC9A62, size: 0x8, addend: 0x0, symName: '___58-[RFApiClient registDeviceWithDeviceTokenProc:completion:]_block_invoke', symObjAddr: 0x1F02, symBinAddr: 0x358D, symSize: 0x191 }
+  - { offset: 0xC9BF4, size: 0x8, addend: 0x0, symName: '-[RFApiClient createAuthTokenProc:]', symObjAddr: 0x2093, symBinAddr: 0x371E, symSize: 0x13C }
+  - { offset: 0xC9CF4, size: 0x8, addend: 0x0, symName: '___35-[RFApiClient createAuthTokenProc:]_block_invoke', symObjAddr: 0x21CF, symBinAddr: 0x385A, symSize: 0x1A2 }
+  - { offset: 0xC9E96, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForCreateAuthToken:]', symObjAddr: 0x2371, symBinAddr: 0x39FC, symSize: 0x2B5 }
+  - { offset: 0xC9FFD, size: 0x8, addend: 0x0, symName: '-[RFApiClient createAuthTokenAfterRegistDevice:]', symObjAddr: 0x2626, symBinAddr: 0x3CB1, symSize: 0x1C4 }
+  - { offset: 0xCA161, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient createAuthTokenAfterRegistDevice:]_block_invoke', symObjAddr: 0x27EA, symBinAddr: 0x3E75, symSize: 0x159 }
+  - { offset: 0xCA29C, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyCreateAuthToken:]', symObjAddr: 0x2943, symBinAddr: 0x3FCE, symSize: 0x23A }
+  - { offset: 0xCA459, size: 0x8, addend: 0x0, symName: '___37-[RFApiClient doOnlyCreateAuthToken:]_block_invoke', symObjAddr: 0x2B7D, symBinAddr: 0x4208, symSize: 0x175 }
+  - { offset: 0xCA5CE, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegmentsProc:completion:]', symObjAddr: 0x2D18, symBinAddr: 0x437D, symSize: 0x1C2 }
+  - { offset: 0xCA738, size: 0x8, addend: 0x0, symName: '___45-[RFApiClient registSegmentsProc:completion:]_block_invoke', symObjAddr: 0x2EDA, symBinAddr: 0x453F, symSize: 0x1DE }
+  - { offset: 0xCA917, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegmentsAfterCreateAuthToken:completion:]', symObjAddr: 0x30B8, symBinAddr: 0x471D, symSize: 0xB7 }
+  - { offset: 0xCA9D9, size: 0x8, addend: 0x0, symName: '___61-[RFApiClient registSegmentsAfterCreateAuthToken:completion:]_block_invoke', symObjAddr: 0x316F, symBinAddr: 0x47D4, symSize: 0x9B }
+  - { offset: 0xCAAE1, size: 0x8, addend: 0x0, symName: '-[RFApiClient registSegmentsAfterRegistDevice:completion:]', symObjAddr: 0x320A, symBinAddr: 0x486F, symSize: 0xB7 }
+  - { offset: 0xCABA3, size: 0x8, addend: 0x0, symName: '___58-[RFApiClient registSegmentsAfterRegistDevice:completion:]_block_invoke', symObjAddr: 0x32C1, symBinAddr: 0x4926, symSize: 0x9B }
+  - { offset: 0xCACAB, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyRegistSegments:completion:]', symObjAddr: 0x335C, symBinAddr: 0x49C1, symSize: 0x23C }
+  - { offset: 0xCAE64, size: 0x8, addend: 0x0, symName: '___47-[RFApiClient doOnlyRegistSegments:completion:]_block_invoke', symObjAddr: 0x3598, symBinAddr: 0x4BFD, symSize: 0x12B }
+  - { offset: 0xCAFD5, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForRegistSegments:]', symObjAddr: 0x36C3, symBinAddr: 0x4D28, symSize: 0x425 }
+  - { offset: 0xCB1F3, size: 0x8, addend: 0x0, symName: '-[RFApiClient modifiedSegments:]', symObjAddr: 0x3AE8, symBinAddr: 0x514D, symSize: 0x3C8 }
+  - { offset: 0xCB429, size: 0x8, addend: 0x0, symName: '-[RFApiClient mergeSavedSegments:]', symObjAddr: 0x3EB0, symBinAddr: 0x5515, symSize: 0x248 }
+  - { offset: 0xCB554, size: 0x8, addend: 0x0, symName: '-[RFApiClient saveSuccessSegments:]', symObjAddr: 0x40F8, symBinAddr: 0x575D, symSize: 0x8B }
+  - { offset: 0xCB5EE, size: 0x8, addend: 0x0, symName: '-[RFApiClient extractRegisterableSegment:]', symObjAddr: 0x4183, symBinAddr: 0x57E8, symSize: 0x2CC }
+  - { offset: 0xCB766, size: 0x8, addend: 0x0, symName: '-[RFApiClient loadSuccessSegments]', symObjAddr: 0x444F, symBinAddr: 0x5AB4, symSize: 0x5E }
+  - { offset: 0xCB7BE, size: 0x8, addend: 0x0, symName: '-[RFApiClient updateDeviceTokenProc:completion:]', symObjAddr: 0x44AD, symBinAddr: 0x5B12, symSize: 0x1BC }
+  - { offset: 0xCB8FA, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient updateDeviceTokenProc:completion:]_block_invoke', symObjAddr: 0x4669, symBinAddr: 0x5CCE, symSize: 0x1C }
+  - { offset: 0xCB980, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient updateDeviceTokenProc:completion:]_block_invoke.281', symObjAddr: 0x4685, symBinAddr: 0x5CEA, symSize: 0x21E }
+  - { offset: 0xCBB4B, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient updateDeviceTokenProc:completion:]_block_invoke_2', symObjAddr: 0x48A3, symBinAddr: 0x5F08, symSize: 0x1C }
+  - { offset: 0xCBBD1, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyUpdateDeviceToken:completion:]', symObjAddr: 0x48BF, symBinAddr: 0x5F24, symSize: 0x23C }
+  - { offset: 0xCBD8A, size: 0x8, addend: 0x0, symName: '___50-[RFApiClient doOnlyUpdateDeviceToken:completion:]_block_invoke', symObjAddr: 0x4AFB, symBinAddr: 0x6160, symSize: 0xF4 }
+  - { offset: 0xCBEAB, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForUpdateDeviceToken:]', symObjAddr: 0x4BEF, symBinAddr: 0x6254, symSize: 0x440 }
+  - { offset: 0xCC0C4, size: 0x8, addend: 0x0, symName: '-[RFApiClient updateDeviceTokenAfterCreateAuthToken:completion:]', symObjAddr: 0x502F, symBinAddr: 0x6694, symSize: 0xB7 }
+  - { offset: 0xCC186, size: 0x8, addend: 0x0, symName: '___64-[RFApiClient updateDeviceTokenAfterCreateAuthToken:completion:]_block_invoke', symObjAddr: 0x50E6, symBinAddr: 0x674B, symSize: 0x9B }
+  - { offset: 0xCC28E, size: 0x8, addend: 0x0, symName: '-[RFApiClient eventLogProc:eventId:eventTime:completion:]', symObjAddr: 0x5181, symBinAddr: 0x67E6, symSize: 0x1D7 }
+  - { offset: 0xCC404, size: 0x8, addend: 0x0, symName: '___57-[RFApiClient eventLogProc:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x5358, symBinAddr: 0x69BD, symSize: 0x18D }
+  - { offset: 0xCC5A1, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56b, symObjAddr: 0x54E5, symBinAddr: 0x6B4A, symSize: 0x4B }
+  - { offset: 0xCC5EE, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s, symObjAddr: 0x5530, symBinAddr: 0x6B95, symSize: 0x33 }
+  - { offset: 0xCC63D, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForEventLog:eventId:eventTime:]', symObjAddr: 0x5563, symBinAddr: 0x6BC8, symSize: 0x4D9 }
+  - { offset: 0xCC8B4, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyEventLog:eventId:eventTime:completion:]', symObjAddr: 0x5A3C, symBinAddr: 0x70A1, symSize: 0x2B0 }
+  - { offset: 0xCCAE7, size: 0x8, addend: 0x0, symName: '___59-[RFApiClient doOnlyEventLog:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x5CEC, symBinAddr: 0x7351, symSize: 0x129 }
+  - { offset: 0xCCC68, size: 0x8, addend: 0x0, symName: '-[RFApiClient eventLogAfterRegistDevice:eventId:eventTime:completion:]', symObjAddr: 0x5E15, symBinAddr: 0x747A, symSize: 0xE9 }
+  - { offset: 0xCCD7C, size: 0x8, addend: 0x0, symName: '___70-[RFApiClient eventLogAfterRegistDevice:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x5EFE, symBinAddr: 0x7563, symSize: 0xB0 }
+  - { offset: 0xCCEB2, size: 0x8, addend: 0x0, symName: '-[RFApiClient eventLogAfterCreateAuthToken:eventId:eventTime:completion:]', symObjAddr: 0x5FAE, symBinAddr: 0x7613, symSize: 0xE9 }
+  - { offset: 0xCCFC6, size: 0x8, addend: 0x0, symName: '___73-[RFApiClient eventLogAfterCreateAuthToken:eventId:eventTime:completion:]_block_invoke', symObjAddr: 0x6097, symBinAddr: 0x76FC, symSize: 0xB0 }
+  - { offset: 0xCD0FC, size: 0x8, addend: 0x0, symName: '-[RFApiClient saveFailedEventLog:eventId:eventTime:]', symObjAddr: 0x6147, symBinAddr: 0x77AC, symSize: 0x1C8 }
+  - { offset: 0xCD230, size: 0x8, addend: 0x0, symName: '-[RFApiClient loadFailedEventLog]', symObjAddr: 0x630F, symBinAddr: 0x7974, symSize: 0x5E }
+  - { offset: 0xCD288, size: 0x8, addend: 0x0, symName: '-[RFApiClient deleteLastFailedEventLog]', symObjAddr: 0x636D, symBinAddr: 0x79D2, symSize: 0x4B }
+  - { offset: 0xCD2DC, size: 0x8, addend: 0x0, symName: '-[RFApiClient retryFailedEventLog]', symObjAddr: 0x63B8, symBinAddr: 0x7A1D, symSize: 0x126 }
+  - { offset: 0xCD3DB, size: 0x8, addend: 0x0, symName: '___34-[RFApiClient retryFailedEventLog]_block_invoke', symObjAddr: 0x64DE, symBinAddr: 0x7B43, symSize: 0x21 }
+  - { offset: 0xCD454, size: 0x8, addend: 0x0, symName: '-[RFApiClient requestOneshotPostProc:templteId:variables:standbyTime:completion:]', symObjAddr: 0x650E, symBinAddr: 0x7B64, symSize: 0x22A }
+  - { offset: 0xCD63A, size: 0x8, addend: 0x0, symName: '___81-[RFApiClient requestOneshotPostProc:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x6738, symBinAddr: 0x7D8E, symSize: 0x1B8 }
+  - { offset: 0xCD820, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64s72b, symObjAddr: 0x68F0, symBinAddr: 0x7F46, symSize: 0x59 }
+  - { offset: 0xCD885, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64s72s, symObjAddr: 0x6949, symBinAddr: 0x7F9F, symSize: 0x41 }
+  - { offset: 0xCD8EC, size: 0x8, addend: 0x0, symName: '-[RFApiClient requestOneshotPostAfterRegistDevice:templteId:variables:standbyTime:completion:]', symObjAddr: 0x698A, symBinAddr: 0x7FE0, symSize: 0x13E }
+  - { offset: 0xCDA70, size: 0x8, addend: 0x0, symName: '___94-[RFApiClient requestOneshotPostAfterRegistDevice:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x6AC8, symBinAddr: 0x811E, symSize: 0xB1 }
+  - { offset: 0xCDBAB, size: 0x8, addend: 0x0, symName: '-[RFApiClient requestOneshotPostAfterCreateAuthToken:templteId:variables:standbyTime:completion:]', symObjAddr: 0x6B79, symBinAddr: 0x81CF, symSize: 0x13E }
+  - { offset: 0xCDD2F, size: 0x8, addend: 0x0, symName: '___97-[RFApiClient requestOneshotPostAfterCreateAuthToken:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x6CB7, symBinAddr: 0x830D, symSize: 0xB1 }
+  - { offset: 0xCDE6A, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyOneshotPost:templteId:variables:standbyTime:completion:]', symObjAddr: 0x6D68, symBinAddr: 0x83BE, symSize: 0x297 }
+  - { offset: 0xCE0B5, size: 0x8, addend: 0x0, symName: '___76-[RFApiClient doOnlyOneshotPost:templteId:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x6FFF, symBinAddr: 0x8655, symSize: 0x11E }
+  - { offset: 0xCE1FA, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForOneshotPost:templteId:variables:standbyTime:]', symObjAddr: 0x711D, symBinAddr: 0x8773, symSize: 0x7B5 }
+  - { offset: 0xCE5B6, size: 0x8, addend: 0x0, symName: '-[RFApiClient cancelOneshotPostProc:completion:]', symObjAddr: 0x78D2, symBinAddr: 0x8F28, symSize: 0x15B }
+  - { offset: 0xCE6CE, size: 0x8, addend: 0x0, symName: '___48-[RFApiClient cancelOneshotPostProc:completion:]_block_invoke', symObjAddr: 0x7A2D, symBinAddr: 0x9083, symSize: 0x15B }
+  - { offset: 0xCE83D, size: 0x8, addend: 0x0, symName: '-[RFApiClient cancelOneshotPostAfterRegistDevice:completion:]', symObjAddr: 0x7B88, symBinAddr: 0x91DE, symSize: 0xB7 }
+  - { offset: 0xCE8FF, size: 0x8, addend: 0x0, symName: '___61-[RFApiClient cancelOneshotPostAfterRegistDevice:completion:]_block_invoke', symObjAddr: 0x7C3F, symBinAddr: 0x9295, symSize: 0x9B }
+  - { offset: 0xCEA07, size: 0x8, addend: 0x0, symName: '-[RFApiClient cancelOneshotPostAfterCreateAuthToken:completion:]', symObjAddr: 0x7CDA, symBinAddr: 0x9330, symSize: 0xB7 }
+  - { offset: 0xCEAC9, size: 0x8, addend: 0x0, symName: '___64-[RFApiClient cancelOneshotPostAfterCreateAuthToken:completion:]_block_invoke', symObjAddr: 0x7D91, symBinAddr: 0x93E7, symSize: 0x9B }
+  - { offset: 0xCEBD1, size: 0x8, addend: 0x0, symName: '-[RFApiClient doOnlyCancelOneshotPost:completion:]', symObjAddr: 0x7E2C, symBinAddr: 0x9482, symSize: 0x23C }
+  - { offset: 0xCED8A, size: 0x8, addend: 0x0, symName: '___50-[RFApiClient doOnlyCancelOneshotPost:completion:]_block_invoke', symObjAddr: 0x8068, symBinAddr: 0x96BE, symSize: 0xFB }
+  - { offset: 0xCEEB7, size: 0x8, addend: 0x0, symName: '-[RFApiClient connectorForCancelOneshotPost:]', symObjAddr: 0x8163, symBinAddr: 0x97B9, symSize: 0x3D8 }
+  - { offset: 0xCF0A0, size: 0x8, addend: 0x0, symName: '-[RFApiClient encodeExceptionToString:]', symObjAddr: 0x853B, symBinAddr: 0x9B91, symSize: 0x20 }
+  - { offset: 0xCF0E3, size: 0x8, addend: 0x0, symName: '-[RFApiClient lockRegistDevice]', symObjAddr: 0x855B, symBinAddr: 0x9BB1, symSize: 0xD }
+  - { offset: 0xCF113, size: 0x8, addend: 0x0, symName: '-[RFApiClient unlockRegistDevice]', symObjAddr: 0x8568, symBinAddr: 0x9BBE, symSize: 0xD }
+  - { offset: 0xCF143, size: 0x8, addend: 0x0, symName: '-[RFApiClient tryRegistDevice]', symObjAddr: 0x8575, symBinAddr: 0x9BCB, symSize: 0xE }
+  - { offset: 0xCF177, size: 0x8, addend: 0x0, symName: '-[RFApiClient lockRegistSegment]', symObjAddr: 0x8583, symBinAddr: 0x9BD9, symSize: 0xD }
+  - { offset: 0xCF1A7, size: 0x8, addend: 0x0, symName: '-[RFApiClient unlockRegistSegment]', symObjAddr: 0x8590, symBinAddr: 0x9BE6, symSize: 0xD }
+  - { offset: 0xCF1D7, size: 0x8, addend: 0x0, symName: '-[RFApiClient tryRegistSegment]', symObjAddr: 0x859D, symBinAddr: 0x9BF3, symSize: 0xE }
+  - { offset: 0xCF20B, size: 0x8, addend: 0x0, symName: '-[RFApiClient lockUpdateDevice]', symObjAddr: 0x85AB, symBinAddr: 0x9C01, symSize: 0xD }
+  - { offset: 0xCF23B, size: 0x8, addend: 0x0, symName: '-[RFApiClient unlockUpdateDevice]', symObjAddr: 0x85B8, symBinAddr: 0x9C0E, symSize: 0xD }
+  - { offset: 0xCF26B, size: 0x8, addend: 0x0, symName: '-[RFApiClient tryUpdateDevice]', symObjAddr: 0x85C5, symBinAddr: 0x9C1B, symSize: 0xE }
+  - { offset: 0xCF29F, size: 0x8, addend: 0x0, symName: '-[RFApiClient .cxx_destruct]', symObjAddr: 0x85D3, symBinAddr: 0x9C29, symSize: 0x33 }
+  - { offset: 0xD0756, size: 0x8, addend: 0x0, symName: '-[RFAlertAction initWithTitle:tag:style:handler:]', symObjAddr: 0x0, symBinAddr: 0x9C5C, symSize: 0xB8 }
+  - { offset: 0xD0861, size: 0x8, addend: 0x0, symName: '-[RFAlertAction initWithTitle:tag:style:handler:]', symObjAddr: 0x0, symBinAddr: 0x9C5C, symSize: 0xB8 }
+  - { offset: 0xD0914, size: 0x8, addend: 0x0, symName: '-[RFAlertAction executeHandler]', symObjAddr: 0xB8, symBinAddr: 0x9D14, symSize: 0x19 }
+  - { offset: 0xD0953, size: 0x8, addend: 0x0, symName: '-[RFAlertAction getTitle]', symObjAddr: 0xD1, symBinAddr: 0x9D2D, symSize: 0xE }
+  - { offset: 0xD098A, size: 0x8, addend: 0x0, symName: '-[RFAlertAction getTag]', symObjAddr: 0xDF, symBinAddr: 0x9D3B, symSize: 0x9 }
+  - { offset: 0xD09BF, size: 0x8, addend: 0x0, symName: '-[RFAlertAction getStyle]', symObjAddr: 0xE8, symBinAddr: 0x9D44, symSize: 0x9 }
+  - { offset: 0xD09F4, size: 0x8, addend: 0x0, symName: '-[RFAlertAction .cxx_destruct]', symObjAddr: 0xF1, symBinAddr: 0x9D4D, symSize: 0x28 }
+  - { offset: 0xD0A96, size: 0x8, addend: 0x0, symName: '-[RFAlertController viewDidLoad]', symObjAddr: 0x0, symBinAddr: 0x9D80, symSize: 0xFD }
+  - { offset: 0xD0B78, size: 0x8, addend: 0x0, symName: '-[RFAlertController viewDidLoad]', symObjAddr: 0x0, symBinAddr: 0x9D80, symSize: 0xFD }
+  - { offset: 0xD0C6E, size: 0x8, addend: 0x0, symName: '-[RFAlertController initWithApplication:title:message:]', symObjAddr: 0xFD, symBinAddr: 0x9E7D, symSize: 0x1B7 }
+  - { offset: 0xD0DD9, size: 0x8, addend: 0x0, symName: '___55-[RFAlertController initWithApplication:title:message:]_block_invoke', symObjAddr: 0x2B4, symBinAddr: 0xA034, symSize: 0x6 }
+  - { offset: 0xD0E0C, size: 0x8, addend: 0x0, symName: '-[RFAlertController onClickButtonAtIndex:]', symObjAddr: 0x2BA, symBinAddr: 0xA03A, symSize: 0x34 }
+  - { offset: 0xD0E63, size: 0x8, addend: 0x0, symName: '-[RFAlertController addView:]', symObjAddr: 0x2EE, symBinAddr: 0xA06E, symSize: 0x2B }
+  - { offset: 0xD0EB6, size: 0x8, addend: 0x0, symName: '-[RFAlertController addImage:]', symObjAddr: 0x319, symBinAddr: 0xA099, symSize: 0x2B }
+  - { offset: 0xD0F09, size: 0x8, addend: 0x0, symName: '-[RFAlertController present:completeHandler:]', symObjAddr: 0x344, symBinAddr: 0xA0C4, symSize: 0x15A }
+  - { offset: 0xD1028, size: 0x8, addend: 0x0, symName: '-[RFAlertController getRootViewController:]', symObjAddr: 0x49E, symBinAddr: 0xA21E, symSize: 0x333 }
+  - { offset: 0xD11E5, size: 0x8, addend: 0x0, symName: '-[RFAlertController foregroundActiveWindowScene:]', symObjAddr: 0x7D1, symBinAddr: 0xA551, symSize: 0x239 }
+  - { offset: 0xD1316, size: 0x8, addend: 0x0, symName: '-[RFAlertController present:]', symObjAddr: 0xA0A, symBinAddr: 0xA78A, symSize: 0x86 }
+  - { offset: 0xD13B1, size: 0x8, addend: 0x0, symName: '-[RFAlertController adjustView]', symObjAddr: 0xA90, symBinAddr: 0xA810, symSize: 0x290 }
+  - { offset: 0xD150B, size: 0x8, addend: 0x0, symName: '-[RFAlertController didReceiveMemoryWarning]', symObjAddr: 0xD20, symBinAddr: 0xAAA0, symSize: 0x2F }
+  - { offset: 0xD153E, size: 0x8, addend: 0x0, symName: '-[RFAlertController .cxx_destruct]', symObjAddr: 0xD4F, symBinAddr: 0xAACF, symSize: 0x51 }
+  - { offset: 0xD16AF, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getAPSWithAttemptContent:]', symObjAddr: 0x0, symBinAddr: 0xAB20, symSize: 0x5F }
+  - { offset: 0xD16BD, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getAPSWithAttemptContent:]', symObjAddr: 0x0, symBinAddr: 0xAB20, symSize: 0x5F }
+  - { offset: 0xD1738, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getAPS:]', symObjAddr: 0x5F, symBinAddr: 0xAB7F, symSize: 0x1C }
+  - { offset: 0xD1787, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getCustomWithAttemptContent:]', symObjAddr: 0x7B, symBinAddr: 0xAB9B, symSize: 0x5F }
+  - { offset: 0xD1802, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getCustom:]', symObjAddr: 0xDA, symBinAddr: 0xABFA, symSize: 0x1C }
+  - { offset: 0xD1851, size: 0x8, addend: 0x0, symName: '+[ParseUserInfo getUserInfo:]', symObjAddr: 0xF6, symBinAddr: 0xAC16, symSize: 0x31 }
+  - { offset: 0xD190A, size: 0x8, addend: 0x0, symName: '+[Reachability reachabilityWithHostName:]', symObjAddr: 0x0, symBinAddr: 0xAC47, symSize: 0x7D }
+  - { offset: 0xD1924, size: 0x8, addend: 0x0, symName: _kReachabilityChangedNotification, symObjAddr: 0x498, symBinAddr: 0x340C0, symSize: 0x0 }
+  - { offset: 0xD198D, size: 0x8, addend: 0x0, symName: '+[Reachability reachabilityWithHostName:]', symObjAddr: 0x0, symBinAddr: 0xAC47, symSize: 0x7D }
+  - { offset: 0xD1A58, size: 0x8, addend: 0x0, symName: '+[Reachability reachabilityWithAddress:]', symObjAddr: 0x7D, symBinAddr: 0xACC4, symSize: 0x5D }
+  - { offset: 0xD1AFE, size: 0x8, addend: 0x0, symName: '+[Reachability reachabilityForInternetConnection]', symObjAddr: 0xDA, symBinAddr: 0xAD21, symSize: 0x5C }
+  - { offset: 0xD1B50, size: 0x8, addend: 0x0, symName: '-[Reachability startNotifier]', symObjAddr: 0x136, symBinAddr: 0xAD7D, symSize: 0x68 }
+  - { offset: 0xD1C22, size: 0x8, addend: 0x0, symName: _ReachabilityCallback, symObjAddr: 0x19E, symBinAddr: 0xADE5, symSize: 0x74 }
+  - { offset: 0xD1CAD, size: 0x8, addend: 0x0, symName: '-[Reachability stopNotifier]', symObjAddr: 0x212, symBinAddr: 0xAE59, symSize: 0x36 }
+  - { offset: 0xD1D19, size: 0x8, addend: 0x0, symName: '-[Reachability dealloc]', symObjAddr: 0x248, symBinAddr: 0xAE8F, symSize: 0x4C }
+  - { offset: 0xD1D88, size: 0x8, addend: 0x0, symName: '-[Reachability networkStatusForFlags:]', symObjAddr: 0x294, symBinAddr: 0xAEDB, symSize: 0xEF }
+  - { offset: 0xD1E19, size: 0x8, addend: 0x0, symName: '-[Reachability connectionRequired]', symObjAddr: 0x383, symBinAddr: 0xAFCA, symSize: 0x2C }
+  - { offset: 0xD1E8B, size: 0x8, addend: 0x0, symName: '-[Reachability currentReachabilityStatus]', symObjAddr: 0x3AF, symBinAddr: 0xAFF6, symSize: 0x38 }
+  - { offset: 0xD1FA2, size: 0x8, addend: 0x0, symName: '-[RFViewModel getAttachmentUrl]', symObjAddr: 0x0, symBinAddr: 0xB02E, symSize: 0xE }
+  - { offset: 0xD2084, size: 0x8, addend: 0x0, symName: '-[RFViewModel getAttachmentUrl]', symObjAddr: 0x0, symBinAddr: 0xB02E, symSize: 0xE }
+  - { offset: 0xD20BB, size: 0x8, addend: 0x0, symName: '-[RFViewModel getImageUrl]', symObjAddr: 0xE, symBinAddr: 0xB03C, symSize: 0xE }
+  - { offset: 0xD20F2, size: 0x8, addend: 0x0, symName: '-[RFViewModel getGifUrl]', symObjAddr: 0x1C, symBinAddr: 0xB04A, symSize: 0xE }
+  - { offset: 0xD2129, size: 0x8, addend: 0x0, symName: '-[RFViewModel getMovieUrl]', symObjAddr: 0x2A, symBinAddr: 0xB058, symSize: 0xE }
+  - { offset: 0xD2160, size: 0x8, addend: 0x0, symName: '-[RFViewModel getSharedImageUrl]', symObjAddr: 0x38, symBinAddr: 0xB066, symSize: 0xE }
+  - { offset: 0xD2197, size: 0x8, addend: 0x0, symName: '-[RFViewModel getSharedGifUrl]', symObjAddr: 0x46, symBinAddr: 0xB074, symSize: 0xE }
+  - { offset: 0xD21CE, size: 0x8, addend: 0x0, symName: '-[RFViewModel getSharedMovieUrl]', symObjAddr: 0x54, symBinAddr: 0xB082, symSize: 0xE }
+  - { offset: 0xD2205, size: 0x8, addend: 0x0, symName: '-[RFViewModel getMediaType]', symObjAddr: 0x62, symBinAddr: 0xB090, symSize: 0x9 }
+  - { offset: 0xD223A, size: 0x8, addend: 0x0, symName: '-[RFViewModel setMediaType:]', symObjAddr: 0x6B, symBinAddr: 0xB099, symSize: 0x9 }
+  - { offset: 0xD2279, size: 0x8, addend: 0x0, symName: '-[RFViewModel initialize:]', symObjAddr: 0x74, symBinAddr: 0xB0A2, symSize: 0x111 }
+  - { offset: 0xD2360, size: 0x8, addend: 0x0, symName: '-[RFViewModel setSharedImageUrl:]', symObjAddr: 0x185, symBinAddr: 0xB1B3, symSize: 0x1BE }
+  - { offset: 0xD24F3, size: 0x8, addend: 0x0, symName: '-[RFViewModel setSharedGifUrl:]', symObjAddr: 0x343, symBinAddr: 0xB371, symSize: 0x190 }
+  - { offset: 0xD266A, size: 0x8, addend: 0x0, symName: '-[RFViewModel setSharedMovieUrl:]', symObjAddr: 0x4D3, symBinAddr: 0xB501, symSize: 0x190 }
+  - { offset: 0xD27E1, size: 0x8, addend: 0x0, symName: '-[RFViewModel setAttachmentUrl:]', symObjAddr: 0x663, symBinAddr: 0xB691, symSize: 0x8B }
+  - { offset: 0xD287C, size: 0x8, addend: 0x0, symName: '-[RFViewModel confirmMediaType:]', symObjAddr: 0x6EE, symBinAddr: 0xB71C, symSize: 0x2D0 }
+  - { offset: 0xD2AD8, size: 0x8, addend: 0x0, symName: '-[RFViewModel useAttachmentUrl:]', symObjAddr: 0x9BE, symBinAddr: 0xB9EC, symSize: 0xF1 }
+  - { offset: 0xD2BC7, size: 0x8, addend: 0x0, symName: '-[RFViewModel .cxx_destruct]', symObjAddr: 0xAAF, symBinAddr: 0xBADD, symSize: 0x6A }
+  - { offset: 0xD2CD1, size: 0x8, addend: 0x0, symName: '-[RFLogoView create]', symObjAddr: 0x0, symBinAddr: 0xBB47, symSize: 0x13C }
+  - { offset: 0xD2CF0, size: 0x8, addend: 0x0, symName: '-[RFLogoView create]', symObjAddr: 0x0, symBinAddr: 0xBB47, symSize: 0x13C }
+  - { offset: 0xD2DB3, size: 0x8, addend: 0x0, symName: '-[RFLogoView updateFrame:]', symObjAddr: 0x13C, symBinAddr: 0xBC83, symSize: 0x51 }
+  - { offset: 0xD2E4C, size: 0x8, addend: 0x0, symName: '-[RFContent initWithUNNotificationContent:receivedDate:]', symObjAddr: 0x0, symBinAddr: 0xBCD4, symSize: 0x7F9 }
+  - { offset: 0xD303D, size: 0x8, addend: 0x0, symName: '-[RFContent initWithUNNotificationContent:receivedDate:]', symObjAddr: 0x0, symBinAddr: 0xBCD4, symSize: 0x7F9 }
+  - { offset: 0xD34E0, size: 0x8, addend: 0x0, symName: '-[RFContent convertToUNNotificationContent]', symObjAddr: 0x7F9, symBinAddr: 0xC4CD, symSize: 0xA09 }
+  - { offset: 0xD3A29, size: 0x8, addend: 0x0, symName: '-[RFContent hasImage]', symObjAddr: 0x1202, symBinAddr: 0xCED6, symSize: 0x9F }
+  - { offset: 0xD3AB4, size: 0x8, addend: 0x0, symName: '-[RFContent hasGif]', symObjAddr: 0x12A1, symBinAddr: 0xCF75, symSize: 0x9F }
+  - { offset: 0xD3B3F, size: 0x8, addend: 0x0, symName: '-[RFContent hasMovie]', symObjAddr: 0x1340, symBinAddr: 0xD014, symSize: 0x9F }
+  - { offset: 0xD3BCA, size: 0x8, addend: 0x0, symName: '-[RFContent isEvent]', symObjAddr: 0x13DF, symBinAddr: 0xD0B3, symSize: 0x80 }
+  - { offset: 0xD3C3D, size: 0x8, addend: 0x0, symName: '-[RFContent title]', symObjAddr: 0x145F, symBinAddr: 0xD133, symSize: 0xA }
+  - { offset: 0xD3C72, size: 0x8, addend: 0x0, symName: '-[RFContent body]', symObjAddr: 0x1469, symBinAddr: 0xD13D, symSize: 0xA }
+  - { offset: 0xD3CA7, size: 0x8, addend: 0x0, symName: '-[RFContent notificationId]', symObjAddr: 0x1473, symBinAddr: 0xD147, symSize: 0xA }
+  - { offset: 0xD3CDC, size: 0x8, addend: 0x0, symName: '-[RFContent eventId]', symObjAddr: 0x147D, symBinAddr: 0xD151, symSize: 0xA }
+  - { offset: 0xD3D11, size: 0x8, addend: 0x0, symName: '-[RFContent imagePath]', symObjAddr: 0x1487, symBinAddr: 0xD15B, symSize: 0xA }
+  - { offset: 0xD3D46, size: 0x8, addend: 0x0, symName: '-[RFContent receivedDate]', symObjAddr: 0x1491, symBinAddr: 0xD165, symSize: 0xA }
+  - { offset: 0xD3D7B, size: 0x8, addend: 0x0, symName: '-[RFContent notificationDate]', symObjAddr: 0x149B, symBinAddr: 0xD16F, symSize: 0xA }
+  - { offset: 0xD3DB0, size: 0x8, addend: 0x0, symName: '-[RFContent extendedProperty]', symObjAddr: 0x14A5, symBinAddr: 0xD179, symSize: 0xA }
+  - { offset: 0xD3DE5, size: 0x8, addend: 0x0, symName: '-[RFContent actionButtons]', symObjAddr: 0x14AF, symBinAddr: 0xD183, symSize: 0xA }
+  - { offset: 0xD3E1A, size: 0x8, addend: 0x0, symName: '-[RFContent type]', symObjAddr: 0x14B9, symBinAddr: 0xD18D, symSize: 0xA }
+  - { offset: 0xD3E4F, size: 0x8, addend: 0x0, symName: '-[RFContent imageUrl]', symObjAddr: 0x14C3, symBinAddr: 0xD197, symSize: 0xA }
+  - { offset: 0xD3E84, size: 0x8, addend: 0x0, symName: '-[RFContent gifUrl]', symObjAddr: 0x14CD, symBinAddr: 0xD1A1, symSize: 0xA }
+  - { offset: 0xD3EB9, size: 0x8, addend: 0x0, symName: '-[RFContent gifPath]', symObjAddr: 0x14D7, symBinAddr: 0xD1AB, symSize: 0xA }
+  - { offset: 0xD3EEE, size: 0x8, addend: 0x0, symName: '-[RFContent movieUrl]', symObjAddr: 0x14E1, symBinAddr: 0xD1B5, symSize: 0xA }
+  - { offset: 0xD3F23, size: 0x8, addend: 0x0, symName: '-[RFContent moviePath]', symObjAddr: 0x14EB, symBinAddr: 0xD1BF, symSize: 0xA }
+  - { offset: 0xD3F58, size: 0x8, addend: 0x0, symName: '-[RFContent .cxx_destruct]', symObjAddr: 0x14F5, symBinAddr: 0xD1C9, symSize: 0xAC }
+  - { offset: 0xD4058, size: 0x8, addend: 0x0, symName: '-[NotificationHistory addContent:]', symObjAddr: 0x0, symBinAddr: 0xD275, symSize: 0x305 }
+  - { offset: 0xD40B1, size: 0x8, addend: 0x0, symName: '-[NotificationHistory addContent:]', symObjAddr: 0x0, symBinAddr: 0xD275, symSize: 0x305 }
+  - { offset: 0xD42CC, size: 0x8, addend: 0x0, symName: '-[NotificationHistory getLatestContent]', symObjAddr: 0x305, symBinAddr: 0xD57A, symSize: 0x1DE }
+  - { offset: 0xD442F, size: 0x8, addend: 0x0, symName: '-[NotificationHistory getHistory]', symObjAddr: 0x4E3, symBinAddr: 0xD758, symSize: 0x3BC }
+  - { offset: 0xD4618, size: 0x8, addend: 0x0, symName: '-[NotificationHistory removeContent:]', symObjAddr: 0x89F, symBinAddr: 0xDB14, symSize: 0x453 }
+  - { offset: 0xD4AA5, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil makeQueryForKey:]', symObjAddr: 0x0, symBinAddr: 0xDF67, symSize: 0xFC }
+  - { offset: 0xD4AC7, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil makeQueryForKey:]', symObjAddr: 0x0, symBinAddr: 0xDF67, symSize: 0xFC }
+  - { offset: 0xD4BA2, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil loadForKey:]', symObjAddr: 0xFC, symBinAddr: 0xE063, symSize: 0x12B }
+  - { offset: 0xD4CEA, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil saveForKey:value:]', symObjAddr: 0x227, symBinAddr: 0xE18E, symSize: 0x137 }
+  - { offset: 0xD4E58, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil deleteForKey:]', symObjAddr: 0x35E, symBinAddr: 0xE2C5, symSize: 0x3C }
+  - { offset: 0xD4EE0, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil saveDeviceId:]', symObjAddr: 0x39A, symBinAddr: 0xE301, symSize: 0x23 }
+  - { offset: 0xD4F2B, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil loadDeviceId]', symObjAddr: 0x3BD, symBinAddr: 0xE324, symSize: 0x20 }
+  - { offset: 0xD4F6A, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil deleteDeviceId]', symObjAddr: 0x3DD, symBinAddr: 0xE344, symSize: 0x20 }
+  - { offset: 0xD4FA5, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil saveAuthToken:]', symObjAddr: 0x3FD, symBinAddr: 0xE364, symSize: 0x23 }
+  - { offset: 0xD4FF0, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil loadAuthToken]', symObjAddr: 0x420, symBinAddr: 0xE387, symSize: 0x20 }
+  - { offset: 0xD502F, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil deleteAuthToken]', symObjAddr: 0x440, symBinAddr: 0xE3A7, symSize: 0x20 }
+  - { offset: 0xD506A, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil saveDeviceToken:]', symObjAddr: 0x460, symBinAddr: 0xE3C7, symSize: 0x23 }
+  - { offset: 0xD50B5, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil loadDeviceToken]', symObjAddr: 0x483, symBinAddr: 0xE3EA, symSize: 0x20 }
+  - { offset: 0xD50F4, size: 0x8, addend: 0x0, symName: '+[RFKeychainUtil deleteDeviceToken]', symObjAddr: 0x4A3, symBinAddr: 0xE40A, symSize: 0x20 }
+  - { offset: 0xD5194, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController init]', symObjAddr: 0x0, symBinAddr: 0xE430, symSize: 0x13E }
+  - { offset: 0xD54B4, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController init]', symObjAddr: 0x0, symBinAddr: 0xE430, symSize: 0x13E }
+  - { offset: 0xD559E, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController initWithContent:]', symObjAddr: 0x13E, symBinAddr: 0xE56E, symSize: 0xFE }
+  - { offset: 0xD5639, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController loadView]', symObjAddr: 0x23C, symBinAddr: 0xE66C, symSize: 0x1D }
+  - { offset: 0xD5676, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController setContent:]', symObjAddr: 0x259, symBinAddr: 0xE689, symSize: 0x4A }
+  - { offset: 0xD56DD, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController setTintColor:]', symObjAddr: 0x2A3, symBinAddr: 0xE6D3, symSize: 0x1D }
+  - { offset: 0xD572A, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController present:completeHandler:]', symObjAddr: 0x2C0, symBinAddr: 0xE6F0, symSize: 0xA4 }
+  - { offset: 0xD57C5, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController dismiss]', symObjAddr: 0x364, symBinAddr: 0xE794, symSize: 0x19 }
+  - { offset: 0xD5802, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController viewDidLoad]', symObjAddr: 0x37D, symBinAddr: 0xE7AD, symSize: 0xBD }
+  - { offset: 0xD587D, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController viewWillTransitionToSize:withTransitionCoordinator:]', symObjAddr: 0x43A, symBinAddr: 0xE86A, symSize: 0x59 }
+  - { offset: 0xD58D8, size: 0x8, addend: 0x0, symName: '___83-[RFNotificationViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke', symObjAddr: 0x493, symBinAddr: 0xE8C3, symSize: 0x6 }
+  - { offset: 0xD590B, size: 0x8, addend: 0x0, symName: '___83-[RFNotificationViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke_2', symObjAddr: 0x499, symBinAddr: 0xE8C9, symSize: 0x21 }
+  - { offset: 0xD5962, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController onButtonTapped:]', symObjAddr: 0x4D8, symBinAddr: 0xE8F8, symSize: 0x183 }
+  - { offset: 0xD5A20, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController onCloseSelected:]', symObjAddr: 0x65B, symBinAddr: 0xEA7B, symSize: 0x36 }
+  - { offset: 0xD5A77, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController contentSizeHandler:]', symObjAddr: 0x691, symBinAddr: 0xEAB1, symSize: 0x3D }
+  - { offset: 0xD5ADA, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController mediaPlayingPaused]', symObjAddr: 0x6CE, symBinAddr: 0xEAEE, symSize: 0x6 }
+  - { offset: 0xD5B09, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController mediaPlayingStarted]', symObjAddr: 0x6D4, symBinAddr: 0xEAF4, symSize: 0x6 }
+  - { offset: 0xD5B38, size: 0x8, addend: 0x0, symName: '-[RFNotificationViewController .cxx_destruct]', symObjAddr: 0x6DA, symBinAddr: 0xEAFA, symSize: 0x42 }
+  - { offset: 0xD5B6B, size: 0x8, addend: 0x0, symName: '-[RFNotificationView init]', symObjAddr: 0x71C, symBinAddr: 0xEB3C, symSize: 0x2F }
+  - { offset: 0xD5BA2, size: 0x8, addend: 0x0, symName: '-[RFNotificationView initWithRFContent:]', symObjAddr: 0x74B, symBinAddr: 0xEB6B, symSize: 0x8B }
+  - { offset: 0xD5C31, size: 0x8, addend: 0x0, symName: '-[RFNotificationView layoutSubviews]', symObjAddr: 0x7D6, symBinAddr: 0xEBF6, symSize: 0xD7 }
+  - { offset: 0xD5CAC, size: 0x8, addend: 0x0, symName: '-[RFNotificationView adjustBaseView]', symObjAddr: 0x8AD, symBinAddr: 0xECCD, symSize: 0x12D }
+  - { offset: 0xD5D4B, size: 0x8, addend: 0x0, symName: '-[RFNotificationView adjustMediaView]', symObjAddr: 0x9DA, symBinAddr: 0xEDFA, symSize: 0x73A }
+  - { offset: 0xD5E44, size: 0x8, addend: 0x0, symName: '-[RFNotificationView adjustMessageView:]', symObjAddr: 0x1114, symBinAddr: 0xF534, symSize: 0x4C0 }
+  - { offset: 0xD5F3F, size: 0x8, addend: 0x0, symName: '-[RFNotificationView layoutActionButtons]', symObjAddr: 0x15D4, symBinAddr: 0xF9F4, symSize: 0x725 }
+  - { offset: 0xD619B, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createViews]', symObjAddr: 0x1CF9, symBinAddr: 0x10119, symSize: 0x13A }
+  - { offset: 0xD6288, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createBaseView]', symObjAddr: 0x1E33, symBinAddr: 0x10253, symSize: 0x10B }
+  - { offset: 0xD637D, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createMediaView]', symObjAddr: 0x1F3E, symBinAddr: 0x1035E, symSize: 0x1E9 }
+  - { offset: 0xD64D5, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createMessageView]', symObjAddr: 0x2127, symBinAddr: 0x10547, symSize: 0x2A8 }
+  - { offset: 0xD6625, size: 0x8, addend: 0x0, symName: '___39-[RFNotificationView createMessageView]_block_invoke', symObjAddr: 0x23CF, symBinAddr: 0x107EF, symSize: 0x6 }
+  - { offset: 0xD665B, size: 0x8, addend: 0x0, symName: '-[RFNotificationView createButtons]', symObjAddr: 0x23D5, symBinAddr: 0x107F5, symSize: 0x885 }
+  - { offset: 0xD6AF0, size: 0x8, addend: 0x0, symName: '-[RFNotificationView baseRect]', symObjAddr: 0x2C5A, symBinAddr: 0x1107A, symSize: 0x171 }
+  - { offset: 0xD6BD9, size: 0x8, addend: 0x0, symName: '-[RFNotificationView resizeViews]', symObjAddr: 0x2DCB, symBinAddr: 0x111EB, symSize: 0x1B4 }
+  - { offset: 0xD6CD4, size: 0x8, addend: 0x0, symName: '-[RFNotificationView getMessageViewMaxHeight:buttonCount:]', symObjAddr: 0x2F7F, symBinAddr: 0x1139F, symSize: 0x6D }
+  - { offset: 0xD6D4C, size: 0x8, addend: 0x0, symName: '-[RFNotificationView getMediaViewMaxHeight]', symObjAddr: 0x2FEC, symBinAddr: 0x1140C, symSize: 0x3B }
+  - { offset: 0xD6D95, size: 0x8, addend: 0x0, symName: '-[RFNotificationView parentController]', symObjAddr: 0x3027, symBinAddr: 0x11447, symSize: 0xC1 }
+  - { offset: 0xD6E4A, size: 0x8, addend: 0x0, symName: '-[RFNotificationView imageWithColor:]', symObjAddr: 0x30E8, symBinAddr: 0x11508, symSize: 0xB5 }
+  - { offset: 0xD6FE0, size: 0x8, addend: 0x0, symName: '-[RFNotificationView rfContent]', symObjAddr: 0x319D, symBinAddr: 0x115BD, symSize: 0x11 }
+  - { offset: 0xD7015, size: 0x8, addend: 0x0, symName: '-[RFNotificationView setRfContent:]', symObjAddr: 0x31AE, symBinAddr: 0x115CE, symSize: 0x14 }
+  - { offset: 0xD7056, size: 0x8, addend: 0x0, symName: '-[RFNotificationView tintColor]', symObjAddr: 0x31C2, symBinAddr: 0x115E2, symSize: 0x11 }
+  - { offset: 0xD708B, size: 0x8, addend: 0x0, symName: '-[RFNotificationView setTintColor:]', symObjAddr: 0x31D3, symBinAddr: 0x115F3, symSize: 0x14 }
+  - { offset: 0xD70CC, size: 0x8, addend: 0x0, symName: '-[RFNotificationView .cxx_destruct]', symObjAddr: 0x31E7, symBinAddr: 0x11607, symSize: 0x99 }
+  - { offset: 0xD73DD, size: 0x8, addend: 0x0, symName: '+[ConfirmConnectingWiFi isReachableViaWiFi]', symObjAddr: 0x0, symBinAddr: 0x116A0, symSize: 0x50 }
+  - { offset: 0xD740D, size: 0x8, addend: 0x0, symName: '+[ConfirmConnectingWiFi isReachableViaWiFi]', symObjAddr: 0x0, symBinAddr: 0x116A0, symSize: 0x50 }
+  - { offset: 0xD7484, size: 0x8, addend: 0x0, symName: '+[ConfirmConnectingWiFi isWifiMode:]', symObjAddr: 0x50, symBinAddr: 0x116F0, symSize: 0x5B }
+  - { offset: 0xD750B, size: 0x8, addend: 0x0, symName: '+[ConfirmConnectingWiFi useWifiMode:]', symObjAddr: 0xAB, symBinAddr: 0x1174B, symSize: 0x3B }
+  - { offset: 0xD7610, size: 0x8, addend: 0x0, symName: '-[RFImageView layoutSubviews]', symObjAddr: 0x0, symBinAddr: 0x11786, symSize: 0x95 }
+  - { offset: 0xD7677, size: 0x8, addend: 0x0, symName: '-[RFImageView layoutSubviews]', symObjAddr: 0x0, symBinAddr: 0x11786, symSize: 0x95 }
+  - { offset: 0xD76B6, size: 0x8, addend: 0x0, symName: '-[RFImageView create:delegate:]', symObjAddr: 0x95, symBinAddr: 0x1181B, symSize: 0x29A }
+  - { offset: 0xD7873, size: 0x8, addend: 0x0, symName: '___31-[RFImageView create:delegate:]_block_invoke', symObjAddr: 0x32F, symBinAddr: 0x11AB5, symSize: 0x79 }
+  - { offset: 0xD78FA, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40w, symObjAddr: 0x3A8, symBinAddr: 0x11B2E, symSize: 0x2E }
+  - { offset: 0xD792F, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40w, symObjAddr: 0x3D6, symBinAddr: 0x11B5C, symSize: 0x22 }
+  - { offset: 0xD795A, size: 0x8, addend: 0x0, symName: '-[RFImageView loadAtachmentImage:]', symObjAddr: 0x3F8, symBinAddr: 0x11B7E, symSize: 0x67 }
+  - { offset: 0xD79D1, size: 0x8, addend: 0x0, symName: '-[RFImageView loadImage:]', symObjAddr: 0x45F, symBinAddr: 0x11BE5, symSize: 0x129 }
+  - { offset: 0xD7AA0, size: 0x8, addend: 0x0, symName: '___25-[RFImageView loadImage:]_block_invoke', symObjAddr: 0x588, symBinAddr: 0x11D0E, symSize: 0xCC }
+  - { offset: 0xD7B6B, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48w, symObjAddr: 0x654, symBinAddr: 0x11DDA, symSize: 0x42 }
+  - { offset: 0xD7BAC, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48w, symObjAddr: 0x696, symBinAddr: 0x11E1C, symSize: 0x2E }
+  - { offset: 0xD7BE3, size: 0x8, addend: 0x0, symName: '-[RFImageView adjustment:]', symObjAddr: 0x6C4, symBinAddr: 0x11E4A, symSize: 0x89 }
+  - { offset: 0xD7C8C, size: 0x8, addend: 0x0, symName: '___26-[RFImageView adjustment:]_block_invoke', symObjAddr: 0x74D, symBinAddr: 0x11ED3, symSize: 0x341 }
+  - { offset: 0xD7DAA, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s, symObjAddr: 0xA8E, symBinAddr: 0x12214, symSize: 0x25 }
+  - { offset: 0xD7DEB, size: 0x8, addend: 0x0, symName: '-[RFImageView setCustomPlayButton]', symObjAddr: 0xAD8, symBinAddr: 0x12239, symSize: 0x16E }
+  - { offset: 0xD7EC2, size: 0x8, addend: 0x0, symName: '-[RFImageView getPlayButton]', symObjAddr: 0xC46, symBinAddr: 0x123A7, symSize: 0x15 }
+  - { offset: 0xD7EF9, size: 0x8, addend: 0x0, symName: '-[RFImageView resizeView:]', symObjAddr: 0xC5B, symBinAddr: 0x123BC, symSize: 0x2E6 }
+  - { offset: 0xD8043, size: 0x8, addend: 0x0, symName: '-[RFImageView .cxx_destruct]', symObjAddr: 0xF41, symBinAddr: 0x126A2, symSize: 0x2F }
+  - { offset: 0xD829E, size: 0x8, addend: 0x0, symName: '-[RFAction getTitle]', symObjAddr: 0x0, symBinAddr: 0x126D1, symSize: 0xE }
+  - { offset: 0xD82FE, size: 0x8, addend: 0x0, symName: '-[RFAction getTitle]', symObjAddr: 0x0, symBinAddr: 0x126D1, symSize: 0xE }
+  - { offset: 0xD8335, size: 0x8, addend: 0x0, symName: '-[RFAction getType]', symObjAddr: 0xE, symBinAddr: 0x126DF, symSize: 0xE }
+  - { offset: 0xD836C, size: 0x8, addend: 0x0, symName: '-[RFAction getValue]', symObjAddr: 0x1C, symBinAddr: 0x126ED, symSize: 0xE }
+  - { offset: 0xD83A3, size: 0x8, addend: 0x0, symName: '-[RFAction getIndex]', symObjAddr: 0x2A, symBinAddr: 0x126FB, symSize: 0xA }
+  - { offset: 0xD83D8, size: 0x8, addend: 0x0, symName: '-[RFAction initWithTitle:type:value:index:]', symObjAddr: 0x34, symBinAddr: 0x12705, symSize: 0xC7 }
+  - { offset: 0xD8497, size: 0x8, addend: 0x0, symName: '-[RFAction .cxx_destruct]', symObjAddr: 0xFB, symBinAddr: 0x127CC, symSize: 0x33 }
+  - { offset: 0xD853E, size: 0x8, addend: 0x0, symName: '+[RFApp isSandbox]', symObjAddr: 0x0, symBinAddr: 0x12800, symSize: 0xC }
+  - { offset: 0xD8558, size: 0x8, addend: 0x0, symName: _RF_ID, symObjAddr: 0x1FB0, symBinAddr: 0x2A838, symSize: 0x0 }
+  - { offset: 0xD8578, size: 0x8, addend: 0x0, symName: __delegateHandler, symObjAddr: 0x25288, symBinAddr: 0x343A0, symSize: 0x0 }
+  - { offset: 0xD85D9, size: 0x8, addend: 0x0, symName: __serviceKey, symObjAddr: 0x25290, symBinAddr: 0x343A8, symSize: 0x0 }
+  - { offset: 0xD85EF, size: 0x8, addend: 0x0, symName: __appDelegate, symObjAddr: 0x25298, symBinAddr: 0x343B0, symSize: 0x0 }
+  - { offset: 0xD8644, size: 0x8, addend: 0x0, symName: __sandbox, symObjAddr: 0x252A0, symBinAddr: 0x343B8, symSize: 0x0 }
+  - { offset: 0xD8743, size: 0x8, addend: 0x0, symName: '+[RFApp isSandbox]', symObjAddr: 0x0, symBinAddr: 0x12800, symSize: 0xC }
+  - { offset: 0xD8776, size: 0x8, addend: 0x0, symName: '+[RFApp setServiceKey:appGroupId:sandbox:]', symObjAddr: 0xC, symBinAddr: 0x1280C, symSize: 0x13C }
+  - { offset: 0xD88BB, size: 0x8, addend: 0x0, symName: '+[RFApp serviceKey]', symObjAddr: 0x148, symBinAddr: 0x12948, symSize: 0x11 }
+  - { offset: 0xD88EE, size: 0x8, addend: 0x0, symName: '+[RFApp onRegisterNotification:notificationType:]', symObjAddr: 0x159, symBinAddr: 0x12959, symSize: 0x8B }
+  - { offset: 0xD8995, size: 0x8, addend: 0x0, symName: '+[RFApp registDevice:completion:]', symObjAddr: 0x1E4, symBinAddr: 0x129E4, symSize: 0x149 }
+  - { offset: 0xD8AB7, size: 0x8, addend: 0x0, symName: '___33+[RFApp registDevice:completion:]_block_invoke', symObjAddr: 0x32D, symBinAddr: 0x12B2D, symSize: 0x7B }
+  - { offset: 0xD8B7D, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32b, symObjAddr: 0x3A8, symBinAddr: 0x12BA8, symSize: 0x17 }
+  - { offset: 0xD8BA6, size: 0x8, addend: 0x0, symName: '+[RFApp registDevice:]', symObjAddr: 0x3CE, symBinAddr: 0x12BCE, symSize: 0xDA }
+  - { offset: 0xD8C88, size: 0x8, addend: 0x0, symName: '+[RFApp stringFromDeviceToken:]', symObjAddr: 0x4A8, symBinAddr: 0x12CA8, symSize: 0xC7 }
+  - { offset: 0xD8D60, size: 0x8, addend: 0x0, symName: '+[RFApp registDeviceToServer:completion:]', symObjAddr: 0x56F, symBinAddr: 0x12D6F, symSize: 0xD4 }
+  - { offset: 0xD8E2B, size: 0x8, addend: 0x0, symName: '___41+[RFApp registDeviceToServer:completion:]_block_invoke', symObjAddr: 0x643, symBinAddr: 0x12E43, symSize: 0x83 }
+  - { offset: 0xD8EC6, size: 0x8, addend: 0x0, symName: '___41+[RFApp registDeviceToServer:completion:]_block_invoke_2', symObjAddr: 0x6C6, symBinAddr: 0x12EC6, symSize: 0xF }
+  - { offset: 0xD8F43, size: 0x8, addend: 0x0, symName: '+[RFApp createAuthToken:]', symObjAddr: 0x6D5, symBinAddr: 0x12ED5, symSize: 0xB9 }
+  - { offset: 0xD8FE6, size: 0x8, addend: 0x0, symName: '___25+[RFApp createAuthToken:]_block_invoke', symObjAddr: 0x78E, symBinAddr: 0x12F8E, symSize: 0xF }
+  - { offset: 0xD9063, size: 0x8, addend: 0x0, symName: '+[RFApp updateDevice]', symObjAddr: 0x79D, symBinAddr: 0x12F9D, symSize: 0x46 }
+  - { offset: 0xD90C6, size: 0x8, addend: 0x0, symName: '+[RFApp setBadgeNumber:badge:]', symObjAddr: 0x7E3, symBinAddr: 0x12FE3, symSize: 0x95 }
+  - { offset: 0xD915D, size: 0x8, addend: 0x0, symName: '+[RFApp resetBadgeNumber:]', symObjAddr: 0x878, symBinAddr: 0x13078, symSize: 0x50 }
+  - { offset: 0xD91D0, size: 0x8, addend: 0x0, symName: '+[RFApp registSegments:completion:]', symObjAddr: 0x8C8, symBinAddr: 0x130C8, symSize: 0xDD }
+  - { offset: 0xD929B, size: 0x8, addend: 0x0, symName: '___35+[RFApp registSegments:completion:]_block_invoke', symObjAddr: 0x9A5, symBinAddr: 0x131A5, symSize: 0x84 }
+  - { offset: 0xD9361, size: 0x8, addend: 0x0, symName: '+[RFApp registDateSegments:completion:]', symObjAddr: 0xA29, symBinAddr: 0x13229, symSize: 0xDC }
+  - { offset: 0xD942C, size: 0x8, addend: 0x0, symName: '___39+[RFApp registDateSegments:completion:]_block_invoke', symObjAddr: 0xB05, symBinAddr: 0x13305, symSize: 0x84 }
+  - { offset: 0xD94F2, size: 0x8, addend: 0x0, symName: '+[RFApp registIntegerSegments:completion:]', symObjAddr: 0xB89, symBinAddr: 0x13389, symSize: 0xDD }
+  - { offset: 0xD95BD, size: 0x8, addend: 0x0, symName: '___42+[RFApp registIntegerSegments:completion:]_block_invoke', symObjAddr: 0xC66, symBinAddr: 0x13466, symSize: 0x84 }
+  - { offset: 0xD9683, size: 0x8, addend: 0x0, symName: '+[RFApp registBooleanSegments:completion:]', symObjAddr: 0xCEA, symBinAddr: 0x134EA, symSize: 0xDC }
+  - { offset: 0xD974E, size: 0x8, addend: 0x0, symName: '___42+[RFApp registBooleanSegments:completion:]_block_invoke', symObjAddr: 0xDC6, symBinAddr: 0x135C6, symSize: 0x84 }
+  - { offset: 0xD9814, size: 0x8, addend: 0x0, symName: '+[RFApp registSegments:intSegments:boolSegments:dateSegments:completion:]', symObjAddr: 0xE4A, symBinAddr: 0x1364A, symSize: 0x11F }
+  - { offset: 0xD9956, size: 0x8, addend: 0x0, symName: '___73+[RFApp registSegments:intSegments:boolSegments:dateSegments:completion:]_block_invoke', symObjAddr: 0xF69, symBinAddr: 0x13769, symSize: 0x84 }
+  - { offset: 0xD9A1C, size: 0x8, addend: 0x0, symName: '+[RFApp getSegments]', symObjAddr: 0xFED, symBinAddr: 0x137ED, symSize: 0x57 }
+  - { offset: 0xD9A83, size: 0x8, addend: 0x0, symName: '+[RFApp postMessage:variables:standbyTime:completion:]', symObjAddr: 0x1044, symBinAddr: 0x13844, symSize: 0x113 }
+  - { offset: 0xD9B9F, size: 0x8, addend: 0x0, symName: '___54+[RFApp postMessage:variables:standbyTime:completion:]_block_invoke', symObjAddr: 0x1157, symBinAddr: 0x13957, symSize: 0x270 }
+  - { offset: 0xD9D49, size: 0x8, addend: 0x0, symName: '+[RFApp cancelPosting:completion:]', symObjAddr: 0x13C7, symBinAddr: 0x13BC7, symSize: 0xD4 }
+  - { offset: 0xD9E18, size: 0x8, addend: 0x0, symName: '___34+[RFApp cancelPosting:completion:]_block_invoke', symObjAddr: 0x149B, symBinAddr: 0x13C9B, symSize: 0x84 }
+  - { offset: 0xD9EE5, size: 0x8, addend: 0x0, symName: '+[RFApp requestAuthorization:applicationDelegate:]', symObjAddr: 0x151F, symBinAddr: 0x13D1F, symSize: 0x1A }
+  - { offset: 0xD9F43, size: 0x8, addend: 0x0, symName: '+[RFApp requestAuthorizationWithOptions:options:applicationDelegate:]', symObjAddr: 0x1539, symBinAddr: 0x13D39, symSize: 0xF0 }
+  - { offset: 0xDA023, size: 0x8, addend: 0x0, symName: '+[RFApp RFtoUNAuthorizationOptions:]', symObjAddr: 0x1629, symBinAddr: 0x13E29, symSize: 0xC }
+  - { offset: 0xDA079, size: 0x8, addend: 0x0, symName: '+[RFApp RFtoUIUserNotificationType:]', symObjAddr: 0x1635, symBinAddr: 0x13E35, symSize: 0xC }
+  - { offset: 0xDA0CF, size: 0x8, addend: 0x0, symName: '+[RFApp onRequestAuthorizationWithAuthorizationOptions:authorizationOptions:]', symObjAddr: 0x1641, symBinAddr: 0x13E41, symSize: 0xC4 }
+  - { offset: 0xDA175, size: 0x8, addend: 0x0, symName: '___77+[RFApp onRequestAuthorizationWithAuthorizationOptions:authorizationOptions:]_block_invoke', symObjAddr: 0x1705, symBinAddr: 0x13F05, symSize: 0x79 }
+  - { offset: 0xDA21C, size: 0x8, addend: 0x0, symName: '___77+[RFApp onRequestAuthorizationWithAuthorizationOptions:authorizationOptions:]_block_invoke_2', symObjAddr: 0x177E, symBinAddr: 0x13F7E, symSize: 0x16 }
+  - { offset: 0xDA266, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s, symObjAddr: 0x1794, symBinAddr: 0x13F94, symSize: 0xF }
+  - { offset: 0xDA299, size: 0x8, addend: 0x0, symName: '+[RFApp setRFNotificationDelegate:]', symObjAddr: 0x17A3, symBinAddr: 0x13FA3, symSize: 0x106 }
+  - { offset: 0xDA35E, size: 0x8, addend: 0x0, symName: '+[RFApp willPresentNotification:completionHandler:]', symObjAddr: 0x18A9, symBinAddr: 0x140A9, symSize: 0x11 }
+  - { offset: 0xDA3BA, size: 0x8, addend: 0x0, symName: '+[RFApp sendNotificationOpenEvent:]', symObjAddr: 0x18BA, symBinAddr: 0x140BA, symSize: 0x14E }
+  - { offset: 0xDA4AE, size: 0x8, addend: 0x0, symName: '+[RFApp didReceiveNotification:handler:]', symObjAddr: 0x1A08, symBinAddr: 0x14208, symSize: 0xCA }
+  - { offset: 0xDA59E, size: 0x8, addend: 0x0, symName: '+[RFApp getReceivedData]', symObjAddr: 0x1AD2, symBinAddr: 0x142D2, symSize: 0x57 }
+  - { offset: 0xDA607, size: 0x8, addend: 0x0, symName: '+[RFApp getLatestReceivedData]', symObjAddr: 0x1B29, symBinAddr: 0x14329, symSize: 0x57 }
+  - { offset: 0xDA670, size: 0x8, addend: 0x0, symName: '+[RFApp setLaunchMode:]', symObjAddr: 0x1B80, symBinAddr: 0x14380, symSize: 0xF6 }
+  - { offset: 0xDA73F, size: 0x8, addend: 0x0, symName: '+[RFApp isRichFlyerNotification:]', symObjAddr: 0x1C76, symBinAddr: 0x14476, symSize: 0x96 }
+  - { offset: 0xDA7F1, size: 0x8, addend: 0x0, symName: '-[RFResult initWithResult:message:code:]', symObjAddr: 0x1D0C, symBinAddr: 0x1450C, symSize: 0x6D }
+  - { offset: 0xDA874, size: 0x8, addend: 0x0, symName: '-[RFResult getResult]', symObjAddr: 0x1D79, symBinAddr: 0x14579, symSize: 0x9 }
+  - { offset: 0xDA8AA, size: 0x8, addend: 0x0, symName: '-[RFResult getMessage]', symObjAddr: 0x1D82, symBinAddr: 0x14582, symSize: 0xE }
+  - { offset: 0xDA8E2, size: 0x8, addend: 0x0, symName: '-[RFResult getCode]', symObjAddr: 0x1D90, symBinAddr: 0x14590, symSize: 0xA }
+  - { offset: 0xDA918, size: 0x8, addend: 0x0, symName: '-[RFResult result]', symObjAddr: 0x1D9A, symBinAddr: 0x1459A, symSize: 0xB }
+  - { offset: 0xDA94D, size: 0x8, addend: 0x0, symName: '-[RFResult message]', symObjAddr: 0x1DA5, symBinAddr: 0x145A5, symSize: 0xA }
+  - { offset: 0xDA982, size: 0x8, addend: 0x0, symName: '-[RFResult code]', symObjAddr: 0x1DAF, symBinAddr: 0x145AF, symSize: 0xA }
+  - { offset: 0xDA9B7, size: 0x8, addend: 0x0, symName: '-[RFResult .cxx_destruct]', symObjAddr: 0x1DB9, symBinAddr: 0x145B9, symSize: 0x17 }
+  - { offset: 0xDB2E6, size: 0x8, addend: 0x0, symName: '+[RFActionManager getAction:]', symObjAddr: 0x0, symBinAddr: 0x145D0, symSize: 0x470 }
+  - { offset: 0xDB2F4, size: 0x8, addend: 0x0, symName: '+[RFActionManager getAction:]', symObjAddr: 0x0, symBinAddr: 0x145D0, symSize: 0x470 }
+  - { offset: 0xDB5C8, size: 0x8, addend: 0x0, symName: '+[RFActionManager getExtensionProperty:]', symObjAddr: 0x470, symBinAddr: 0x14A40, symSize: 0xFE }
+  - { offset: 0xDB6AF, size: 0x8, addend: 0x0, symName: '+[RFActionManager createActionId:buttonIndex:]', symObjAddr: 0x56E, symBinAddr: 0x14B3E, symSize: 0x28 }
+  - { offset: 0xDB70E, size: 0x8, addend: 0x0, symName: '+[RFActionManager isValidAction:notificationId:buttonIndex:]', symObjAddr: 0x596, symBinAddr: 0x14B66, symSize: 0xB2 }
+  - { offset: 0xDB887, size: 0x8, addend: 0x0, symName: '+[ContentUtil urlToFileName:]', symObjAddr: 0x0, symBinAddr: 0x14C18, symSize: 0x15 }
+  - { offset: 0xDB895, size: 0x8, addend: 0x0, symName: '+[ContentUtil urlToFileName:]', symObjAddr: 0x0, symBinAddr: 0x14C18, symSize: 0x15 }
+  - { offset: 0xDB8E4, size: 0x8, addend: 0x0, symName: '+[ContentUtil urlToCustomFileName:name:]', symObjAddr: 0x15, symBinAddr: 0x14C2D, symSize: 0x96 }
+  - { offset: 0xDB973, size: 0x8, addend: 0x0, symName: '+[ContentUtil confirmExistResource:]', symObjAddr: 0xAB, symBinAddr: 0x14CC3, symSize: 0x34 }
+  - { offset: 0xDB9E2, size: 0x8, addend: 0x0, symName: '+[ContentUtil createTemporary:]', symObjAddr: 0xDF, symBinAddr: 0x14CF7, symSize: 0xA8 }
+  - { offset: 0xDBA9D, size: 0x8, addend: 0x0, symName: '+[ContentUtil confirmExist:]', symObjAddr: 0x187, symBinAddr: 0x14D9F, symSize: 0x7C }
+  - { offset: 0xDBB30, size: 0x8, addend: 0x0, symName: '+[ContentUtil createAppShared:notificationId:]', symObjAddr: 0x203, symBinAddr: 0x14E1B, symSize: 0xD4 }
+  - { offset: 0xDBC79, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent onTapMessage]', symObjAddr: 0x0, symBinAddr: 0x14EF0, symSize: 0x96 }
+  - { offset: 0xDBD05, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent onTapMessage]', symObjAddr: 0x0, symBinAddr: 0x14EF0, symSize: 0x96 }
+  - { offset: 0xDBD74, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent onTapImage]', symObjAddr: 0x96, symBinAddr: 0x14F86, symSize: 0x96 }
+  - { offset: 0xDBDE3, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent didReceiveNotification:]', symObjAddr: 0x12C, symBinAddr: 0x1501C, symSize: 0x1EA }
+  - { offset: 0xDBF32, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayPauseButtonType]', symObjAddr: 0x316, symBinAddr: 0x15206, symSize: 0x37 }
+  - { offset: 0xDBFCC, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayPauseButtonFrame]', symObjAddr: 0x34D, symBinAddr: 0x1523D, symSize: 0x29F }
+  - { offset: 0xDC118, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayPauseButtonTintColor]', symObjAddr: 0x5EC, symBinAddr: 0x154DC, symSize: 0x2F }
+  - { offset: 0xDC157, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlay]', symObjAddr: 0x61B, symBinAddr: 0x1550B, symSize: 0x24 }
+  - { offset: 0xDC196, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPause]', symObjAddr: 0x63F, symBinAddr: 0x1552F, symSize: 0x24 }
+  - { offset: 0xDC1D5, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent createMediaView:]', symObjAddr: 0x663, symBinAddr: 0x15553, symSize: 0x112 }
+  - { offset: 0xDC290, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent createMessageView:]', symObjAddr: 0x775, symBinAddr: 0x15665, symSize: 0x253 }
+  - { offset: 0xDC406, size: 0x8, addend: 0x0, symName: '___43-[RFNotificationContent createMessageView:]_block_invoke', symObjAddr: 0x9C8, symBinAddr: 0x158B8, symSize: 0xC7 }
+  - { offset: 0xDC4B8, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent setViewSize:]', symObjAddr: 0xAAD, symBinAddr: 0x1598D, symSize: 0x255 }
+  - { offset: 0xDC5BF, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent getAppGroupId:]', symObjAddr: 0xD02, symBinAddr: 0x15BE2, symSize: 0xAE }
+  - { offset: 0xDC672, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent contentSizeHandler:]', symObjAddr: 0xDB0, symBinAddr: 0x15C90, symSize: 0x1D1 }
+  - { offset: 0xDC71D, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayingPaused]', symObjAddr: 0xF81, symBinAddr: 0x15E61, symSize: 0x3D }
+  - { offset: 0xDC774, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent mediaPlayingStarted]', symObjAddr: 0xFBE, symBinAddr: 0x15E9E, symSize: 0x3D }
+  - { offset: 0xDC7CB, size: 0x8, addend: 0x0, symName: '-[RFNotificationContent .cxx_destruct]', symObjAddr: 0xFFB, symBinAddr: 0x15EDB, symSize: 0x45 }
+  - { offset: 0xDC947, size: 0x8, addend: 0x0, symName: '-[RFGifView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x15F20, symSize: 0x29F }
+  - { offset: 0xDCA37, size: 0x8, addend: 0x0, symName: '-[RFGifView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x15F20, symSize: 0x29F }
+  - { offset: 0xDCC2F, size: 0x8, addend: 0x0, symName: '-[RFGifView initWithFrame:maxSize:]', symObjAddr: 0x29F, symBinAddr: 0x161BF, symSize: 0x24 }
+  - { offset: 0xDCC91, size: 0x8, addend: 0x0, symName: '-[RFGifView layoutSubviews]', symObjAddr: 0x2C3, symBinAddr: 0x161E3, symSize: 0x9C }
+  - { offset: 0xDCCD0, size: 0x8, addend: 0x0, symName: '-[RFGifView create:delegate:]', symObjAddr: 0x35F, symBinAddr: 0x1627F, symSize: 0x174 }
+  - { offset: 0xDCDF7, size: 0x8, addend: 0x0, symName: '-[RFGifView resizeView:maxSize:]', symObjAddr: 0x4D3, symBinAddr: 0x163F3, symSize: 0x11E }
+  - { offset: 0xDCE8A, size: 0x8, addend: 0x0, symName: '-[RFGifView getMimeType:]', symObjAddr: 0x5F1, symBinAddr: 0x16511, symSize: 0x79 }
+  - { offset: 0xDCEE9, size: 0x8, addend: 0x0, symName: '-[RFGifView loadGif:saveUrl:baseURL:]', symObjAddr: 0x66A, symBinAddr: 0x1658A, symSize: 0x17D }
+  - { offset: 0xDD007, size: 0x8, addend: 0x0, symName: '___37-[RFGifView loadGif:saveUrl:baseURL:]_block_invoke', symObjAddr: 0x7E7, symBinAddr: 0x16707, symSize: 0x107 }
+  - { offset: 0xDD130, size: 0x8, addend: 0x0, symName: '___37-[RFGifView loadGif:saveUrl:baseURL:]_block_invoke_2', symObjAddr: 0x8EE, symBinAddr: 0x1680E, symSize: 0xE4 }
+  - { offset: 0xDD20F, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56w64w, symObjAddr: 0x9D2, symBinAddr: 0x168F2, symSize: 0x56 }
+  - { offset: 0xDD25C, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56w64w, symObjAddr: 0xA28, symBinAddr: 0x16948, symSize: 0x41 }
+  - { offset: 0xDD29F, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64w72w, symObjAddr: 0xA69, symBinAddr: 0x16989, symSize: 0x5D }
+  - { offset: 0xDD2F8, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s48s56s64w72w, symObjAddr: 0xAC6, symBinAddr: 0x169E6, symSize: 0x48 }
+  - { offset: 0xDD347, size: 0x8, addend: 0x0, symName: '-[RFGifView adjustment:]', symObjAddr: 0xB0E, symBinAddr: 0x16A2E, symSize: 0x703 }
+  - { offset: 0xDD533, size: 0x8, addend: 0x0, symName: '-[RFGifView .cxx_destruct]', symObjAddr: 0x1211, symBinAddr: 0x17131, symSize: 0x51 }
+  - { offset: 0xDD770, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setIdentifier:]', symObjAddr: 0x0, symBinAddr: 0x17182, symSize: 0x14 }
+  - { offset: 0xDD78A, size: 0x8, addend: 0x0, symName: __identifier, symObjAddr: 0xBE50, symBinAddr: 0x343C0, symSize: 0x0 }
+  - { offset: 0xDD7A5, size: 0x8, addend: 0x0, symName: __eventId, symObjAddr: 0xBE58, symBinAddr: 0x343C8, symSize: 0x0 }
+  - { offset: 0xDD7BB, size: 0x8, addend: 0x0, symName: __title, symObjAddr: 0xBE60, symBinAddr: 0x343D0, symSize: 0x0 }
+  - { offset: 0xDD7D1, size: 0x8, addend: 0x0, symName: __subTitle, symObjAddr: 0xBE68, symBinAddr: 0x343D8, symSize: 0x0 }
+  - { offset: 0xDD7E7, size: 0x8, addend: 0x0, symName: _lastNotificationIdKey, symObjAddr: 0xA78, symBinAddr: 0x2A990, symSize: 0x0 }
+  - { offset: 0xDD802, size: 0x8, addend: 0x0, symName: _lastEventIdKey, symObjAddr: 0xA80, symBinAddr: 0x2A998, symSize: 0x0 }
+  - { offset: 0xDD818, size: 0x8, addend: 0x0, symName: _lastNotificationDateKey, symObjAddr: 0xA88, symBinAddr: 0x2A9A0, symSize: 0x0 }
+  - { offset: 0xDD82E, size: 0x8, addend: 0x0, symName: _lastNotificationInfoKey, symObjAddr: 0xA90, symBinAddr: 0x2A9A8, symSize: 0x0 }
+  - { offset: 0xDD838, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setIdentifier:]', symObjAddr: 0x0, symBinAddr: 0x17182, symSize: 0x14 }
+  - { offset: 0xDD877, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo identifier]', symObjAddr: 0x14, symBinAddr: 0x17196, symSize: 0x84 }
+  - { offset: 0xDD8F9, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setEventId:]', symObjAddr: 0x98, symBinAddr: 0x1721A, symSize: 0x14 }
+  - { offset: 0xDD938, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo eventId]', symObjAddr: 0xAC, symBinAddr: 0x1722E, symSize: 0x92 }
+  - { offset: 0xDD9C6, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setTitle:]', symObjAddr: 0x13E, symBinAddr: 0x172C0, symSize: 0x14 }
+  - { offset: 0xDDA05, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo title]', symObjAddr: 0x152, symBinAddr: 0x172D4, symSize: 0x11 }
+  - { offset: 0xDDA38, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo setSubTitle:]', symObjAddr: 0x163, symBinAddr: 0x172E5, symSize: 0x14 }
+  - { offset: 0xDDA77, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo subTitle]', symObjAddr: 0x177, symBinAddr: 0x172F9, symSize: 0x11 }
+  - { offset: 0xDDAAA, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo reset]', symObjAddr: 0x188, symBinAddr: 0x1730A, symSize: 0x5A }
+  - { offset: 0xDDB09, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo updateWithResponse:]', symObjAddr: 0x1E2, symBinAddr: 0x17364, symSize: 0x24D }
+  - { offset: 0xDDCD3, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo saveLastNotificationId:appGroups:]', symObjAddr: 0x42F, symBinAddr: 0x175B1, symSize: 0x208 }
+  - { offset: 0xDDE99, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo loadLastNotificationId:]', symObjAddr: 0x637, symBinAddr: 0x177B9, symSize: 0x178 }
+  - { offset: 0xDDFE0, size: 0x8, addend: 0x0, symName: '+[RFLastNotificationInfo loadLastEventId:]', symObjAddr: 0x7AF, symBinAddr: 0x17931, symSize: 0x178 }
+  - { offset: 0xDE1CF, size: 0x8, addend: 0x0, symName: '-[RFMovieView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x17AB0, symSize: 0x1E1 }
+  - { offset: 0xDE2F7, size: 0x8, addend: 0x0, symName: '-[RFMovieView initWithFrame:]', symObjAddr: 0x0, symBinAddr: 0x17AB0, symSize: 0x1E1 }
+  - { offset: 0xDE41C, size: 0x8, addend: 0x0, symName: '-[RFMovieView dealloc]', symObjAddr: 0x1E1, symBinAddr: 0x17C91, symSize: 0x65 }
+  - { offset: 0xDE467, size: 0x8, addend: 0x0, symName: '-[RFMovieView layoutSubviews]', symObjAddr: 0x246, symBinAddr: 0x17CF6, symSize: 0xC0 }
+  - { offset: 0xDE4B2, size: 0x8, addend: 0x0, symName: '-[RFMovieView getPlayButton]', symObjAddr: 0x306, symBinAddr: 0x17DB6, symSize: 0x15 }
+  - { offset: 0xDE4E9, size: 0x8, addend: 0x0, symName: '-[RFMovieView getStopButton]', symObjAddr: 0x31B, symBinAddr: 0x17DCB, symSize: 0x15 }
+  - { offset: 0xDE520, size: 0x8, addend: 0x0, symName: '-[RFMovieView setCustomPlayButton]', symObjAddr: 0x330, symBinAddr: 0x17DE0, symSize: 0x23E }
+  - { offset: 0xDE6D0, size: 0x8, addend: 0x0, symName: '-[RFMovieView create:delegate:]', symObjAddr: 0x56E, symBinAddr: 0x1801E, symSize: 0x442 }
+  - { offset: 0xDE98B, size: 0x8, addend: 0x0, symName: '-[RFMovieView display]', symObjAddr: 0x9B0, symBinAddr: 0x18460, symSize: 0x182 }
+  - { offset: 0xDEA89, size: 0x8, addend: 0x0, symName: '-[RFMovieView getPlayButtonRect]', symObjAddr: 0xB32, symBinAddr: 0x185E2, symSize: 0x60 }
+  - { offset: 0xDEB16, size: 0x8, addend: 0x0, symName: '-[RFMovieView adjustment:]', symObjAddr: 0xB92, symBinAddr: 0x18642, symSize: 0x301 }
+  - { offset: 0xDEC04, size: 0x8, addend: 0x0, symName: '-[RFMovieView play]', symObjAddr: 0xE93, symBinAddr: 0x18943, symSize: 0x99 }
+  - { offset: 0xDEC73, size: 0x8, addend: 0x0, symName: '-[RFMovieView pause]', symObjAddr: 0xF2C, symBinAddr: 0x189DC, symSize: 0x99 }
+  - { offset: 0xDECE2, size: 0x8, addend: 0x0, symName: '-[RFMovieView observeValueForKeyPath:ofObject:change:context:]', symObjAddr: 0xFC5, symBinAddr: 0x18A75, symSize: 0x1EE }
+  - { offset: 0xDEE21, size: 0x8, addend: 0x0, symName: '-[RFMovieView registNotification]', symObjAddr: 0x11B3, symBinAddr: 0x18C63, symSize: 0x67 }
+  - { offset: 0xDEE79, size: 0x8, addend: 0x0, symName: '-[RFMovieView removeNotification]', symObjAddr: 0x121A, symBinAddr: 0x18CCA, symSize: 0x60 }
+  - { offset: 0xDEED1, size: 0x8, addend: 0x0, symName: '-[RFMovieView playerItemReachedEnd:]', symObjAddr: 0x127A, symBinAddr: 0x18D2A, symSize: 0x38A }
+  - { offset: 0xDF12F, size: 0x8, addend: 0x0, symName: '___36-[RFMovieView playerItemReachedEnd:]_block_invoke', symObjAddr: 0x1604, symBinAddr: 0x190B4, symSize: 0x93 }
+  - { offset: 0xDF1CB, size: 0x8, addend: 0x0, symName: '-[RFMovieView setSaveCache:]', symObjAddr: 0x1707, symBinAddr: 0x19147, symSize: 0x10 }
+  - { offset: 0xDF20C, size: 0x8, addend: 0x0, symName: '-[RFMovieView resizeView:]', symObjAddr: 0x1717, symBinAddr: 0x19157, symSize: 0x1FE }
+  - { offset: 0xDF2BD, size: 0x8, addend: 0x0, symName: '-[RFMovieView .cxx_destruct]', symObjAddr: 0x1915, symBinAddr: 0x19355, symSize: 0xBB }
+  - { offset: 0xDF458, size: 0x8, addend: 0x0, symName: '-[RFAlertView initWithFrame:title:message:]', symObjAddr: 0x0, symBinAddr: 0x19410, symSize: 0x30D }
+  - { offset: 0xDF544, size: 0x8, addend: 0x0, symName: '-[RFAlertView initWithFrame:title:message:]', symObjAddr: 0x0, symBinAddr: 0x19410, symSize: 0x30D }
+  - { offset: 0xDF6F6, size: 0x8, addend: 0x0, symName: '-[RFAlertView createTitleLabel:]', symObjAddr: 0x30D, symBinAddr: 0x1971D, symSize: 0x2EC }
+  - { offset: 0xDF896, size: 0x8, addend: 0x0, symName: '-[RFAlertView createMessageLabel:]', symObjAddr: 0x5F9, symBinAddr: 0x19A09, symSize: 0x2E9 }
+  - { offset: 0xDFA01, size: 0x8, addend: 0x0, symName: '-[RFAlertView setContentEffectViewHeight:]', symObjAddr: 0x8E2, symBinAddr: 0x19CF2, symSize: 0x13B }
+  - { offset: 0xDFA50, size: 0x8, addend: 0x0, symName: '-[RFAlertView addDelegate:]', symObjAddr: 0xA1D, symBinAddr: 0x19E2D, symSize: 0x14 }
+  - { offset: 0xDFA93, size: 0x8, addend: 0x0, symName: '-[RFAlertView addView:]', symObjAddr: 0xA31, symBinAddr: 0x19E41, symSize: 0x1FC }
+  - { offset: 0xDFB30, size: 0x8, addend: 0x0, symName: '-[RFAlertView addImage:]', symObjAddr: 0xC2D, symBinAddr: 0x1A03D, symSize: 0xFB }
+  - { offset: 0xDFC13, size: 0x8, addend: 0x0, symName: '-[RFAlertView addAction:]', symObjAddr: 0xD28, symBinAddr: 0x1A138, symSize: 0x73 }
+  - { offset: 0xDFC86, size: 0x8, addend: 0x0, symName: '-[RFAlertView adjustment]', symObjAddr: 0xD9B, symBinAddr: 0x1A1AB, symSize: 0x206 }
+  - { offset: 0xDFD7D, size: 0x8, addend: 0x0, symName: '-[RFAlertView createSingleButton]', symObjAddr: 0xFA1, symBinAddr: 0x1A3B1, symSize: 0x237 }
+  - { offset: 0xDFE7A, size: 0x8, addend: 0x0, symName: '-[RFAlertView createButton:action:]', symObjAddr: 0x11D8, symBinAddr: 0x1A5E8, symSize: 0x358 }
+  - { offset: 0xE0094, size: 0x8, addend: 0x0, symName: '-[RFAlertView onClickAction:]', symObjAddr: 0x1530, symBinAddr: 0x1A940, symSize: 0xEF }
+  - { offset: 0xE015B, size: 0x8, addend: 0x0, symName: '-[RFAlertView .cxx_destruct]', symObjAddr: 0x161F, symBinAddr: 0x1AA2F, symSize: 0x71 }
+  - { offset: 0xE0203, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil setAppGroupId:]', symObjAddr: 0x0, symBinAddr: 0x1AAA0, symSize: 0x6B }
+  - { offset: 0xE021D, size: 0x8, addend: 0x0, symName: __appGroupId, symObjAddr: 0x7828, symBinAddr: 0x343E0, symSize: 0x0 }
+  - { offset: 0xE022C, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil setAppGroupId:]', symObjAddr: 0x0, symBinAddr: 0x1AAA0, symSize: 0x6B }
+  - { offset: 0xE029B, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil getAppGroupId]', symObjAddr: 0x6B, symBinAddr: 0x1AB0B, symSize: 0x11 }
+  - { offset: 0xE02CE, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil savePreference:key:]', symObjAddr: 0x7C, symBinAddr: 0x1AB1C, symSize: 0xBF }
+  - { offset: 0xE039D, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil getPreference:]', symObjAddr: 0x13B, symBinAddr: 0x1ABDB, symSize: 0xA2 }
+  - { offset: 0xE0438, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil moveFile:destFileName:]', symObjAddr: 0x1DD, symBinAddr: 0x1AC7D, symSize: 0x151 }
+  - { offset: 0xE0563, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil saveHistory:]', symObjAddr: 0x32E, symBinAddr: 0x1ADCE, symSize: 0xFB }
+  - { offset: 0xE064E, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil getHistory]', symObjAddr: 0x429, symBinAddr: 0x1AEC9, symSize: 0xF3 }
+  - { offset: 0xE0730, size: 0x8, addend: 0x0, symName: '+[AppGroupsUtil makeContainerFileUrl:]', symObjAddr: 0x51C, symBinAddr: 0x1AFBC, symSize: 0xAC }
+  - { offset: 0xE0850, size: 0x8, addend: 0x0, symName: '-[RFMediaView layoutSubviews]', symObjAddr: 0x0, symBinAddr: 0x1B068, symSize: 0xF6 }
+  - { offset: 0xE0977, size: 0x8, addend: 0x0, symName: '-[RFMediaView layoutSubviews]', symObjAddr: 0x0, symBinAddr: 0x1B068, symSize: 0xF6 }
+  - { offset: 0xE09CE, size: 0x8, addend: 0x0, symName: '-[RFMediaView initialized:delegate:]', symObjAddr: 0xF6, symBinAddr: 0x1B15E, symSize: 0x57 }
+  - { offset: 0xE0A39, size: 0x8, addend: 0x0, symName: '-[RFMediaView initialized:custom:delegate:]', symObjAddr: 0x14D, symBinAddr: 0x1B1B5, symSize: 0x57 }
+  - { offset: 0xE0AB0, size: 0x8, addend: 0x0, symName: '-[RFMediaView create]', symObjAddr: 0x1A4, symBinAddr: 0x1B20C, symSize: 0x12 }
+  - { offset: 0xE0AED, size: 0x8, addend: 0x0, symName: '-[RFMediaView adjustment:]', symObjAddr: 0x1B6, symBinAddr: 0x1B21E, symSize: 0x13D }
+  - { offset: 0xE0B6C, size: 0x8, addend: 0x0, symName: '-[RFMediaView createImageView]', symObjAddr: 0x2F3, symBinAddr: 0x1B35B, symSize: 0xCE }
+  - { offset: 0xE0BF7, size: 0x8, addend: 0x0, symName: '-[RFMediaView createGifView]', symObjAddr: 0x3C1, symBinAddr: 0x1B429, symSize: 0x10B }
+  - { offset: 0xE0C6A, size: 0x8, addend: 0x0, symName: '-[RFMediaView playGifView]', symObjAddr: 0x4CC, symBinAddr: 0x1B534, symSize: 0x4D }
+  - { offset: 0xE0CB5, size: 0x8, addend: 0x0, symName: '-[RFMediaView createMovieView]', symObjAddr: 0x519, symBinAddr: 0x1B581, symSize: 0x1D9 }
+  - { offset: 0xE0DB8, size: 0x8, addend: 0x0, symName: '-[RFMediaView playMovieView]', symObjAddr: 0x6F2, symBinAddr: 0x1B75A, symSize: 0x4D }
+  - { offset: 0xE0E03, size: 0x8, addend: 0x0, symName: '-[RFMediaView mediaPlay]', symObjAddr: 0x73F, symBinAddr: 0x1B7A7, symSize: 0x10A }
+  - { offset: 0xE0EA2, size: 0x8, addend: 0x0, symName: '-[RFMediaView mediaPause]', symObjAddr: 0x849, symBinAddr: 0x1B8B1, symSize: 0xB7 }
+  - { offset: 0xE0F1D, size: 0x8, addend: 0x0, symName: '-[RFMediaView onTapPlay]', symObjAddr: 0x900, symBinAddr: 0x1B968, symSize: 0x7D }
+  - { offset: 0xE0F80, size: 0x8, addend: 0x0, symName: '-[RFMediaView onTapStop]', symObjAddr: 0x97D, symBinAddr: 0x1B9E5, symSize: 0x7D }
+  - { offset: 0xE0FE3, size: 0x8, addend: 0x0, symName: '-[RFMediaView setMaxSize:]', symObjAddr: 0x9FA, symBinAddr: 0x1BA62, symSize: 0x18 }
+  - { offset: 0xE1024, size: 0x8, addend: 0x0, symName: '-[RFMediaView resize:maxSize:]', symObjAddr: 0xA12, symBinAddr: 0x1BA7A, symSize: 0xC8 }
+  - { offset: 0xE109B, size: 0x8, addend: 0x0, symName: '-[RFMediaView imageContentSizeHandler:]', symObjAddr: 0xADA, symBinAddr: 0x1BB42, symSize: 0x55 }
+  - { offset: 0xE1113, size: 0x8, addend: 0x0, symName: '___39-[RFMediaView imageContentSizeHandler:]_block_invoke', symObjAddr: 0xB2F, symBinAddr: 0x1BB97, symSize: 0x138 }
+  - { offset: 0xE11CE, size: 0x8, addend: 0x0, symName: '-[RFMediaView gifContentSizeHandler:]', symObjAddr: 0xC85, symBinAddr: 0x1BCCF, symSize: 0x75 }
+  - { offset: 0xE124D, size: 0x8, addend: 0x0, symName: '-[RFMediaView movieContentSizeHandler:]', symObjAddr: 0xCFA, symBinAddr: 0x1BD44, symSize: 0x4F }
+  - { offset: 0xE12B4, size: 0x8, addend: 0x0, symName: '-[RFMediaView movieMediaPlayingStarted]', symObjAddr: 0xD49, symBinAddr: 0x1BD93, symSize: 0x7C }
+  - { offset: 0xE1318, size: 0x8, addend: 0x0, symName: '-[RFMediaView movieMediaPlayingPaused]', symObjAddr: 0xDC5, symBinAddr: 0x1BE0F, symSize: 0x7C }
+  - { offset: 0xE137C, size: 0x8, addend: 0x0, symName: '-[RFMediaView .cxx_destruct]', symObjAddr: 0xE41, symBinAddr: 0x1BE8B, symSize: 0x84 }
+  - { offset: 0xE14CD, size: 0x8, addend: 0x0, symName: '+[RFNotificationService configureRFNotification:appGroupId:displayNavigate:completeHandler:]', symObjAddr: 0x0, symBinAddr: 0x1BF10, symSize: 0x143 }
+  - { offset: 0xE1506, size: 0x8, addend: 0x0, symName: '+[RFNotificationService configureRFNotification:appGroupId:displayNavigate:completeHandler:]', symObjAddr: 0x0, symBinAddr: 0x1BF10, symSize: 0x143 }
+  - { offset: 0xE1631, size: 0x8, addend: 0x0, symName: '___92+[RFNotificationService configureRFNotification:appGroupId:displayNavigate:completeHandler:]_block_invoke', symObjAddr: 0x143, symBinAddr: 0x1C053, symSize: 0x1EB }
+  - { offset: 0xE17E3, size: 0x8, addend: 0x0, symName: '___92+[RFNotificationService configureRFNotification:appGroupId:displayNavigate:completeHandler:]_block_invoke_2', symObjAddr: 0x32E, symBinAddr: 0x1C23E, symSize: 0xAE }
+  - { offset: 0xE18BD, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40b, symObjAddr: 0x3DC, symBinAddr: 0x1C2EC, symSize: 0x30 }
+  - { offset: 0xE18F2, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s40s, symObjAddr: 0x40C, symBinAddr: 0x1C31C, symSize: 0x25 }
+  - { offset: 0xE1929, size: 0x8, addend: 0x0, symName: ___destroy_helper_block_e8_32s, symObjAddr: 0x448, symBinAddr: 0x1C348, symSize: 0xF }
+  - { offset: 0xE1954, size: 0x8, addend: 0x0, symName: '+[RFNotificationService configureRFNotification:appGroupId:completeHandler:]', symObjAddr: 0x457, symBinAddr: 0x1C357, symSize: 0x22 }
+  - { offset: 0xE19BB, size: 0x8, addend: 0x0, symName: '+[RFNotificationService appendMessage:]', symObjAddr: 0x479, symBinAddr: 0x1C379, symSize: 0x34D }
+  - { offset: 0xE1C6C, size: 0x8, addend: 0x0, symName: '+[RFNotificationService getTypeToShowDetail]', symObjAddr: 0x7C6, symBinAddr: 0x1C6C6, symSize: 0x1CE }
+  - { offset: 0xE1DAB, size: 0x8, addend: 0x0, symName: '+[RFNotificationService createNavigationMessage]', symObjAddr: 0x994, symBinAddr: 0x1C894, symSize: 0xAE }
+  - { offset: 0xE1E3E, size: 0x8, addend: 0x0, symName: '+[RFNotificationService createNavigationMessageForMovie]', symObjAddr: 0xA42, symBinAddr: 0x1C942, symSize: 0xAE }
+  - { offset: 0xE1ED1, size: 0x8, addend: 0x0, symName: '+[RFNotificationService appendGroupId:]', symObjAddr: 0xAF0, symBinAddr: 0x1C9F0, symSize: 0x16C }
+  - { offset: 0xE2028, size: 0x8, addend: 0x0, symName: '+[RFNotificationService applyAction:]', symObjAddr: 0xC5C, symBinAddr: 0x1CB5C, symSize: 0x24 }
+  - { offset: 0xE22E6, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay init]', symObjAddr: 0x0, symBinAddr: 0x1CB80, symSize: 0x69 }
+  - { offset: 0xE2354, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay init]', symObjAddr: 0x0, symBinAddr: 0x1CB80, symSize: 0x69 }
+  - { offset: 0xE23A3, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay initWithContent:]', symObjAddr: 0x69, symBinAddr: 0x1CBE9, symSize: 0x82 }
+  - { offset: 0xE241A, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay setContent:]', symObjAddr: 0xEB, symBinAddr: 0x1CC6B, symSize: 0x16 }
+  - { offset: 0xE2467, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay setButtonColor:]', symObjAddr: 0x101, symBinAddr: 0x1CC81, symSize: 0x16 }
+  - { offset: 0xE24B4, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay present:completeHandler:]', symObjAddr: 0x117, symBinAddr: 0x1CC97, symSize: 0x16 }
+  - { offset: 0xE250F, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay dismiss]', symObjAddr: 0x12D, symBinAddr: 0x1CCAD, symSize: 0x16 }
+  - { offset: 0xE254E, size: 0x8, addend: 0x0, symName: '-[RFContentDisplay .cxx_destruct]', symObjAddr: 0x143, symBinAddr: 0x1CCC3, symSize: 0x10 }
+  - { offset: 0xE2794, size: 0x8, addend: 0x0, symName: '+[Category create:]', symObjAddr: 0x0, symBinAddr: 0x1CCD3, symSize: 0x157 }
+  - { offset: 0xE27E9, size: 0x8, addend: 0x0, symName: '+[Category create:]', symObjAddr: 0x0, symBinAddr: 0x1CCD3, symSize: 0x157 }
+  - { offset: 0xE2910, size: 0x8, addend: 0x0, symName: '___19+[Category create:]_block_invoke', symObjAddr: 0x157, symBinAddr: 0x1CE2A, symSize: 0xFC }
+  - { offset: 0xE2A22, size: 0x8, addend: 0x0, symName: '+[Category createActs:completeHandler:]', symObjAddr: 0x29D, symBinAddr: 0x1CF26, symSize: 0x587 }
+  - { offset: 0xE2DA3, size: 0x8, addend: 0x0, symName: '+[Category transformOptionsWithOptions:]', symObjAddr: 0x824, symBinAddr: 0x1D4AD, symSize: 0x1C7 }
+  - { offset: 0xE306C, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector initWithUrl:]', symObjAddr: 0x0, symBinAddr: 0x1D674, symSize: 0xBA }
+  - { offset: 0xE3155, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector initWithUrl:]', symObjAddr: 0x0, symBinAddr: 0x1D674, symSize: 0xBA }
+  - { offset: 0xE31F0, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector initWithUrl:method:]', symObjAddr: 0xBA, symBinAddr: 0x1D72E, symSize: 0xBD }
+  - { offset: 0xE329B, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector initWithUrl:method:params:]', symObjAddr: 0x177, symBinAddr: 0x1D7EB, symSize: 0xE0 }
+  - { offset: 0xE3386, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector method:]', symObjAddr: 0x257, symBinAddr: 0x1D8CB, symSize: 0xD }
+  - { offset: 0xE33CB, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector headers:]', symObjAddr: 0x264, symBinAddr: 0x1D8D8, symSize: 0x1F9 }
+  - { offset: 0xE34A1, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector jsonBody:]', symObjAddr: 0x45D, symBinAddr: 0x1DAD1, symSize: 0x31 }
+  - { offset: 0xE3500, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector params:]', symObjAddr: 0x48E, symBinAddr: 0x1DB02, symSize: 0x31 }
+  - { offset: 0xE355F, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector replace:]', symObjAddr: 0x4BF, symBinAddr: 0x1DB33, symSize: 0x346 }
+  - { offset: 0xE36EC, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector makeQueryString:]', symObjAddr: 0x805, symBinAddr: 0x1DE79, symSize: 0x2C1 }
+  - { offset: 0xE382E, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector requestUrl]', symObjAddr: 0xAC6, symBinAddr: 0x1E13A, symSize: 0x12A }
+  - { offset: 0xE38FD, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector setMethod:]', symObjAddr: 0xBF0, symBinAddr: 0x1E264, symSize: 0x48 }
+  - { offset: 0xE3964, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector setHeader:]', symObjAddr: 0xC38, symBinAddr: 0x1E2AC, symSize: 0x1E6 }
+  - { offset: 0xE3A3E, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector setJsonBody:]', symObjAddr: 0xE1E, symBinAddr: 0x1E492, symSize: 0xC9 }
+  - { offset: 0xE3B01, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector request:]', symObjAddr: 0xEE7, symBinAddr: 0x1E55B, symSize: 0xFA }
+  - { offset: 0xE3BF8, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector startCommunication:completion:]', symObjAddr: 0xFE1, symBinAddr: 0x1E655, symSize: 0x13C }
+  - { offset: 0xE3D20, size: 0x8, addend: 0x0, symName: '___49-[RFHttpConnector startCommunication:completion:]_block_invoke', symObjAddr: 0x111D, symBinAddr: 0x1E791, symSize: 0x8A }
+  - { offset: 0xE3E02, size: 0x8, addend: 0x0, symName: '-[RFHttpConnector .cxx_destruct]', symObjAddr: 0x11FC, symBinAddr: 0x1E81B, symSize: 0x3E }
+  - { offset: 0xE400D, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate initWithDelegateHandler:]', symObjAddr: 0x0, symBinAddr: 0x1E860, symSize: 0x3E }
+  - { offset: 0xE4027, size: 0x8, addend: 0x0, symName: _openEventKey, symObjAddr: 0x1200, symBinAddr: 0x2AB08, symSize: 0x0 }
+  - { offset: 0xE4075, size: 0x8, addend: 0x0, symName: _openNotificationId, symObjAddr: 0x1208, symBinAddr: 0x2AB10, symSize: 0x0 }
+  - { offset: 0xE408B, size: 0x8, addend: 0x0, symName: _openEventId, symObjAddr: 0x1210, symBinAddr: 0x2AB18, symSize: 0x0 }
+  - { offset: 0xE40A1, size: 0x8, addend: 0x0, symName: _openAppEvent, symObjAddr: 0x1218, symBinAddr: 0x2AB20, symSize: 0x0 }
+  - { offset: 0xE40B7, size: 0x8, addend: 0x0, symName: _kLaunchModeMovie, symObjAddr: 0x1300, symBinAddr: 0x34308, symSize: 0x0 }
+  - { offset: 0xE40CD, size: 0x8, addend: 0x0, symName: _kLaunchModeGif, symObjAddr: 0x1308, symBinAddr: 0x34310, symSize: 0x0 }
+  - { offset: 0xE40E3, size: 0x8, addend: 0x0, symName: _kLaunchModeImage, symObjAddr: 0x1310, symBinAddr: 0x34318, symSize: 0x0 }
+  - { offset: 0xE40F9, size: 0x8, addend: 0x0, symName: _kLaunchModeText, symObjAddr: 0x1318, symBinAddr: 0x34320, symSize: 0x0 }
+  - { offset: 0xE41B2, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate initWithDelegateHandler:]', symObjAddr: 0x0, symBinAddr: 0x1E860, symSize: 0x3E }
+  - { offset: 0xE4205, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate configure]', symObjAddr: 0x3E, symBinAddr: 0x1E89E, symSize: 0x148 }
+  - { offset: 0xE42A4, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate appWillResignActive:]', symObjAddr: 0x186, symBinAddr: 0x1E9E6, symSize: 0x12 }
+  - { offset: 0xE42ED, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate sceneWillDeactivate:]', symObjAddr: 0x198, symBinAddr: 0x1E9F8, symSize: 0x12 }
+  - { offset: 0xE4336, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate processWillResignActive]', symObjAddr: 0x1AA, symBinAddr: 0x1EA0A, symSize: 0x153 }
+  - { offset: 0xE4440, size: 0x8, addend: 0x0, symName: '___46-[AppInternalDelegate processWillResignActive]_block_invoke', symObjAddr: 0x2FD, symBinAddr: 0x1EB5D, symSize: 0x1E }
+  - { offset: 0xE44AF, size: 0x8, addend: 0x0, symName: '___46-[AppInternalDelegate processWillResignActive]_block_invoke.46', symObjAddr: 0x339, symBinAddr: 0x1EB89, symSize: 0x6 }
+  - { offset: 0xE44FA, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate appWillterminate:]', symObjAddr: 0x33F, symBinAddr: 0x1EB8F, symSize: 0x6 }
+  - { offset: 0xE4535, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate appDidBecomeActive:]', symObjAddr: 0x345, symBinAddr: 0x1EB95, symSize: 0x82 }
+  - { offset: 0xE45D4, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate sceneDidActivate:]', symObjAddr: 0x3C7, symBinAddr: 0x1EC17, symSize: 0xB4 }
+  - { offset: 0xE4687, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate processDidBecomeActive:]', symObjAddr: 0x47B, symBinAddr: 0x1ECCB, symSize: 0xE1 }
+  - { offset: 0xE4762, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate getRootViewController:]', symObjAddr: 0x55C, symBinAddr: 0x1EDAC, symSize: 0x185 }
+  - { offset: 0xE48A0, size: 0x8, addend: 0x0, symName: '___45-[AppInternalDelegate getRootViewController:]_block_invoke', symObjAddr: 0x6E1, symBinAddr: 0x1EF31, symSize: 0x1C }
+  - { offset: 0xE48F3, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate getRootViewControllerWithWindowScene:]', symObjAddr: 0x6FD, symBinAddr: 0x1EF4D, symSize: 0x26F }
+  - { offset: 0xE4A41, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate displayLatestContent:content:]', symObjAddr: 0x96C, symBinAddr: 0x1F1BC, symSize: 0x104 }
+  - { offset: 0xE4B28, size: 0x8, addend: 0x0, symName: '___52-[AppInternalDelegate displayLatestContent:content:]_block_invoke', symObjAddr: 0xA70, symBinAddr: 0x1F2C0, symSize: 0xD1 }
+  - { offset: 0xE4C2E, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s, symObjAddr: 0xB41, symBinAddr: 0x1F391, symSize: 0x2C }
+  - { offset: 0xE4C7B, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate hasDisplayed:]', symObjAddr: 0xB99, symBinAddr: 0x1F3C9, symSize: 0x189 }
+  - { offset: 0xE4DCA, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate canDisplayWithMode:]', symObjAddr: 0xD22, symBinAddr: 0x1F552, symSize: 0x16C }
+  - { offset: 0xE4EFD, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate getLaunchMode]', symObjAddr: 0xE8E, symBinAddr: 0x1F6BE, symSize: 0x5E }
+  - { offset: 0xE4F64, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate setLaunchMode:]', symObjAddr: 0xEEC, symBinAddr: 0x1F71C, symSize: 0x81 }
+  - { offset: 0xE4FFB, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate delegateHandler]', symObjAddr: 0xF6D, symBinAddr: 0x1F79D, symSize: 0xA }
+  - { offset: 0xE5030, size: 0x8, addend: 0x0, symName: '-[AppInternalDelegate setDelegateHandler:]', symObjAddr: 0xF77, symBinAddr: 0x1F7A7, symSize: 0x19 }
+  - { offset: 0xE5439, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil sendEventLog:param:]', symObjAddr: 0x0, symBinAddr: 0x1F7C0, symSize: 0x19 }
+  - { offset: 0xE5448, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil sendEventLog:param:]', symObjAddr: 0x0, symBinAddr: 0x1F7C0, symSize: 0x19 }
+  - { offset: 0xE549D, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil sendReservedEventLog]', symObjAddr: 0x19, symBinAddr: 0x1F7D9, symSize: 0x3EA }
+  - { offset: 0xE56E2, size: 0x8, addend: 0x0, symName: '___39+[RFLogEventsUtil sendReservedEventLog]_block_invoke', symObjAddr: 0x403, symBinAddr: 0x1FBC3, symSize: 0x3F }
+  - { offset: 0xE57AD, size: 0x8, addend: 0x0, symName: ___copy_helper_block_e8_32s40s48s56s64s72s, symObjAddr: 0x442, symBinAddr: 0x1FC02, symSize: 0x41 }
+  - { offset: 0xE581E, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil reserveSendLog:]', symObjAddr: 0x4C4, symBinAddr: 0x1FC43, symSize: 0x136 }
+  - { offset: 0xE5961, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil logForRF:param:]', symObjAddr: 0x5FA, symBinAddr: 0x1FD79, symSize: 0x145 }
+  - { offset: 0xE5A8F, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil reset]', symObjAddr: 0x73F, symBinAddr: 0x1FEBE, symSize: 0x19 }
+  - { offset: 0xE5ACA, size: 0x8, addend: 0x0, symName: '+[RFLogEventsUtil currentNotificationId]', symObjAddr: 0x758, symBinAddr: 0x1FED7, symSize: 0x19 }
+  - { offset: 0xE5CCA, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler userNotificationCenter:willPresentNotification:withCompletionHandler:]', symObjAddr: 0x0, symBinAddr: 0x1FEF0, symSize: 0xEE }
+  - { offset: 0xE5D2C, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler userNotificationCenter:willPresentNotification:withCompletionHandler:]', symObjAddr: 0x0, symBinAddr: 0x1FEF0, symSize: 0xEE }
+  - { offset: 0xE5E13, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler userNotificationCenter:didReceiveNotificationResponse:withCompletionHandler:]', symObjAddr: 0xEE, symBinAddr: 0x1FFDE, symSize: 0x105 }
+  - { offset: 0xE5F06, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler delegate]', symObjAddr: 0x1F3, symBinAddr: 0x200E3, symSize: 0x16 }
+  - { offset: 0xE5F3D, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler setDelegate:]', symObjAddr: 0x209, symBinAddr: 0x200F9, symSize: 0x11 }
+  - { offset: 0xE5F7E, size: 0x8, addend: 0x0, symName: '-[UNCDelegateHandler .cxx_destruct]', symObjAddr: 0x21A, symBinAddr: 0x2010A, symSize: 0xE }
+  - { offset: 0xE60DE, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager reserveEventLog:eventPostId:eventId:eventTime:]', symObjAddr: 0x0, symBinAddr: 0x20118, symSize: 0x597 }
+  - { offset: 0xE60F8, size: 0x8, addend: 0x0, symName: _evnetLogkey, symObjAddr: 0x1AA8, symBinAddr: 0x2AC38, symSize: 0x0 }
+  - { offset: 0xE6118, size: 0x8, addend: 0x0, symName: _evnetLogHistorykey, symObjAddr: 0x1AB0, symBinAddr: 0x2AC40, symSize: 0x0 }
+  - { offset: 0xE612E, size: 0x8, addend: 0x0, symName: _segmentKey, symObjAddr: 0x1AB8, symBinAddr: 0x2AC48, symSize: 0x0 }
+  - { offset: 0xE614E, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager reserveEventLog:eventPostId:eventId:eventTime:]', symObjAddr: 0x0, symBinAddr: 0x20118, symSize: 0x597 }
+  - { offset: 0xE6487, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager loadReservedEventLogs]', symObjAddr: 0x597, symBinAddr: 0x206AF, symSize: 0x19 }
+  - { offset: 0xE64C8, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager removeReservedEventLogs]', symObjAddr: 0x5B0, symBinAddr: 0x206C8, symSize: 0x19 }
+  - { offset: 0xE6505, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager addEventLogToHistories:]', symObjAddr: 0x5C9, symBinAddr: 0x206E1, symSize: 0x220 }
+  - { offset: 0xE66E1, size: 0x8, addend: 0x0, symName: '___43-[RFApiDataManager addEventLogToHistories:]_block_invoke', symObjAddr: 0x7E9, symBinAddr: 0x20901, symSize: 0xC0 }
+  - { offset: 0xE67BB, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager hasEventLogInHistories:eventPostId:eventId:]', symObjAddr: 0x8A9, symBinAddr: 0x209C1, symSize: 0x404 }
+  - { offset: 0xE69E4, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager reserveRegisterSegments:]', symObjAddr: 0xCAD, symBinAddr: 0x20DC5, symSize: 0x259 }
+  - { offset: 0xE6B29, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager reserveRegisterSegments:intSegments:boolSegments:dateSegments:]', symObjAddr: 0xF06, symBinAddr: 0x2101E, symSize: 0x6BD }
+  - { offset: 0xE6E10, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager loadReservedSegments]', symObjAddr: 0x15C3, symBinAddr: 0x216DB, symSize: 0x19 }
+  - { offset: 0xE6E51, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager removeReservedSegments]', symObjAddr: 0x15DC, symBinAddr: 0x216F4, symSize: 0x19 }
+  - { offset: 0xE6E8E, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager saveArray:data:]', symObjAddr: 0x15F5, symBinAddr: 0x2170D, symSize: 0xC3 }
+  - { offset: 0xE6F55, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager loadArray:]', symObjAddr: 0x16B8, symBinAddr: 0x217D0, symSize: 0x7E }
+  - { offset: 0xE6FD4, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager saveDictionary:data:]', symObjAddr: 0x1736, symBinAddr: 0x2184E, symSize: 0xC3 }
+  - { offset: 0xE709B, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager loadDictionary:]', symObjAddr: 0x17F9, symBinAddr: 0x21911, symSize: 0x7E }
+  - { offset: 0xE711A, size: 0x8, addend: 0x0, symName: '-[RFApiDataManager remove:]', symObjAddr: 0x1877, symBinAddr: 0x2198F, symSize: 0x6D }
+  - { offset: 0xE72AA, size: 0x8, addend: 0x0, symName: '+[Media addAttachment:completeHandler:]', symObjAddr: 0x0, symBinAddr: 0x219FC, symSize: 0x137 }
+  - { offset: 0xE72B9, size: 0x8, addend: 0x0, symName: '+[Media addAttachment:completeHandler:]', symObjAddr: 0x0, symBinAddr: 0x219FC, symSize: 0x137 }
+  - { offset: 0xE73E0, size: 0x8, addend: 0x0, symName: '+[Media get:attemptContent:completeHandler:]', symObjAddr: 0x137, symBinAddr: 0x21B33, symSize: 0x162 }
+  - { offset: 0xE7527, size: 0x8, addend: 0x0, symName: '___44+[Media get:attemptContent:completeHandler:]_block_invoke', symObjAddr: 0x299, symBinAddr: 0x21C95, symSize: 0x286 }
+  - { offset: 0xE773C, size: 0x8, addend: 0x0, symName: '+[Media moveToGroupContainer:from:]', symObjAddr: 0x58F, symBinAddr: 0x21F1B, symSize: 0x1CE }
+  - { offset: 0xE78F7, size: 0x8, addend: 0x0, symName: '+[Media hasMovie:]', symObjAddr: 0x75D, symBinAddr: 0x220E9, symSize: 0xFD }
+  - { offset: 0xE7A39, size: 0x8, addend: 0x0, symName: '+[Media addPlayButton:destUrl:]', symObjAddr: 0x85A, symBinAddr: 0x221E6, symSize: 0x316 }
+  - { offset: 0xE7D9E, size: 0x8, addend: 0x0, symName: '+[Media dataTask:]', symObjAddr: 0xB70, symBinAddr: 0x224FC, symSize: 0x8C }
+  - { offset: 0xE7E3D, size: 0x8, addend: 0x0, symName: '+[Media dataTaskWithCompleteHandler:completeHandler:]', symObjAddr: 0xBFC, symBinAddr: 0x22588, symSize: 0xF7 }
+  - { offset: 0xE7F10, size: 0x8, addend: 0x0, symName: '___53+[Media dataTaskWithCompleteHandler:completeHandler:]_block_invoke', symObjAddr: 0xCF3, symBinAddr: 0x2267F, symSize: 0xBE }
+  - { offset: 0xE82AB, size: 0x8, addend: 0x0, symName: '-[RFApiResponse initWithResponse:data:]', symObjAddr: 0x0, symBinAddr: 0x2273D, symSize: 0x1FF }
+  - { offset: 0xE835E, size: 0x8, addend: 0x0, symName: '-[RFApiResponse initWithResponse:data:]', symObjAddr: 0x0, symBinAddr: 0x2273D, symSize: 0x1FF }
+  - { offset: 0xE851A, size: 0x8, addend: 0x0, symName: '-[RFApiResponse status]', symObjAddr: 0x1FF, symBinAddr: 0x2293C, symSize: 0xA }
+  - { offset: 0xE854F, size: 0x8, addend: 0x0, symName: '-[RFApiResponse message]', symObjAddr: 0x209, symBinAddr: 0x22946, symSize: 0xA }
+  - { offset: 0xE8584, size: 0x8, addend: 0x0, symName: '-[RFApiResponse deviceId]', symObjAddr: 0x213, symBinAddr: 0x22950, symSize: 0xA }
+  - { offset: 0xE85B9, size: 0x8, addend: 0x0, symName: '-[RFApiResponse authToken]', symObjAddr: 0x21D, symBinAddr: 0x2295A, symSize: 0xA }
+  - { offset: 0xE85EE, size: 0x8, addend: 0x0, symName: '-[RFApiResponse postingIds]', symObjAddr: 0x227, symBinAddr: 0x22964, symSize: 0xA }
+  - { offset: 0xE8623, size: 0x8, addend: 0x0, symName: '-[RFApiResponse .cxx_destruct]', symObjAddr: 0x231, symBinAddr: 0x2296E, symSize: 0x3E }
 ...

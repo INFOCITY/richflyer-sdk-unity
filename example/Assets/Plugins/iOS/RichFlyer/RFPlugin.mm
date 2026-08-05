@@ -15,18 +15,66 @@ extern "C" {
 
   typedef void (*RFNotificationReceiverFunction)(const char* buttonTitle, const char* buttonValue, const char* buttonValueType, unsigned long buttonIndex, const char* extendedProperty);
   static RFNotificationReceiverFunction RFNotificationReceiver;
+  static RFAction* PendingNotificationAction;
+  static NSString* PendingExtendedProperty;
+  static bool HasPendingNotification;
 
-  typedef void (*RFCallbackFunction)(bool result, long status, const char* message);
-  static RFCallbackFunction RFCompleted;
+  static void dispatchNotification(RFAction* action, NSString* extendedProperty) {
+    if (!RFNotificationReceiver) {
+      PendingNotificationAction = action;
+      PendingExtendedProperty = extendedProperty;
+      HasPendingNotification = true;
+      return;
+    }
 
-  typedef void (*RFContentDisplayCallbackFunction)(const char* buttonTitle, const char* buttonValue, const char* buttonValueType, unsigned long buttonIndex);
-  static RFContentDisplayCallbackFunction RFContentDisplayCallback;
+    const char* title = action.getTitle ? [action.getTitle UTF8String] : NULL;
+    const char* value = action.getValue ? [action.getValue UTF8String] : NULL;
+    const char* type = action.getType ? [action.getType UTF8String] : NULL;
+    unsigned long index = action.getIndex;
+    const char* extendedPropertyCstr = extendedProperty ? [extendedProperty UTF8String] : NULL;
+    RFNotificationReceiver(title, value, type, index, extendedPropertyCstr);
+  }
 
-  typedef void (*RFPostingResultCallbackFunction)(bool result, long status, const char* message, const char* eventPostIds);
-  static RFPostingResultCallbackFunction RFPostMessageCallback;
+  typedef void (*RFCallbackFunction)(bool result, long status, const char* message, long long requestId);
+  static RFCallbackFunction RFInitializationCallback;
+  static long long RFInitializationRequestId;
+  static bool HasInitializationResult;
+  static bool InitializationResult;
+  static long InitializationCode;
+  static NSString* InitializationMessage;
+
+  static void dispatchInitializationResult() {
+    if (!HasInitializationResult || !RFInitializationCallback) {
+      return;
+    }
+
+    RFCallbackFunction callback = RFInitializationCallback;
+    long long requestId = RFInitializationRequestId;
+    RFInitializationCallback = NULL;
+    RFInitializationRequestId = 0;
+    callback(InitializationResult, InitializationCode, [InitializationMessage UTF8String], requestId);
+  }
+
+  typedef void (*RFContentDisplayCallbackFunction)(const char* buttonTitle, const char* buttonValue, const char* buttonValueType, unsigned long buttonIndex, long long requestId);
+
+  typedef void (*RFPostingResultCallbackFunction)(bool result, long status, const char* message, const char* eventPostIds, long long requestId);
 
   void registReceiver(RFNotificationReceiverFunction callback) {
     RFNotificationReceiver = callback;
+    if (RFNotificationReceiver && HasPendingNotification) {
+      RFAction* action = PendingNotificationAction;
+      NSString* extendedProperty = PendingExtendedProperty;
+      PendingNotificationAction = nil;
+      PendingExtendedProperty = nil;
+      HasPendingNotification = false;
+      dispatchNotification(action, extendedProperty);
+    }
+  }
+
+  void initializeRichFlyer(long long requestId, RFCallbackFunction callback) {
+    RFInitializationRequestId = requestId;
+    RFInitializationCallback = callback;
+    dispatchInitializationResult();
   }
 
   void resetBadgeNumber() {
@@ -37,7 +85,7 @@ extern "C" {
     [RFPlugin setBadgeNumber:number];
   }
 
-  void registSegments(const char* segmentsJson, RFCallbackFunction callback) {
+  void registSegments(const char* segmentsJson, long long requestId, RFCallbackFunction callback) {
         
     NSData *data = [[NSString stringWithUTF8String:segmentsJson] dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary* dictionary = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
@@ -48,9 +96,10 @@ extern "C" {
       [registabaleSegments setObject:segment[@"Value"] forKey:segment[@"Name"]];
     }
     
-    RFCompleted = callback;
     [RFPlugin registSegments:registabaleSegments completion:^(RFResult* result) {
-      RFCompleted(result.result, result.code, [result.message UTF8String]);
+      if (callback) {
+        callback(result.result, result.code, [result.message UTF8String], requestId);
+      }
     }];
   }
 
@@ -110,15 +159,17 @@ extern "C" {
 
   }
 
+  void releaseString(const char* value) {
+    free((void*)value);
+  }
+
   void setLaunchMode(int mode) {
     [RFPlugin setLaunchMode:mode];
   }
 
-  void displayContent(const char* notificationId, RFContentDisplayCallbackFunction callback) {
-    
-    RFContentDisplayCallback = callback;
-    
-    [RFPlugin displayContent:[NSString stringWithUTF8String:notificationId]
+  void displayContent(const char* notificationId, long long requestId, RFContentDisplayCallbackFunction callback) {
+    NSString* notificationIdString = notificationId ? [NSString stringWithUTF8String:notificationId] : @"";
+    [RFPlugin displayContent:notificationIdString
              completeHandler:^(RFAction* action) {
       
       const char* title = action.getTitle ? [action.getTitle UTF8String] : NULL;
@@ -126,18 +177,18 @@ extern "C" {
       const char* type = action.getType ? [action.getType UTF8String] : NULL;
       unsigned long index = action.getIndex;
 
-      if (RFContentDisplayCallback) {
-        RFContentDisplayCallback(title, value, type, index);
+      if (callback) {
+        callback(title, value, type, index, requestId);
       }
     }];
   }
 
-  void postMessage(const char* events, const char* variables, int standbyTime, RFPostingResultCallbackFunction callback) {
+  void postMessage(const char* events, const char* variables, int standbyTime, long long requestId, RFPostingResultCallbackFunction callback) {
     NSData *eventsData = [[NSString stringWithUTF8String:events] dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary* eventsDict = [NSJSONSerialization JSONObjectWithData:eventsData options:kNilOptions error:nil];
     NSArray* eventsArray = eventsDict[@"Events"];
     
-    NSData *variablesData = [[NSString stringWithUTF8String:variables] dataUsingEncoding:NSUTF8StringEncoding];
+    NSData *variablesData = variables ? [[NSString stringWithUTF8String:variables] dataUsingEncoding:NSUTF8StringEncoding] : nil;
     NSDictionary* variablesDict = [NSJSONSerialization JSONObjectWithData:variablesData options:kNilOptions error:nil];
     NSArray* srcVariables = variablesDict[@"Variables"];
     NSMutableDictionary* useVariables = [NSMutableDictionary dictionary];
@@ -150,22 +201,24 @@ extern "C" {
       standbyTimeNumber = [NSNumber numberWithLong:standbyTime];
     }
     
-    RFPostMessageCallback = callback;
     [RFPlugin postMessage:eventsArray variables:useVariables standbyTime:standbyTimeNumber completion:^(RFResult* result, NSArray<NSString *>* eventPostIds) {
 
       NSString* joinedEventPostIds = nil;
       if (eventPostIds) {
         joinedEventPostIds = [eventPostIds componentsJoinedByString:@","];
       }
-      RFPostMessageCallback(result.result, result.code, [result.message UTF8String], [joinedEventPostIds UTF8String]);
+      if (callback) {
+        callback(result.result, result.code, [result.message UTF8String], [joinedEventPostIds UTF8String], requestId);
+      }
     }];
   }
 
-  void cancelPosting(const char* eventPostId, RFPostingResultCallbackFunction callback) {
-    RFPostMessageCallback = callback;
-    
-    [RFPlugin cancelPosting:[NSString stringWithUTF8String:eventPostId] completion:^(RFResult* result) {
-      RFPostMessageCallback(result.result, result.code, [result.message UTF8String], nil);
+  void cancelPosting(const char* eventPostId, long long requestId, RFPostingResultCallbackFunction callback) {
+    NSString* eventPostIdString = eventPostId ? [NSString stringWithUTF8String:eventPostId] : @"";
+    [RFPlugin cancelPosting:eventPostIdString completion:^(RFResult* result) {
+      if (callback) {
+        callback(result.result, result.code, [result.message UTF8String], nil, requestId);
+      }
     }];
   }
 
@@ -177,19 +230,29 @@ extern "C" {
 @implementation RFPlugin
 
 
-+ (void)receiveNotification:(UNNotificationResponse*)response {
++ (void)completeInitializationWithResult:(BOOL)result code:(NSInteger)code message:(nullable NSString*)message {
+  void (^completion)(void) = ^{
+    HasInitializationResult = true;
+    InitializationResult = result;
+    InitializationCode = code;
+    InitializationMessage = [message copy];
+    dispatchInitializationResult();
+  };
+
+  if ([NSThread isMainThread]) {
+    completion();
+  } else {
+    dispatch_async(dispatch_get_main_queue(), completion);
+  }
+}
+
+
++ (void)receiveNotification:(nullable UNNotificationResponse*)response {
 
   if (!response) return;
   
   [RFApp didReceiveNotification:response handler:^(RFAction* action, NSString* extendedProperty){
-    if (RFNotificationReceiver) {
-      const char* title = action.getTitle ? [action.getTitle UTF8String] : NULL;
-      const char* value = action.getValue ? [action.getValue UTF8String] : NULL;
-      const char* type = action.getType ? [action.getType UTF8String] : NULL;
-      unsigned long index = action.getIndex;
-      const char* extendedPropertyCstr = extendedProperty ? [extendedProperty UTF8String] : NULL;
-      RFNotificationReceiver(title, value, type, index, extendedPropertyCstr);
-    }
+    dispatchNotification(action, extendedProperty);
   }];
 }
 
@@ -246,18 +309,41 @@ extern "C" {
   }
   
   if (!useContent) {
-    completeHandler(nil);
+    if (completeHandler) completeHandler(nil);
     return;
   }
   
-  UIViewController *topController = [UIApplication sharedApplication].keyWindow.rootViewController;
+  UIWindow *targetWindow = nil;
+  if (@available(iOS 13.0, *)) {
+    for (UIScene *scene in [UIApplication sharedApplication].connectedScenes) {
+      if (scene.activationState != UISceneActivationStateForegroundActive || ![scene isKindOfClass:[UIWindowScene class]]) {
+        continue;
+      }
+      for (UIWindow *window in ((UIWindowScene *)scene).windows) {
+        if (window.isKeyWindow) {
+          targetWindow = window;
+          break;
+        }
+      }
+      if (targetWindow) break;
+    }
+  }
+  if (!targetWindow) {
+    targetWindow = [UIApplication sharedApplication].keyWindow;
+  }
+
+  UIViewController *topController = targetWindow.rootViewController;
+  if (!topController) {
+    if (completeHandler) completeHandler(nil);
+    return;
+  }
   while (topController.presentedViewController) {
     topController = topController.presentedViewController;
   }
 
   RFContentDisplay* rfDisplay = [[RFContentDisplay alloc] initWithContent:useContent];
   [rfDisplay present:topController completeHandler:^(RFAction* action){
-    completeHandler(action);
+    if (completeHandler) completeHandler(action);
     [rfDisplay dismiss];
   }];
 }

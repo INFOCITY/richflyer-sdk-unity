@@ -4,6 +4,7 @@
 //  Copyright © 2022年 INFOCITY,Inc. All rights reserved.
 //
 
+using System;
 using System.Collections.Generic;
 
 namespace RichFlyer
@@ -36,7 +37,7 @@ namespace RichFlyer
 #elif UNITY_ANDROID            
             return RFAndroidPluginScript.GetSegments();
 #else
-            return null;
+            return Array.Empty<RFSegment>();
 #endif
         }
 
@@ -47,7 +48,7 @@ namespace RichFlyer
 #elif UNITY_ANDROID
             return RFAndroidPluginScript.GetReceivedData();
 #else
-            return null;
+            return Array.Empty<RFContent>();
 #endif
         }
 

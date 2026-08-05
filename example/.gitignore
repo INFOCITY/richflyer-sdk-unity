@@ -70,3 +70,25 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Android Resolver / Firebase build-time generated files.
+# SDK users are expected to run dependency resolution themselves
+# (Assets > External Dependency Manager > Android Resolver > Resolve).
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/mainTemplate.gradle*
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/gradleTemplate.properties*
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/settingsTemplate.gradle*
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/baseProjectTemplate.gradle*
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/launcherTemplate.gradle*
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/RichFlyer/notification_icon.aar*
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/FirebaseApp.androidlib/AndroidManifest.xml*
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/FirebaseApp.androidlib/project.properties*
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/FirebaseApp.androidlib/res/values/google-services.xml*
+/[Aa]ssets/[Pp]lugins/[Aa]ndroid/MessagingUnityPlayerActivity.java*
+/ProjectSettings/AndroidResolverDependencies.xml
+
+# Firebase / RichFlyer credentials. Each SDK user must supply their own.
+/[Aa]ssets/google-services.json*
+/[Aa]ssets/[Ss]treamingAssets/
+/[Aa]ssets/[Ss]treamingAssets.meta
+/[Aa]ssets/[Rr]esources/
+/[Aa]ssets/[Rr]esources.meta

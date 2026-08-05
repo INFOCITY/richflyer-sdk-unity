@@ -10,9 +10,13 @@
 
 #import <RichFlyer/RichFlyer.h>
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface RFPlugin : NSObject
 
-+ (void)receiveNotification:(UNNotificationResponse*)response;
++ (void)receiveNotification:(nullable UNNotificationResponse*)response;
+
++ (void)completeInitializationWithResult:(BOOL)result code:(NSInteger)code message:(nullable NSString*)message;
 
 + (void)resetBadgeNumber;
 
@@ -24,7 +28,7 @@
 
 + (NSDictionary*)getReceivedData;
 
-+ (NSDictionary*)getLatestReceivedData;
++ (nullable NSDictionary*)getLatestReceivedData;
 
 + (void)setLaunchMode:(RFLaunchModes)mode;
 
@@ -35,5 +39,7 @@
 + (void)cancelPosting:(nonnull NSString*)eventPostId completion:(nullable void (^)(RFResult* _Nonnull result))completion;
 
 @end
+
+NS_ASSUME_NONNULL_END
 
 #endif /* RFPlugin_h */

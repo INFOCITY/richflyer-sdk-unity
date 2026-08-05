@@ -6,8 +6,11 @@
 
 #if UNITY_IOS
 
+using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading;
 using UnityEngine;
 
 namespace RichFlyer
@@ -15,21 +18,24 @@ namespace RichFlyer
     public class RFIOSPluginScript
     {
 
-        static RFCompleted _callback;
         static RFNotificationReceiver _receiver;
-        static RFContentDisplayCallback _displayCallback;
-        static RFPostMessageCallback _postMessageCallback;
+        static readonly object CallbackLock = new object();
+        static readonly Dictionary<long, RFCompleted> ResultCallbacks = new Dictionary<long, RFCompleted>();
+        static readonly Dictionary<long, RFContentDisplayCallback> DisplayCallbacks = new Dictionary<long, RFContentDisplayCallback>();
+        static readonly Dictionary<long, RFPostMessageCallback> PostMessageCallbacks = new Dictionary<long, RFPostMessageCallback>();
+        static long _nextRequestId;
 
         public static void Initialize(RFNotificationReceiver receiver, RFCompleted onResult)
         {
             if (receiver == null)
             {
-                onResult(false, 400, "Receiver not found.");
+                onResult?.Invoke(false, 400, "Receiver not found.");
                 return;
             }
             _receiver = receiver;
             registReceiver(NotificationReceiver);
-            onResult(true, 0, "");
+            long requestId = AddCallback(ResultCallbacks, onResult);
+            initializeRichFlyer(requestId, OnResultCallback);
         }
 
         public static void ResetBadgeNumber()
@@ -44,35 +50,35 @@ namespace RichFlyer
 
         public static void RegistSegments(RFSegment[] segments, RFCompleted onResult)
         {
-            _callback = onResult;
-
             //segments to json
-            var jsonDict = new RFSegmentsJson(segments);
+            var jsonDict = new RFSegmentsJson(segments ?? Array.Empty<RFSegment>());
             string segmentsJson = JsonUtility.ToJson(jsonDict);
-            registSegments(segmentsJson, OnResultCallback);
+            long requestId = AddCallback(ResultCallbacks, onResult);
+            registSegments(segmentsJson, requestId, OnResultCallback);
         }
 
         public static RFSegment[] GetSegments()
         {
-            string segmentsJson = getSegments();
-            RFSegmentsJson segmentObj = JsonUtility.FromJson<RFSegmentsJson>(segmentsJson);
-            return segmentObj.Segments;
+            string segmentsJson = GetNativeString(getSegments());
+            RFSegmentsJson segmentObj = string.IsNullOrEmpty(segmentsJson)
+                ? null
+                : JsonUtility.FromJson<RFSegmentsJson>(segmentsJson);
+            return segmentObj?.Segments ?? Array.Empty<RFSegment>();
         }
 
         public static RFContent[] GetReceivedData()
         {
-            string contentsJson = getReceivedData();
-            RFContentArrayJson obj = JsonUtility.FromJson<RFContentArrayJson>(contentsJson);
-            RFContent[] receivedContent = obj.Contents;
-            return receivedContent;
+            string contentsJson = GetNativeString(getReceivedData());
+            RFContentArrayJson obj = string.IsNullOrEmpty(contentsJson)
+                ? null
+                : JsonUtility.FromJson<RFContentArrayJson>(contentsJson);
+            return obj?.Contents ?? Array.Empty<RFContent>();
         }
 
         public static RFContent GetLatestReceivedData()
         {
-            string contentJson = getLatestReceivedData();
-            RFContent content = JsonUtility.FromJson<RFContent>(contentJson);
-
-            return content;
+            string contentJson = GetNativeString(getLatestReceivedData());
+            return string.IsNullOrEmpty(contentJson) ? null : JsonUtility.FromJson<RFContent>(contentJson);
         }
 
         public static void SetLaunchMode(int modes)
@@ -82,19 +88,17 @@ namespace RichFlyer
 
         public static void DisplayContent(string notificationId, RFContentDisplayCallback callback)
         {
-            _displayCallback = callback;
-            displayContent(notificationId, OnDismissContentDisplay);
+            long requestId = AddCallback(DisplayCallbacks, callback);
+            displayContent(notificationId, requestId, OnDismissContentDisplay);
         }
 
         public static void PostMessage(string[] events, Dictionary<string, string> variables, int? standbyTime, RFPostMessageCallback onResult)
         {
-            _postMessageCallback = onResult;
-
-            RFEventArrayJson eventArrayJson = new RFEventArrayJson(events);
+            RFEventArrayJson eventArrayJson = new RFEventArrayJson(events ?? Array.Empty<string>());
             string eventsJson = JsonUtility.ToJson(eventArrayJson);
 
             List<RFVariable> rfVariables = new List<RFVariable>();
-            foreach (var variable in variables)
+            foreach (var variable in variables ?? new Dictionary<string, string>())
             {
                 RFVariable rfVariable = new RFVariable(variable.Key, variable.Value);
                 rfVariables.Add(rfVariable);
@@ -106,13 +110,14 @@ namespace RichFlyer
             if (standbyTime != null) {
                 rfStandbyTime = standbyTime.Value;
             }
-            postMessage(eventsJson, variableJson, rfStandbyTime, OnPostMessageCallback);
+            long requestId = AddCallback(PostMessageCallbacks, onResult);
+            postMessage(eventsJson, variableJson, rfStandbyTime, requestId, OnPostMessageCallback);
         }
 
         public static void CancelPosting(string eventPostId, RFPostMessageCallback onResult)
         {
-            _postMessageCallback = onResult;
-            cancelPosting(eventPostId, OnPostMessageCallback);
+            long requestId = AddCallback(PostMessageCallbacks, onResult);
+            cancelPosting(eventPostId, requestId, OnPostMessageCallback);
         }
 
 
@@ -120,6 +125,9 @@ namespace RichFlyer
 
         [DllImport("__Internal")]
         private static extern void registReceiver(RFNotificationReceiver receiver);
+
+        [DllImport("__Internal")]
+        private static extern void initializeRichFlyer(long requestId, RFCompletedNativeCallback onResult);
 
         [AOT.MonoPInvokeCallback(typeof(RFNotificationReceiver))]
         private static void NotificationReceiver(string buttonTitle, string buttonValue, string buttonValueType, ulong buttonIndex, string extendedProperty)
@@ -135,58 +143,123 @@ namespace RichFlyer
         [DllImport("__Internal")]
         private static extern void setBadgeNumber(int number);
 
-        [AOT.MonoPInvokeCallback(typeof(RFCompleted))]
-        private static void OnResultCallback(bool result, long code, string message)
+        private delegate void RFCompletedNativeCallback([MarshalAs(UnmanagedType.I1)] bool result, long code, string message, long requestId);
+
+        [AOT.MonoPInvokeCallback(typeof(RFCompletedNativeCallback))]
+        private static void OnResultCallback(bool result, long code, string message, long requestId)
         {
-            _callback(result, code, message);
+            TakeCallback(ResultCallbacks, requestId)?.Invoke(result, code, message);
         }
 
         [DllImport("__Internal")]
-        private static extern void registSegments(string segments, RFCompleted onResult);
+        private static extern void registSegments(string segments, long requestId, RFCompletedNativeCallback onResult);
 
         [DllImport("__Internal")]
-        private static extern string getSegments();
+        private static extern IntPtr getSegments();
 
         [DllImport("__Internal")]
-        private static extern string getReceivedData();
+        private static extern IntPtr getReceivedData();
 
         [DllImport("__Internal")]
-        private static extern string getLatestReceivedData();
+        private static extern IntPtr getLatestReceivedData();
+
+        [DllImport("__Internal")]
+        private static extern void releaseString(IntPtr value);
 
         [DllImport("__Internal")]
         private static extern void setLaunchMode(int mode);
 
-        [AOT.MonoPInvokeCallback(typeof(RFContentDisplayCallback))]
-        private static void OnDismissContentDisplay(string buttonTitle, string buttonValue, string buttonValueType, ulong buttonIndex)
+        private delegate void RFContentDisplayNativeCallback(string buttonTitle, string buttonValue, string buttonValueType, ulong buttonIndex, long requestId);
+
+        [AOT.MonoPInvokeCallback(typeof(RFContentDisplayNativeCallback))]
+        private static void OnDismissContentDisplay(string buttonTitle, string buttonValue, string buttonValueType, ulong buttonIndex, long requestId)
         {
-            _displayCallback(buttonTitle, buttonValue, buttonValueType, buttonIndex);
+            TakeCallback(DisplayCallbacks, requestId)?.Invoke(buttonTitle, buttonValue, buttonValueType, buttonIndex);
         }
 
         [DllImport("__Internal")]
-        private static extern void displayContent(string notificationId, RFContentDisplayCallback callback);
+        private static extern void displayContent(string notificationId, long requestId, RFContentDisplayNativeCallback callback);
 
 
-        public delegate void RFPostMessageNativeCallback(bool result, long code, string message, string eventPostIds);
+        private delegate void RFPostMessageNativeCallback([MarshalAs(UnmanagedType.I1)] bool result, long code, string message, string eventPostIds, long requestId);
         [AOT.MonoPInvokeCallback(typeof(RFPostMessageNativeCallback))]
-        private static void OnPostMessageCallback(bool result, long code, string message, string eventPostIds)
+        private static void OnPostMessageCallback(bool result, long code, string message, string eventPostIds, long requestId)
         {
+            RFPostMessageCallback callback = TakeCallback(PostMessageCallbacks, requestId);
+            if (callback == null)
+            {
+                return;
+            }
+
             if (eventPostIds != null && eventPostIds.Length > 0)
             {
                 string[] eventPostIdArray = eventPostIds.Split(',');
-                _postMessageCallback(result, code, message, eventPostIdArray);
+                callback(result, code, message, eventPostIdArray);
             } else
             {
-                _postMessageCallback(result, code, message, null);
+                callback(result, code, message, null);
             }
         }
 
         [DllImport("__Internal")]
-        private static extern void postMessage(string events, string variables, int standbyTime, RFPostMessageNativeCallback callback);
+        private static extern void postMessage(string events, string variables, int standbyTime, long requestId, RFPostMessageNativeCallback callback);
 
         [DllImport("__Internal")]
-        private static extern void cancelPosting(string eventPostId, RFPostMessageNativeCallback callback);
+        private static extern void cancelPosting(string eventPostId, long requestId, RFPostMessageNativeCallback callback);
 
 #endregion P/Invoke
+
+        private static long AddCallback<T>(Dictionary<long, T> callbacks, T callback) where T : class
+        {
+            long requestId = Interlocked.Increment(ref _nextRequestId);
+            if (callback != null)
+            {
+                lock (CallbackLock)
+                {
+                    callbacks[requestId] = callback;
+                }
+            }
+            return requestId;
+        }
+
+        private static T TakeCallback<T>(Dictionary<long, T> callbacks, long requestId) where T : class
+        {
+            lock (CallbackLock)
+            {
+                T callback;
+                if (!callbacks.TryGetValue(requestId, out callback))
+                {
+                    return null;
+                }
+                callbacks.Remove(requestId);
+                return callback;
+            }
+        }
+
+        private static string GetNativeString(IntPtr nativeString)
+        {
+            if (nativeString == IntPtr.Zero)
+            {
+                return null;
+            }
+
+            try
+            {
+                int length = 0;
+                while (Marshal.ReadByte(nativeString, length) != 0)
+                {
+                    length++;
+                }
+
+                var bytes = new byte[length];
+                Marshal.Copy(nativeString, bytes, 0, length);
+                return Encoding.UTF8.GetString(bytes);
+            }
+            finally
+            {
+                releaseString(nativeString);
+            }
+        }
     }
 }
 

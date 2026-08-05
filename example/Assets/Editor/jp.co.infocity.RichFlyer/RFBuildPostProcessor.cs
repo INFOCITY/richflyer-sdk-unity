@@ -10,8 +10,6 @@ using UnityEditor.Callbacks;
 using UnityEditor.iOS.Xcode;
 using UnityEditor.iOS.Xcode.Extensions;
 using System.IO;
-using System.IO.Compression;
-using UnityEngine.Assertions;
 using RichFlyer;
 
 public class RFBuildPostProcessor
@@ -98,6 +96,7 @@ public class RFBuildPostProcessor
         catch (System.Exception e)
         {
             Debug.LogError($"{e}");
+            throw;
         }
 
     }
@@ -109,18 +108,22 @@ public class RFBuildPostProcessor
         string unityFrameworkTarget = project.GetUnityFrameworkTargetGuid();
 
         string searchPath = Path.Combine(pathToBuiltProject, FRAMEWORK_TARGET_PATH, XC_FRAMEWORK_NAME);
-        string[] deleteFrameworks = Directory.GetDirectories(searchPath, FRAMEWORK_NAME, SearchOption.AllDirectories);
-        foreach (string framework in deleteFrameworks)
+        if (Directory.Exists(searchPath))
         {
-            string projectPath = framework.Replace(pathToBuiltProject, "").TrimStart('/');
-            string delFileGuid = project.FindFileGuidByProjectPath(projectPath);
-            if (delFileGuid != null)
+            string[] deleteFrameworks = Directory.GetDirectories(searchPath, FRAMEWORK_NAME, SearchOption.AllDirectories);
+            foreach (string framework in deleteFrameworks)
             {
-                project.RemoveFileFromBuild(unityFrameworkTarget, delFileGuid);
-                project.RemoveFile(delFileGuid);
+                string projectPath = framework.Replace(pathToBuiltProject, "").TrimStart('/');
+                string delFileGuid = project.FindFileGuidByProjectPath(projectPath);
+                if (delFileGuid != null)
+                {
+                    project.RemoveFileFromBuild(unityFrameworkTarget, delFileGuid);
+                    project.RemoveFile(delFileGuid);
+                }
             }
+
+            Directory.Delete(searchPath, true);
         }
-        Directory.Delete(searchPath, true);
         string delFileGuid2 = project.FindFileGuidByProjectPath(Path.Combine(FRAMEWORK_TARGET_PATH, FRAMEWORK_NAME));
         if (delFileGuid2 != null)
         {
@@ -136,9 +139,12 @@ public class RFBuildPostProcessor
         }
 
         string frameworkDir = Path.Combine(pathToBuiltProject, FRAMEWORK_TARGET_PATH);
-        Directory.Delete(frameworkDir, true);
+        if (Directory.Exists(frameworkDir))
+        {
+            Directory.Delete(frameworkDir, true);
+        }
 
-        bool hasFramwork = project.ContainsFileByProjectPath(Path.Combine("Frameworks", XC_FRAMEWORK_NAME));
+        bool hasFramework = project.ContainsFileByProjectPath(Path.Combine("Frameworks", XC_FRAMEWORK_NAME));
 
         //xcframeworkをコピー
         string srcPath = Path.Combine(XC_FRAMEWORK_SRC_DIR, XC_FRAMEWORK_NAME);
@@ -146,7 +152,7 @@ public class RFBuildPostProcessor
 
         CopyAndReplaceDirectory(srcPath, targetPath);
 
-        if (hasFramwork)
+        if (hasFramework)
         {
             return null;
         }
@@ -382,6 +388,10 @@ public class RFBuildPostProcessor
     {
         string frameworkGuid = project.GetUnityFrameworkTargetGuid();
         string searchPath = Path.Combine(pathToBuiltProject, LIBRARIES_EXTENSION_PATH);
+        if (!Directory.Exists(searchPath))
+        {
+            return;
+        }
         string[] deleteFiles = Directory.GetFiles(searchPath, "*", SearchOption.AllDirectories);
         foreach (string file in deleteFiles)
         {
@@ -412,11 +422,13 @@ public class RFBuildPostProcessor
 
         foreach (var file in Directory.GetFiles(srcPath))
         {
-            if (Path.GetExtension(file).Equals(".meta", System.StringComparison.OrdinalIgnoreCase))
+            string fileName = Path.GetFileName(file);
+            if (Path.GetExtension(file).Equals(".meta", System.StringComparison.OrdinalIgnoreCase)
+                || fileName.Equals(".DS_Store", System.StringComparison.OrdinalIgnoreCase))
             {
                 continue;
             }
-            File.Copy(file, Path.Combine(dstPath, Path.GetFileName(file)));
+            File.Copy(file, Path.Combine(dstPath, fileName));
         }
 
         foreach (var dir in Directory.GetDirectories(srcPath))

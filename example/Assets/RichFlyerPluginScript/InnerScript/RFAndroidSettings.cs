@@ -6,8 +6,8 @@
 
 #if UNITY_ANDROID
 using System.IO;
+using System.Text;
 using UnityEngine;
-using UnityEngine.Networking;
 
 namespace RichFlyer
 {
@@ -49,13 +49,44 @@ namespace RichFlyer
 
         public static RFAndroidSettings LoadFromAppAsset()
         {
-            var path = Path.Combine(Application.streamingAssetsPath, RICHFLYER_ASSET_DIR, RICHFLYER_SETTING);
+            string assetPath = Path.Combine(RICHFLYER_ASSET_DIR, RICHFLYER_SETTING).Replace('\\', '/');
 
-            UnityWebRequest request = UnityWebRequest.Get(path);
-            request.SendWebRequest();
-            while (!request.isDone) { }
+            using (AndroidJavaObject activity = GetCurrentActivity())
+            using (AndroidJavaObject assets = activity.Call<AndroidJavaObject>("getAssets"))
+            using (AndroidJavaObject stream = assets.Call<AndroidJavaObject>("open", assetPath))
+            using (AndroidJavaObject streamReader = new AndroidJavaObject("java.io.InputStreamReader", stream, Encoding.UTF8.WebName))
+            using (AndroidJavaObject reader = new AndroidJavaObject("java.io.BufferedReader", streamReader))
+            {
+                try
+                {
+                    var json = new StringBuilder();
+                    string line;
+                    while ((line = reader.Call<string>("readLine")) != null)
+                    {
+                        json.Append(line);
+                    }
 
-            return JsonUtility.FromJson<RFAndroidSettings>(request.downloadHandler.text);
+                    RFAndroidSettings settings = JsonUtility.FromJson<RFAndroidSettings>(json.ToString());
+                    if (settings == null)
+                    {
+                        throw new InvalidDataException($"Invalid RichFlyer settings: {assetPath}");
+                    }
+
+                    return settings;
+                }
+                finally
+                {
+                    reader.Call("close");
+                }
+            }
+        }
+
+        private static AndroidJavaObject GetCurrentActivity()
+        {
+            using (var unityPlayer = new AndroidJavaClass("com.unity3d.player.UnityPlayer"))
+            {
+                return unityPlayer.GetStatic<AndroidJavaObject>("currentActivity");
+            }
         }
 
     }

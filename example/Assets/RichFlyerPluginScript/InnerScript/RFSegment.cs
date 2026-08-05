@@ -5,6 +5,7 @@
 //
 
 using System;
+using System.Globalization;
 using UnityEngine;
 
 namespace RichFlyer
@@ -13,19 +14,16 @@ namespace RichFlyer
     public class RFSegment
     {
         [SerializeField]
-        private string Name;
+        public string Name;
 
         [SerializeField]
-        private string Value;
+        public string Value;
 
         [NonSerialized]
-        private string   StringValue;
+        private SegmentValueType _valueType;
+
         [NonSerialized]
-        private bool     BoolValue;
-        [NonSerialized]
-        private long      NumberValue;
-        [NonSerialized]
-        private DateTime DateValue;
+        private DateTime _dateValue;
 
         public RFSegment(string name, string value)
         {
@@ -58,60 +56,105 @@ namespace RichFlyer
 
         public string getStringValue()
         {
-            return this.StringValue;
+            return this.Value;
         }
 
         public bool getBoolValue()
         {
-            return this.BoolValue;
+            if (_valueType == SegmentValueType.String || _valueType == SegmentValueType.Date)
+            {
+                return false;
+            }
+
+            bool boolValue;
+            if (bool.TryParse(this.Value, out boolValue))
+            {
+                return boolValue;
+            }
+
+            long numberValue;
+            return long.TryParse(this.Value, NumberStyles.Integer, CultureInfo.InvariantCulture, out numberValue)
+                && numberValue > 0;
         }
 
         public long getNumberValue()
         {
-            return this.NumberValue;
+            if (_valueType == SegmentValueType.String)
+            {
+                return 0;
+            }
+
+            bool boolValue;
+            if (bool.TryParse(this.Value, out boolValue))
+            {
+                return boolValue ? 1 : 0;
+            }
+
+            long numberValue;
+            return long.TryParse(this.Value, NumberStyles.Integer, CultureInfo.InvariantCulture, out numberValue)
+                ? numberValue
+                : 0;
         }
 
         public DateTime getDateValue()
         {
-            return this.DateValue;
+            if (_valueType == SegmentValueType.Date)
+            {
+                return _dateValue;
+            }
+
+            if (_valueType != SegmentValueType.Unknown)
+            {
+                return default;
+            }
+
+            long unixTimestamp;
+            return long.TryParse(this.Value, NumberStyles.Integer, CultureInfo.InvariantCulture, out unixTimestamp)
+                ? DateTimeOffset.FromUnixTimeSeconds(unixTimestamp).LocalDateTime
+                : default;
         }
         
 
         private void setupValue(object value)
         {
-            System.Type type = value.GetType();
+            if (value == null)
+            {
+                throw new ArgumentNullException(nameof(value));
+            }
+
+            Type type = value.GetType();
             if (type == typeof(string))
             {
+                _valueType = SegmentValueType.String;
                 this.Value = (string)value;
-                this.StringValue = (string)value;
             }
             else if (type == typeof(long))
             {
-                this.Value = ((long)value).ToString();
-                this.StringValue = this.Value;
-                this.NumberValue = (long)value;
-                this.BoolValue = ((long)value > 0);
+                _valueType = SegmentValueType.Number;
+                this.Value = ((long)value).ToString(CultureInfo.InvariantCulture);
             }
             else if (type == typeof(bool))
             {
+                _valueType = SegmentValueType.Bool;
                 this.Value = (bool)value ? "true" : "false";
-                this.StringValue = this.Value;
-                this.NumberValue = (bool)value ? 1 : 0;
-                this.BoolValue = (bool)value;            
             }
             else if (type == typeof(DateTime))
             {
-                DateTime unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-                DateTime dateTime = TimeZoneInfo.ConvertTimeToUtc((DateTime)value);
-                TimeSpan elapsedTime = dateTime - unixEpoch;
-
-                long unixTimestamp = (long)elapsedTime.TotalSeconds;
-                this.Value = unixTimestamp.ToString();
-                this.NumberValue = unixTimestamp;
-                this.StringValue = this.Value;
-                this.DateValue = (DateTime)value;
+                _valueType = SegmentValueType.Date;
+                _dateValue = (DateTime)value;
+                long unixTimestamp = new DateTimeOffset((DateTime)value).ToUnixTimeSeconds();
+                this.Value = unixTimestamp.ToString(CultureInfo.InvariantCulture);
             }
 
+        }
+
+        private enum SegmentValueType
+        {
+            Unknown,
+            String,
+            Bool,
+            Number,
+            Date
         }
 
     }
